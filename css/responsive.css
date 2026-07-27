@@ -540,6 +540,15 @@
     box-shadow: var(--shadow-md);
   }
 
+  .card:hover::before,
+  .card:hover::after {
+    opacity: 0;
+  }
+
+  .card:hover .card-image {
+    transform: none;
+  }
+
   .gallery-item:hover img {
     transform: none;
   }

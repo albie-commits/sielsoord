@@ -974,6 +974,7 @@ body.hero-dark .hero-bg-fallback {
   transition: transform var(--transition-luxury), box-shadow var(--transition-luxury);
   position: relative;
   border: 1px solid transparent;
+  touch-action: manipulation;              /* lock cards on touch */
 }
 
 .card::before {
