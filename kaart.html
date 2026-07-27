@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=18">
+  <link rel="stylesheet" href="css/style.css?v=20">
   <link rel="stylesheet" href="css/responsive.css?v=5">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
 
@@ -21,7 +21,7 @@
       "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
     }}
   </script>
-  <script type="module" src="js/terrain.js?v=2"></script>
+  <script type="module" src="js/terrain.js?v=3"></script>
 </head>
 <body>
 
@@ -90,123 +90,53 @@
           </p>
         </div>
 
-        <!-- Info box explaining what they see -->
-        <div class="map-info-box fade-in">
-          <h3 data-i18n="map.info_title">Wat jy op die kaart sien</h3>
-          <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);" data-i18n="map.info_desc">
-            Hierdie data kom direk vanaf die nuutste Sielsoord KML-lêer wat in Google Earth opgemeet is.
-            Klik op enige element op die kaart vir meer inligting.
-          </p>
-          <div class="feature-list">
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #E8B842;">⬖</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_sielsoord_title">Sielsoord 2,500 Hektaar Grens</strong>
-                <span data-i18n="map.feature_sielsoord_desc">Die amptelike plaas grens — die goue lyn. Die hele plaas is 2,500 hektaar.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #C9A84C;">⬖</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_rustoord_title">Plaas Rustoord Grens</strong>
-                <span data-i18n="map.feature_rustoord_desc">Die oorspronklike familieplaas Rustoord se grens — sagte goue lyn.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #E07B39;">▲</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_available_title">6 Koppies (Beskikbaar)</strong>
-                <span data-i18n="map.feature_available_desc">Koraal merkers toon die 6 koppies wat te koop is teen R4M NAD elk. Klik vir besonderhede.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #F5A623;">▲</div>
-              <div class="feature-text">
-                <strong data-i18n="map.legend_1reserved">1 Koppie (Gereserveer)</strong>
-                <span data-i18n="map.feature_reserved_desc">Oranje merker — Sielshorison (Koppie 8) is gereserveer. Besig met transaksie.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #78909C;">▲</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_private_title">1 Koppie (Privaat)</strong>
-                <span data-i18n="map.feature_private_desc">Grys merker — Sielsrus (Koppie 1) is privaat en nie te koop nie.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #3498DB;">◉</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_boreholes_title">2 Boorgate</strong>
-                <span data-i18n="map.feature_boreholes_desc">Blou merkers toon boorgate. Volop water vir wild, vee en potensiële bouprojekte.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #F0E6D2;">━</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_road_title">D2695-gruispad</strong>
-                <span data-i18n="map.feature_road_desc">Roomkleurige lyn — die gruispad wat maklike toegang tot die plaas gee. Reg vanaf die hoofweg.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #1B5E20;">━━</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_etosha_title">Etosha Nasionale Park</strong>
-                <span data-i18n="map.feature_etosha_desc">Donkergroen stippellyn — Etosha se suidgrens. Reg langs Sielsoord! Wild beweeg vrylik deur die streek.</span>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon" style="background: #A0522D;">━</div>
-              <div class="feature-text">
-                <strong data-i18n="map.feature_ongava_title">Ongava-reservaatgrens</strong>
-                <span data-i18n="map.feature_ongava_desc">Terracotta lyn — die privaat Ongava-wildreservaat grens ook aan Sielsoord.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- The actual 3D map -->
         <div class="map-container fade-in">
           <div id="terrain-map" class="terrain-map" role="application" data-i18n-attr="aria-label:map.aria_label" aria-label="Interaktiewe 3D kaart van Sielsoord plaas"></div>
+          <button id="terrain-fullscreen" class="terrain-fullscreen" data-i18n="map.control_fullscreen" data-i18n-attr="title:map.control_fullscreen" title="Volskerm">⛶</button>
           <button id="terrain-reset" class="terrain-reset" data-i18n="map.control_reset">Herstel kaartaansig</button>
         </div>
 
         <!-- Legend -->
         <div class="map-legend fade-in">
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #E8B842; opacity: 0.3; border: 2px solid #E8B842;"></span>
-            <span data-i18n="map.legend_sielsoord">Sielsoord-grens (2,500 ha)</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #C9A84C; opacity: 0.3; border: 2px solid #C9A84C;"></span>
-            <span data-i18n="map.legend_rustoord">Plaas Rustoord-grens</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #E07B39;"></span>
-            <span data-i18n="map.legend_available">Beskikbaar</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #F5A623;"></span>
-            <span data-i18n="peaks.reserved">Gereserveer</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #78909C;"></span>
-            <span data-i18n="map.legend_private">Privaat</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #3498DB;"></span>
-            <span data-i18n="map.legend_borehole">Boorgat</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #F0E6D2; border: 1px solid #ccc;"></span>
-            <span data-i18n="map.legend_road">Toegangspad (D2695)</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #1B5E20;"></span>
-            <span data-i18n="map.legend_etosha">Etosha-grens</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-swatch" style="background: #A0522D;"></span>
-            <span data-i18n="map.legend_ongava">Ongava-grens</span>
+          <h4 class="legend-title" data-i18n="map.legend_title">Sleutel</h4>
+          <div class="legend-grid">
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-line" style="background: rgba(232,184,66,0.25); border-color: #E8B842;"></span>
+              <span data-i18n="map.legend_sielsoord">Sielsoord-grens (2,500 ha)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-line" style="background: rgba(201,168,76,0.25); border-color: #C9A84C;"></span>
+              <span data-i18n="map.legend_rustoord">Plaas Rustoord-grens</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-dot" style="background: #E07B39;"></span>
+              <span data-i18n="map.legend_available">Beskikbaar (6 koppies)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-dot" style="background: #F5A623;"></span>
+              <span data-i18n="map.legend_1reserved">1 Koppie (Gereserveer)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-dot" style="background: #78909C;"></span>
+              <span data-i18n="map.legend_private">Privaat (1 koppie)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-dot" style="background: #3498DB;"></span>
+              <span data-i18n="map.legend_borehole">Boorgat (2)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-line" style="background: rgba(240,230,210,0.4); border-color: #F0E6D2;"></span>
+              <span data-i18n="map.legend_road">Toegangspad (D2695)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-line" style="background: rgba(46,125,50,0.3); border-color: #2E7D32;"></span>
+              <span data-i18n="map.legend_etosha">Etosha-grens</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-swatch legend-swatch-line" style="background: rgba(160,82,45,0.3); border-color: #A0522D;"></span>
+              <span data-i18n="map.legend_ongava">Ongava-grens</span>
+            </div>
           </div>
         </div>
       </div>
@@ -395,9 +325,11 @@
   </footer>
 
   <script src="js/main.js?v=6"></script>
-  <script src="js/translations.js?v=20"></script>
+  <script src="js/translations.js?v=24"></script>
   <script src="js/i18n.js?v=5"></script>
   <script src="js/premium.js"></script>
   <script type="module" src="js/sigil-3d.js?v=4"></script>
+  <script src="js/counter.js"></script>
+
 </body>
 </html>

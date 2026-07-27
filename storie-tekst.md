@@ -15,7 +15,7 @@ Sielsoord lê in noordelike Namibië, 108 km noord van Outjo en net 70 km van Ok
 
 Want dit is wat Sielsoord werklik is: antiek. Die dolomietrots onder jou voete dra 2,500 miljoen jaar se geologiese geskiedenis — dieselfde antieke landskap wat Etosha vorm, strek onder hierdie grond deur. Jy loop letterlik op dieselfde klip as die reuse wat hier gedwaal het toe die wêreld nog jonk was. Die hoogte bo seespieël wissel van 1,170 tot 1,220 meter, wat beteken die lug is dun en skoon, en die horisonne strek oneindig ver.
 
-En wat 'n horisonne. Agt koppies verrys uit die savanne, elk met sy eie karakter, sy eie uitsig, sy eie persoonlikheid. Op die hoogste punt staan die familie se jaghuis — die hart van generasies se bymeenkomste, waar stories vertel is rondom vuur plekke en kinders grootgeword het met die veld as hulle speelgrond. Sewe van hierdie koppies wag nou op nuwe eienaars. Elkeen 'n privaat koninkryk. Elkeen 'n geleentheid om nie net grond te besit nie, maar om 'n stuk van Afrika se siel te besit.
+En wat 'n horisonne. Agt koppies verrys uit die savanne, elk met sy eie karakter, sy eie uitsig, sy eie persoonlikheid. Op die hoogste punt staan die familie se huis — die hart van generasies se bymeenkomste, waar stories vertel is rondom vuur plekke en kinders grootgeword het met die veld as hulle speelgrond. Sewe van hierdie koppies wag nou op nuwe eienaars. Elkeen 'n privaat koninkryk. Elkeen 'n geleentheid om nie net grond te besit nie, maar om 'n stuk van Afrika se siel te besit.
 
 
 ## Die Seisoene — Twee Wêrelde op Een Plek
@@ -56,7 +56,7 @@ Tussen die mopane groei acacia-soorte met hulle skerp dorings en sagte geel blom
 
 ## Die Geleentheid — Sewe Koppies, Sewe Koninkryke
 
-Sielsoord bied nou iets wat selde beskikbaar kom in die wêreld van luukse vaste eiendom: die kans om 'n privaat koppie te besit op 'n plaas wat aan Etosha self grens. Van die agt koppies op die eiendom is sewe vir verkoop, elk teen R3.5 miljoen (Namibiese dollar). Elkeen verteenwoordig nie net 'n bouperseel nie, maar 'n private koninkryk met uitsigte wat onmoontlik is om te repliseer.
+Sielsoord bied nou iets wat selde beskikbaar kom in die wêreld van luukse vaste eiendom: die kans om 'n privaat koppie te besit op 'n plaas wat aan Etosha self grens. Van die agt koppies op die eiendom is ses vir verkoop, elk teen R4 miljoen (Namibiese dollar). Elkeen verteenwoordig nie net 'n bouperseel nie, maar 'n private koninkryk met uitsigte wat onmoontlik is om te repliseer.
 
 Dink daaraan. Jy staan op jou eie koppie, 1,200 meter bo seespieël, en jy kyk oor Etosha — oor die 4,760 vierkante kilometer se soutpan wat die inheemse bevolking "Die Groot Wit Plek" noem — en in die verte, aan die einde van die sigbare wêreld, sien jy die donderstorms van Angola in die naglig flikker. Jy hoor Etosha se leeus. Jy sien die renosters in die skemer. Jy is omsingel deur die rykste wildernis in Suider-Afrika, en tog staan jy op grond wat joune is — joune om te beskerm, om lief te hê, om deur te gee aan jou kinders en hulle kinders weer.
 

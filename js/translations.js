@@ -29,7 +29,7 @@ const TRANSLATIONS = {
     "story.land_h": "Die Land en Ligging",
     "story.land_p1": "Sielsoord lê 108 km noord van Outjo en ongeveer 70 km vanaf Okaukuejo. Die D2695-gruispad loop tot by die plaashek. Daar is 'n bestaande landingstrook ongeveer 12 km van die plaas af.",
     "story.land_p2": "Die terrein bestaan uit oop veld, mopanieveld en rotsagtige koppies. Die hoogte wissel van ongeveer 1,170 tot 1,220 meter bo seespieël.",
-    "story.land_p3": "Die agt koppies bied verskillende uitsigte en bouplekke. Die familie se jaghuis staan op Sielsrus, die hoogste koppie, en bly familie-eiendom.",
+    "story.land_p3": "Die agt koppies bied verskillende uitsigte en bouplekke. Die familie se huis staan op Sielsrus, die hoogste koppie, en bly familie-eiendom.",
 
     "story.seasons_h": "Die Seisoene",
     "story.seasons_p1": "Die wintermaande is meestal droog, met helder dae en koel nagte. Dit is 'n goeie tyd vir stap, veldritte en buitelewe.",
@@ -40,6 +40,8 @@ const TRANSLATIONS = {
     "story.wild_p1": "Wild wat op Sielsoord gesien word, sluit onder meer kudu, gemsbok, springbok en vlakvark in. Waarnemings wissel volgens die seisoen, water en beweging van die diere.",
     "story.wild_p2": "Die ligging is eenvoudig: Sielsoord grens aan Ongava Private Game Reserve, en Ongava grens aan Etosha Nasionale Park. Ongava lê dus tussen Sielsoord en Etosha; Sielsoord grens nie direk aan Etosha nie.",
     "story.wild_p3": "Etosha en Ongava vorm deel van die groter wildgebied rondom Sielsoord. Diere en geluide uit die omgewing kan soms vanaf die plaas waargeneem word, maar geen spesifieke wildbesigtiging kan gewaarborg word nie.",
+
+    "story.no_hunting": "⚠️ Streng geen-jag beleid. Sielsoord is 'n bewaringsplaas. Geen jag word op die eiendom toegelaat nie — die wild is hier om te lewe, nie om gejag te word nie.",
 
     "story.sky_h": "Voëllewe",
     "story.sky_p1": "Sielsoord het 'n verskeidenheid voëls. Foto's uit die plaas se eie galery wys onder meer bye-eters en ander plaaslike spesies.",
@@ -87,7 +89,7 @@ const TRANSLATIONS = {
     "index.stats_peaks": "Koppies",
     "index.stats_soul": "Plek vir jou Siel",
     "index.sielsrus_eyebrow": "Koppie 1 — Ons Koppie",
-    "index.sielsrus_card": "Nie te koop nie. Hier is ons jaghuis. Dit bly ons s'n.",
+    "index.sielsrus_card": "Nie te koop nie. Hier is ons huis. Dit bly ons s'n.",
     "index.sale_eyebrow": "Koppies 2–7 — Beskikbaar",
     "index.sale_title": "Ses koppies. Elkeen R4 miljoen.",
     "index.sale_all": "Sien alle koppies",
@@ -129,12 +131,12 @@ const TRANSLATIONS = {
     "peaks.legend_available": "6 Beskikbaar",
     "peaks.legend_reserved": "1 Gereserveer",
     "peaks.legend_private": "1 Privaat",
-    "peaks.sielsrus_card": "Ons familie se tuis. Die jaghuis bo-op die hoogste punt. Nie te koop nie — dit bly ons s'n.",
+    "peaks.sielsrus_card": "Ons familie se tuis. Ons huis bo-op die hoogste punt. Nie te koop nie — dit bly ons s'n.",
     "peaks.sielsrus_view": "Bekyk die galery ›",
     "peaks.avail_eyebrow": "Beskikbaarheid",
 
     /* ── Extra index keys ── */
-    "index.sielsrus_desc": "Ons familie se tuis. Die jaghuis bo-op die hoogste punt.",
+    "index.sielsrus_desc": "Ons familie se tuis. Ons huis bo-op die hoogste punt.",
     "index.cta_text2": "Voel die aarde onder jou voete en die stilte in jou siel.",
     "mtn.sielsrus_img_alt": "Sielsrus — ons koppie",
 
@@ -145,7 +147,7 @@ const TRANSLATIONS = {
     "plaas.story_eyebrow": "Ons Storie",
     "plaas.story_title": "'n Familie, 'n plaas, 'n belofte",
     "plaas.story_p1": "Sielsoord is meer as 'n stuk grond op 'n kaart. Dit is 'n plek wat deur generasies van 'n familie liefgehad is — waar kinders grootgeword het met die veld as hulle speelgrond, waar gesinne saamgekom het rondom 'n vuur onder die sterre, en waar die stilte so diep is dat jy jou eie hartslae kan hoor.",
-    "plaas.story_p2": "Die plaas behoort aan 'n familie wat die land oor dekades heen geken het — elke koppie, elke vallei, elke borehole. Die jaghuis bo-op die hoogste piek was die hart van familie-bymeenkomste. Nou wag die res van die koppies op nuwe eienaars om hulle eie stories te kom skryf.",
+    "plaas.story_p2": "Die plaas behoort aan 'n familie wat die land oor dekades heen geken het — elke koppie, elke vallei, elke borehole. Ons huis bo-op die hoogste piek was die hart van familie-bymeenkomste. Nou wag die res van die koppies op nuwe eienaars om hulle eie stories te kom skryf.",
     "plaas.story_p3": "Ons verkoop nie net grond nie. Ons deel 'n stuk van ons siel met mense wat dit sal waardeer. Daarom noem ons dit Sielsoord — die plek waar jou siel tuis kom.",
     "plaas.land_eyebrow": "Die Land",
     "plaas.land_title": "2,500 hektaar van Namibiese wildernis",
@@ -219,9 +221,9 @@ const TRANSLATIONS = {
     "peaks.intro_eyebrow": "Die Geleentheid",
     "peaks.intro_title": "Agt koppies op een plaas",
     "peaks.intro_p1": "Ons het 2,500 hektaar opgemeet en 8 koppies afgebaken — elkeen 'n selfstandige stuk aarde met sy eie karakter, sy eie uitsig, sy eie gees.",
-    "peaks.intro_p2": "Koppie 1 — Sielsrus is ons familie se koppie. Daar's ons jaghuis. Koppie 8 — Sielshorison is gereserveer. Die ander 6 koppies is vir verkoop teen R4 miljoen (NAD) elk. Regte titel akte. Namibiese eiendomsreg. Jy besit dit vir ewig.",
+    "peaks.intro_p2": "Koppie 1 — Sielsrus is ons familie se koppie. Daar's ons huis. Koppie 8 — Sielshorison is gereserveer. Die ander 6 koppies is vir verkoop teen R4 miljoen (NAD) elk. Regte titel akte. Namibiese eiendomsreg. Jy besit dit vir ewig.",
     "peaks.sielsrus_eyebrow": "Koppie 1 — Ons Koppie",
-    "peaks.sielsrus_card": "Ons familie se tuis. Die jaghuis bo-op die hoogste piek. Nie te koop nie — dit bly ons s'n.",
+    "peaks.sielsrus_card": "Ons familie se tuis. Ons huis bo-op die hoogste piek. Nie te koop nie — dit bly ons s'n.",
     "peaks.sielsrus_view": "Bekyk die galery",
     "peaks.sale_eyebrow": "Koppies 2–7 — Beskikbaar",
     "peaks.sale_title": "Ses koppies beskikbaar",
@@ -233,7 +235,7 @@ const TRANSLATIONS = {
     /* ── Hill names (proper nouns — same in all langs) ── */
     "mtn.sielsrus": "Sielsrus",
     "mtn.sielsrus_sub": "Sielsrus — Ons Koppie",
-    "mtn.sielsrus_desc": "Ons familie se tuis. Die jaghuis bo-op die hoogste piek. Nie te koop nie — dit bly ons s'n.",
+    "mtn.sielsrus_desc": "Ons familie se tuis. Ons huis bo-op die hoogste piek. Nie te koop nie — dit bly ons s'n.",
 
     /* ── Kaart page ── */
     "map.hero_eyebrow": "Die Kaart",
@@ -410,7 +412,7 @@ const TRANSLATIONS = {
 
     /* ── Sielsrus page specific ── */
     "mtn.sielsrus_heading": "Ons koppie. Ons tuis.",
-    "mtn.sielsrus_lead": "Sielsrus is die hart van Sielsoord — die piek waar ons familie se jaghuis staan. Hier het generasies saamgekom rondom die vuur, onder die onbesoedelde sterrehemel. Hierdie koppie is nie te koop nie. Dit bly ons s'n.",
+    "mtn.sielsrus_lead": "Sielsrus is die hart van Sielsoord — die piek waar ons familie se huis staan. Hier het generasies saamgekom rondom die vuur, onder die onbesoedelde sterrehemel. Hierdie koppie is nie te koop nie. Dit bly ons s'n.",
     "mtn.sielsrus_viewpoint": "Dis van hier af, bo-op Sielsrus, dat ons die ander koppies kan sien lê — elkeen wag op sy eie stories, sy eie mense. Die uitsig is oneindig.",
     "mtn.sielsrus_gallery_title": "Sielsrus in prente",
 
@@ -429,7 +431,7 @@ const TRANSLATIONS = {
     "meta.story_title": "Storie — Sielsoord",
     "meta.story_desc": "Die storie van Sielsoord — 2,500 hektaar Namibiese wildernis met geskiedenis, wild en siel, naby Etosha.",
     "meta.sielsrus_title": "Sielsrus — Ons Koppie — Sielsoord",
-    "meta.sielsrus_desc": "Sielsrus — ons familie se koppie en jaghuis op die hoogste punt van Sielsoord.",
+    "meta.sielsrus_desc": "Sielsrus — ons familie se koppie en huis op die hoogste punt van Sielsoord.",
     "mtn.sielsrus_view_alt": "Uitsig vanaf Sielsrus",
     "meta.hill_available_desc": "'n Privaat koppie beskikbaar op Sielsoord, Namibië, teen R4 miljoen.",
     "meta.hill_reserved_desc": "Sielshorison — Koppie 8 op Sielsoord, Namibië. Tans gereserveer.",
@@ -451,10 +453,11 @@ const TRANSLATIONS = {
     "map.feature_ongava_title": "Ongava-reservaatgrens",
     "map.feature_ongava_desc": "Terracotta lyn — die privaat Ongava-wildreservaat grens ook aan Sielsoord.",
     "map.aria_label": "Interaktiewe kaart van die Sielsoord-plaas",
+    "map.legend_title": "Sleutel",
     "map.legend_sielsoord": "Sielsoord-grens (2,500 ha)",
     "map.legend_rustoord": "Plaas Rustoord-grens",
-    "map.legend_available": "Beskikbaar",
-    "map.legend_private": "Privaat",
+    "map.legend_available": "Beskikbaar (6 koppies)",
+    "map.legend_private": "Privaat (1 koppie)",
     "map.legend_borehole": "Boorgat",
     "map.legend_road": "Toegangspad (D2695)",
     "map.legend_etosha": "Etosha-grens",
@@ -503,7 +506,7 @@ const TRANSLATIONS = {
     "kontak.faq4_q": "Mag ek op my koppie bou?",
     "kontak.faq4_a": "Ja, onderhewig aan die nodige plaaslike goedkeurings. Jy kan 'n huis, buitegebou of klein gastehuis beplan. Lae-impakontwerp wat die natuurlike landskap respekteer, word aangemoedig.",
     "kontak.faq5_q": "Watter wild is op die plaas?",
-    "kontak.faq5_a": "Die plaas is naby Etosha en Ongava, met wild soos koedoes, gemsbokke, springbokke, steenbokke en jakkalse. Olifante en renosters kan soms vanuit die reservate deur die streek beweeg. Alle wild- en jagaktiwiteite moet aan Namibiese regulasies voldoen.",
+    "kontak.faq5_a": "Die plaas is naby Etosha en Ongava, met wild soos koedoes, gemsbokke, springbokke, steenbokke en jakkalse. Olifante en renosters kan soms vanuit die reservate deur die streek beweeg. Sielsoord het 'n streng geen-jag beleid. Geen jag word op die plaas toegelaat nie.",
     "kontak.faq6_q": "Hoe ver is dit van die naaste dorp?",
     "kontak.faq6_a": "Die D2695-gruispad bied direkte toegang vanaf die hoofweg. Outjo en Okaukuejo, Etosha se hoofkamp, is in die omgewing. Ons verskaf presiese afstande en rytye tydens jou navraag.",
     "kontak.faq7_q": "Kan ek die grense op Google Earth verifieer?",
@@ -547,7 +550,7 @@ const TRANSLATIONS = {
     "story.land_h": "The Land and Location",
     "story.land_p1": "Sielsoord is 108 km north of Outjo and approximately 70 km from Okaukuejo. The D2695 gravel road reaches the farm gate. An existing airstrip is approximately 12 km away.",
     "story.land_p2": "The terrain includes open veld, mopane woodland and rocky hills. Elevation ranges from approximately 1,170 to 1,220 metres above sea level.",
-    "story.land_p3": "The eight hills offer different views and building sites. The family's hunting house stands on Sielsrus, the highest hill, and remains family property.",
+    "story.land_p3": "The eight hills offer different views and building sites. The family's house stands on Sielsrus, the highest hill, and remains family property.",
 
     "story.seasons_h": "The Seasons",
     "story.seasons_p1": "The winter months are generally dry, with clear days and cool nights. This is a good time for walking, game drives and outdoor activities.",
@@ -558,6 +561,8 @@ const TRANSLATIONS = {
     "story.wild_p1": "Wildlife seen on Sielsoord includes kudu, gemsbok, springbok and warthog. Sightings vary with the season, water and animal movement.",
     "story.wild_p2": "The location should be stated clearly: Sielsoord borders Ongava Private Game Reserve, and Ongava borders Etosha National Park. Ongava lies between Sielsoord and Etosha; Sielsoord does not border Etosha directly.",
     "story.wild_p3": "Etosha and Ongava form part of the larger wildlife area around Sielsoord. Animals and sounds from the area may sometimes be observed from the farm, but no particular wildlife sighting can be guaranteed.",
+
+    "story.no_hunting": "⚠️ Strict no-hunting policy. Sielsoord is a conservation farm. No hunting is allowed on the property — the wildlife is here to live, not to be hunted.",
 
     "story.sky_h": "Birdlife",
     "story.sky_p1": "Sielsoord has a variety of birds. Photographs in the farm's own gallery show bee-eaters and other local species.",
@@ -603,7 +608,7 @@ const TRANSLATIONS = {
     "index.stats_peaks": "Hill Peaks",
     "index.stats_soul": "Room for your Soul",
     "index.sielsrus_eyebrow": "Hill 1 — Our Hill",
-    "index.sielsrus_card": "Not for sale. This is our hunting lodge. It stays ours.",
+    "index.sielsrus_card": "Not for sale. This is our home. It stays ours.",
     "index.sale_eyebrow": "Hills 2–7 — Available",
     "index.sale_title": "Six hills. Each R4 million.",
     "index.sale_all": "See all hills",
@@ -645,12 +650,12 @@ const TRANSLATIONS = {
     "peaks.legend_available": "6 Available",
     "peaks.legend_reserved": "1 Reserved",
     "peaks.legend_private": "1 Private",
-    "peaks.sielsrus_card": "Our family's home. The hunting lodge atop the highest peak. Not for sale — it stays ours.",
+    "peaks.sielsrus_card": "Our family's home. Our house atop the highest peak. Not for sale — it stays ours.",
     "peaks.sielsrus_view": "View the gallery ›",
     "peaks.avail_eyebrow": "Availability",
 
     /* ── Extra index keys ── */
-    "index.sielsrus_desc": "Our family's home. The hunting lodge atop the highest point.",
+    "index.sielsrus_desc": "Our family's home. Our house atop the highest point.",
     "index.cta_text2": "Feel the earth beneath your feet and the silence in your soul.",
     "mtn.sielsrus_img_alt": "Sielsrus — our hill",
 
@@ -660,7 +665,7 @@ const TRANSLATIONS = {
     "plaas.story_eyebrow": "Our Story",
     "plaas.story_title": "A family, a farm, a promise",
     "plaas.story_p1": "Sielsoord is more than a piece of land on a map. It is a place loved by generations of a family — where children grew up with the veld as their playground, where families gathered around a fire under the stars, and where the silence is so deep you can hear your own heartbeat.",
-    "plaas.story_p2": "The farm belongs to a family that has known the land over decades — every hill, every valley, every borehole. The hunting lodge atop the highest peak was the heart of family gatherings. Now the rest of the hills await new owners to come write their own stories.",
+    "plaas.story_p2": "The farm belongs to a family that has known the land over decades — every hill, every valley, every borehole. Our house atop the highest peak was the heart of family gatherings. Now the rest of the hills await new owners to come write their own stories.",
     "plaas.story_p3": "We're not just selling land. We're sharing a piece of our soul with people who will cherish it. That's why we call it Sielsoord — the place where your soul comes home.",
     "plaas.land_eyebrow": "The Land",
     "plaas.land_title": "2,500 hectares of Namibian wilderness",
@@ -732,9 +737,9 @@ const TRANSLATIONS = {
     "peaks.intro_eyebrow": "The Opportunity",
     "peaks.intro_title": "Eight hills on one farm",
     "peaks.intro_p1": "We surveyed 2,500 hectares and demarcated 8 hill peaks — each a self-contained piece of earth with its own character, its own view, its own spirit.",
-    "peaks.intro_p2": "Hill 1 — Sielsrus is our family's hill. That's where our hunting lodge is. Hill 8 — Sielshorison is reserved. The other 6 hills are for sale at R4 million (NAD) each. Proper title deeds. Namibian property rights. You own it forever.",
+    "peaks.intro_p2": "Hill 1 — Sielsrus is our family's hill. That's where our home is. Hill 8 — Sielshorison is reserved. The other 6 hills are for sale at R4 million (NAD) each. Proper title deeds. Namibian property rights. You own it forever.",
     "peaks.sielsrus_eyebrow": "Hill 1 — Our Hill",
-    "peaks.sielsrus_card": "Our family's home. The hunting lodge atop the highest peak. Not for sale — it stays ours.",
+    "peaks.sielsrus_card": "Our family's home. Our house atop the highest peak. Not for sale — it stays ours.",
     "peaks.sielsrus_view": "View the gallery",
     "peaks.sale_eyebrow": "Hills 2–7 — Available",
     "peaks.sale_title": "Six hills available",
@@ -745,7 +750,7 @@ const TRANSLATIONS = {
 
     "mtn.sielsrus": "Sielsrus",
     "mtn.sielsrus_sub": "Sielsrus — Our Hill",
-    "mtn.sielsrus_desc": "Our family's home. The hunting lodge atop the highest peak. Not for sale — it stays ours.",
+    "mtn.sielsrus_desc": "Our family's home. Our house atop the highest peak. Not for sale — it stays ours.",
 
     "map.hero_eyebrow": "The Map",
     "map.hero_title": "See the land",
@@ -920,7 +925,7 @@ const TRANSLATIONS = {
 
     /* ── Sielsrus page specific ── */
     "mtn.sielsrus_heading": "Our hill. Our home.",
-    "mtn.sielsrus_lead": "Sielsrus is the heart of Sielsoord — the peak where our family's hunting lodge stands. Here generations gathered around the fire, under the unpolluted starry sky. This hill is not for sale. It stays ours.",
+    "mtn.sielsrus_lead": "Sielsrus is the heart of Sielsoord — the peak where our family's home stands. Here generations gathered around the fire, under the unpolluted starry sky. This hill is not for sale. It stays ours.",
     "mtn.sielsrus_viewpoint": "It's from here, atop Sielsrus, that we can see the other hills lying — each waiting for its own stories, its own people. The view is endless.",
     "mtn.sielsrus_gallery_title": "Sielsrus in pictures",
 
@@ -939,7 +944,7 @@ const TRANSLATIONS = {
     "meta.story_title": "Story — Sielsoord",
     "meta.story_desc": "The story of Sielsoord — 2,500 hectares of Namibian wilderness, history, wildlife and soul, near Etosha.",
     "meta.sielsrus_title": "Sielsrus — Our Hill — Sielsoord",
-    "meta.sielsrus_desc": "Sielsrus — our family's hill and hunting lodge at the highest point of Sielsoord.",
+    "meta.sielsrus_desc": "Sielsrus — our family's hill and home at the highest point of Sielsoord.",
     "mtn.sielsrus_view_alt": "View from Sielsrus",
     "meta.hill_available_desc": "A private hill available at Sielsoord, Namibia, for R4 million.",
     "meta.hill_reserved_desc": "Sielshorison — Hill 8 at Sielsoord, Namibia. Currently reserved.",
@@ -961,10 +966,11 @@ const TRANSLATIONS = {
     "map.feature_ongava_title": "Ongava Reserve Boundary",
     "map.feature_ongava_desc": "Terracotta line — the private Ongava wildlife reserve also borders Sielsoord.",
     "map.aria_label": "Interactive map of Sielsoord farm",
+    "map.legend_title": "Key",
     "map.legend_sielsoord": "Sielsoord boundary (2,500 ha)",
     "map.legend_rustoord": "Farm Rustoord boundary",
-    "map.legend_available": "Available",
-    "map.legend_private": "Private",
+    "map.legend_available": "Available (6 hills)",
+    "map.legend_private": "Private (1 hill)",
     "map.legend_borehole": "Borehole",
     "map.legend_road": "Access road (D2695)",
     "map.legend_etosha": "Etosha boundary",
@@ -1013,7 +1019,7 @@ const TRANSLATIONS = {
     "kontak.faq4_q": "May I build on my hill?",
     "kontak.faq4_a": "Yes, subject to the necessary local approvals. You may plan a home, outbuilding or small guesthouse. Low-impact design that respects the natural landscape is encouraged.",
     "kontak.faq5_q": "What wildlife is found on the farm?",
-    "kontak.faq5_a": "The farm is close to Etosha and Ongava, with wildlife including kudu, oryx, springbok, steenbok and jackals. Elephants and rhinos may occasionally move through the region from the reserves. All wildlife and hunting activities must comply with Namibian regulations.",
+    "kontak.faq5_a": "The farm is close to Etosha and Ongava, with wildlife including kudu, oryx, springbok, steenbok and jackals. Elephants and rhinos may occasionally move through the region from the reserves. Sielsoord has a strict no-hunting policy. No hunting is allowed on the farm.",
     "kontak.faq6_q": "How far is it from the nearest town?",
     "kontak.faq6_a": "The D2695 gravel road provides direct access from the main road. Outjo and Okaukuejo, Etosha's main camp, are in the region. We provide precise distances and driving times when you enquire.",
     "kontak.faq7_q": "Can I verify the boundaries in Google Earth?",
@@ -1057,7 +1063,7 @@ const TRANSLATIONS = {
     "story.land_h": "Das Land — Ein Erbe aus Fels und Weite",
     "story.land_p1": "Sielsoord liegt im nördlichen Namibia, 108 km nördlich von Outjo und nur 70 km von Okaukuejo — dem Haupteingang von Etosha. Die D2695-Schotterstraße führt direkt bis zum Tor der Farm, und eine bestehende Landebahn nur 12 km entfernt bedeutet, dass du mit dem Flugzeug hier sein kannst, wenn dich die Stimmung ruft. Auf den Koordinaten 19.382°S, 15.597°O liegt eine Welt, die sowohl dem Antiken als auch dem Ewigen gehört.",
     "story.land_p2": "Denn das ist, was Sielsoord wirklich ist: uralt. Das Dolomitgestein unter deinen Füßen trägt 2.500 Millionen Jahre geologischer Geschichte — dieselbe antike Landschaft, die Etosha bildet, erstreckt sich unter diesem Boden. Du buchstäblich auf demselben Stein wie die Riesen, die hier wandelten, als die Welt noch jung war. Die Höhe über dem Meeresspiegel variiert von 1.170 bis 1.220 Metern, was bedeutet, dass die Luft dünn und rein ist und die Horizonte sich unendlich weit erstrecken.",
-    "story.land_p3": "Und was für Horizonte. Acht Hügel erheben sich aus der Savanne, jeder mit seinem eigenen Charakter, seiner eigenen Aussicht, seiner eigenen Persönlichkeit. Auf dem höchsten Punkt steht das Jagdhaus der Familie — das Herz von Generationen von Zusammenkünften, wo Geschichten am Feuer erzählt wurden und Kinder mit dem Veld als Spielplatz aufwuchsen. Sieben dieser Hügel warten nun auf neue Eigentümer. Jeder ein privates Königreich. Jeder eine Gelegenheit, nicht nur Land zu besitzen, sondern ein Stück der Seele Afrikas.",
+    "story.land_p3": "Und was für Horizonte. Acht Hügel erheben sich aus der Savanne, jeder mit seinem eigenen Charakter, seiner eigenen Aussicht, seiner eigenen Persönlichkeit. Auf dem höchsten Punkt steht das Haus der Familie — das Herz von Generationen von Zusammenkünften, wo Geschichten am Feuer erzählt wurden und Kinder mit dem Veld als Spielplatz aufwuchsen. Sieben dieser Hügel warten nun auf neue Eigentümer. Jeder ein privates Königreich. Jeder eine Gelegenheit, nicht nur Land zu besitzen, sondern ein Stück der Seele Afrikas.",
 
     "story.seasons_h": "Die Jahreszeiten — Zwei Welten an einem Ort",
     "story.seasons_p1": "Im Winter — von Mai bis August — sind die Tage scharf und kristallklar. Nachts fallen die Temperaturen auf etwa 10°C, und du ziehst einen Pullover an, um draußen mit deinem Kaffee zu sitzen, während der Sonnenaufgang die Ebenen in Gold und Bernstein taucht. Der Himmel ist wolkenlos, Tag für Tag, und die Sterne... die Sterne sind unbeschreiblich. Die Milchstraße erstreckt sich wie ein Lichtstrom über den Himmel, so hell, dass du deinen Schatten im Sternenlicht sehen kannst. Hier gibt es keine Lichtverschmutzung. Nur du, die Stille und das Universum, das sich dir offenbart.",
@@ -1068,6 +1074,8 @@ const TRANSLATIONS = {
     "story.wild_p1": "Sie streifen frei über Sielsoords 2.500 Hektar. Kudu-Herden bewegen sich durch die Mopane-Bäume mit einer Würde, die nur Antilopen besitzen. Oryx — diese ikonischen schwarz-weißen Gesichter mit ihren aufrechten Hörnern wie Speeren — stehen gegen den Horizont wie Gestalten aus einer Urzeit. Springböcke springen über die Ebenen, ihre weißen Rücken im Sonnenlicht blitzend. Sie sind hier. Sie waren schon immer hier. Sie gehören niemandem und jedem.",
     "story.wild_p2": "Die Lage muss klar beschrieben werden: Sielsoord grenzt an das Ongava Private Game Reserve, und Ongava grenzt an den Etosha-Nationalpark. Ongava liegt somit zwischen Sielsoord und Etosha; Sielsoord grenzt nicht direkt an Etosha.",
     "story.wild_p3": "Und in der Nacht — dann hörst du sie. Etosha ist seit 2005 eine offizielle Löwenschutz-Einheit. Die Löwen brüllen in der Dunkelheit in der Nähe des Grenzzauns, und der Klang rollt über die Ebenen und die Hügel hinauf bis zu deiner Haustür. Es ist ein Klang, der durch deinen ganzen Körper vibriert — uralt und wild und unverfälschtes Afrika. Schwarze Nashörner, Leoparden, Geparden, Hyänen, Zebras, Giraffen, Blaugnus, Elen-Antilopen, Hartmann-Bergzebras, Warzenschweine, Schakale, Löffelhunde, Erdferkel und sogar der seltene Erdwolf.",
+
+    "story.no_hunting": "⚠️ Strenge Jagdverbots-Richtlinie. Sielsoord ist eine Naturschutzfarm. Jegliche Jagd auf dem Grundstück ist untersagt — die Wildtiere sind hier, um zu leben, nicht um gejagt zu werden.",
 
     "story.sky_h": "Der Himmel — Ein Königreich der Flügel",
     "story.sky_p1": "Strauße wandern über die Ebenen mit der Würde von Königen, ihre langen Hälse gegen den Horizont. Kampfadler und Raufußadler gleiten auf Thermikströmungen über den Hügeln, ihre scharfen Augen das Veld unten nach jeder Bewegung absuchend. Geier — jene stillen Reiniger der Wildnis — kreisen in Mustern, die aussehen, als wären sie von einer unsichtbaren Hand gezeichnet.",
@@ -1113,7 +1121,7 @@ const TRANSLATIONS = {
     "index.stats_peaks": "Hügelkuppen",
     "index.stats_soul": "Platz für Ihre Seele",
     "index.sielsrus_eyebrow": "Hügel 1 — Unser Hügel",
-    "index.sielsrus_card": "Nicht zu verkaufen. Hier ist unser Jagdhaus. Es bleibt unser.",
+    "index.sielsrus_card": "Nicht zu verkaufen. Hier ist unser Haus. Es bleibt unser.",
     "index.sale_eyebrow": "Hügel 2–7 — Verfügbar",
     "index.sale_title": "Sechs Hügel. Jeder R4 Millionen.",
     "index.sale_all": "Alle Hügel ansehen",
@@ -1155,12 +1163,12 @@ const TRANSLATIONS = {
     "peaks.legend_available": "6 Verfügbar",
     "peaks.legend_reserved": "1 Reserviert",
     "peaks.legend_private": "1 Privat",
-    "peaks.sielsrus_card": "Unser Familienheim. Das Jagdhaus auf dem höchsten Punkt. Nicht zu verkaufen — es bleibt unser.",
+    "peaks.sielsrus_card": "Unser Familienheim. Das Haus auf dem höchsten Punkt. Nicht zu verkaufen — es bleibt unser.",
     "peaks.sielsrus_view": "Galerie ansehen ›",
     "peaks.avail_eyebrow": "Verfügbarkeit",
 
     /* ── Extra index keys ── */
-    "index.sielsrus_desc": "Unser Familienheim. Das Jagdhaus auf dem höchsten Punkt.",
+    "index.sielsrus_desc": "Unser Familienheim. Das Haus auf dem höchsten Punkt.",
     "index.cta_text2": "Fühlen Sie die Erde unter Ihren Füßen und die Stille in Ihrer Seele.",
     "mtn.sielsrus_img_alt": "Sielsrus — unser Hügel",
 
@@ -1170,7 +1178,7 @@ const TRANSLATIONS = {
     "plaas.story_eyebrow": "Unsere Geschichte",
     "plaas.story_title": "Eine Familie, eine Farm, ein Versprechen",
     "plaas.story_p1": "Sielsoord ist mehr als ein Stück Land auf einer Karte. Es ist ein Ort, der von Generationen einer Familie geliebt wurde — wo Kinder mit dem Veld als Spielplatz aufwuchsen, wo Familien sich unter den Sternen um ein Feuer versammelten, und wo die Stille so tief ist, dass man den eigenen Herzschlag hören kann.",
-    "plaas.story_p2": "Die Farm gehört einer Familie, die das Land über Jahrzehnte kennt — jeden Hügel, jedes Tal, jedes Bohrloch. Das Jagdhaus auf dem höchsten Gipfel war das Herz der Familienzusammenkünfte. Nun warten die restlichen Hügel auf neue Eigentümer, die ihre eigenen Geschichten schreiben.",
+    "plaas.story_p2": "Die Farm gehört einer Familie, die das Land über Jahrzehnte kennt — jeden Hügel, jedes Tal, jedes Bohrloch. Das Haus auf dem höchsten Gipfel war das Herz der Familienzusammenkünfte. Nun warten die restlichen Hügel auf neue Eigentümer, die ihre eigenen Geschichten schreiben.",
     "plaas.story_p3": "Wir verkaufen nicht nur Land. Wir teilen ein Stück unserer Seele mit Menschen, die es zu schätzen wissen. Deshalb nennen wir es Sielsoord — der Ort, wo Ihre Seele Heimat findet.",
     "plaas.land_eyebrow": "Das Land",
     "plaas.land_title": "2.500 Hektar namibische Wildnis",
@@ -1227,7 +1235,7 @@ const TRANSLATIONS = {
     "farm.rules_owners": "8 Eigentümer",
     "farm.rules_animals": "Keine Tierhaltung",
     "farm.rules_nature": "Wir genießen derzeit die Natur",
-    "farm.rules_lodge": "Dürfen nur ein Jagdhaus für den persönlichen Gebrauch bauen",
+    "farm.rules_lodge": "Dürfen nur ein Haus für den persönlichen Gebrauch bauen",
     "farm.rules_resort": "Wir bauen kein Resort oder Airbnb",
     "farm.rules_drives": "Alle dürfen das Land für Game/Veld-Fahrten nutzen",
 
@@ -1242,9 +1250,9 @@ const TRANSLATIONS = {
     "peaks.intro_eyebrow": "Die Gelegenheit",
     "peaks.intro_title": "Acht Hügel auf einer Farm",
     "peaks.intro_p1": "Wir haben 2.500 Hektar vermessen und 8 Hügelkuppe abgegrenzt — jeder ein eigenständiges Stück Erde mit eigenem Charakter, eigenem Blick, eigenem Geist.",
-    "peaks.intro_p2": "Hügel 1 — Sielsrus ist der Hügel unserer Familie. Dort steht unser Jagdhaus. Hügel 8 — Sielshorison ist reserviert. Die anderen 6 Hügel sind für je R4 Millionen (NAD) zu verkaufen. Echte Eigentumstitel. Namibisches Eigentumsrecht. Sie besitzen es für immer.",
+    "peaks.intro_p2": "Hügel 1 — Sielsrus ist der Hügel unserer Familie. Dort steht unser Haus. Hügel 8 — Sielshorison ist reserviert. Die anderen 6 Hügel sind für je R4 Millionen (NAD) zu verkaufen. Echte Eigentumstitel. Namibisches Eigentumsrecht. Sie besitzen es für immer.",
     "peaks.sielsrus_eyebrow": "Hügel 1 — Unser Hügel",
-    "peaks.sielsrus_card": "Das Zuhause unserer Familie. Das Jagdhaus auf dem höchsten Gipfel. Nicht zu verkaufen — es bleibt unser.",
+    "peaks.sielsrus_card": "Das Zuhause unserer Familie. Das Haus auf dem höchsten Gipfel. Nicht zu verkaufen — es bleibt unser.",
     "peaks.sielsrus_view": "Galerie ansehen",
     "peaks.sale_eyebrow": "Hügel 2–7 — Verfügbar",
     "peaks.sale_title": "Sechs Hügel verfügbar",
@@ -1255,7 +1263,7 @@ const TRANSLATIONS = {
 
     "mtn.sielsrus": "Sielsrus",
     "mtn.sielsrus_sub": "Sielsrus — Unser Hügel",
-    "mtn.sielsrus_desc": "Das Zuhause unserer Familie. Das Jagdhaus auf dem höchsten Gipfel. Nicht zu verkaufen — es bleibt unser.",
+    "mtn.sielsrus_desc": "Das Zuhause unserer Familie. Das Haus auf dem höchsten Gipfel. Nicht zu verkaufen — es bleibt unser.",
 
     "map.hero_eyebrow": "Die Karte",
     "map.hero_title": "Sehen Sie das Land",
@@ -1430,7 +1438,7 @@ const TRANSLATIONS = {
 
     /* ── Sielsrus page specific ── */
     "mtn.sielsrus_heading": "Unser Hügel. Unser Zuhause.",
-    "mtn.sielsrus_lead": "Sielsrus ist das Herz von Sielsoord — der Gipfel, auf dem das Jagdhaus unserer Familie steht. Hier versammelten sich Generationen um das Feuer, unter dem ungetrübten Sternenhimmel. Dieser Hügel steht nicht zum Verkauf. Er bleibt unser.",
+    "mtn.sielsrus_lead": "Sielsrus ist das Herz von Sielsoord — der Gipfel, auf dem das Haus unserer Familie steht. Hier versammelten sich Generationen um das Feuer, unter dem ungetrübten Sternenhimmel. Dieser Hügel steht nicht zum Verkauf. Er bleibt unser.",
     "mtn.sielsrus_viewpoint": "Von hier, oben auf Sielsrus, können wir die anderen Hügel liegen sehen — jeder wartet auf seine eigenen Geschichten, seine eigenen Menschen. Der Blick ist endlos.",
     "mtn.sielsrus_gallery_title": "Sielsrus in Bildern",
 
@@ -1449,7 +1457,7 @@ const TRANSLATIONS = {
     "meta.story_title": "Geschichte — Sielsoord",
     "meta.story_desc": "Die Geschichte von Sielsoord — 2.500 Hektar namibische Wildnis, Geschichte, Tierwelt und Seele, nahe Etosha.",
     "meta.sielsrus_title": "Sielsrus — Unser Hügel — Sielsoord",
-    "meta.sielsrus_desc": "Sielsrus — der Hügel unserer Familie mit Jagdhaus am höchsten Punkt von Sielsoord.",
+    "meta.sielsrus_desc": "Sielsrus — der Hügel unserer Familie mit Haus am höchsten Punkt von Sielsoord.",
     "mtn.sielsrus_view_alt": "Aussicht vom Sielsrus",
     "meta.hill_available_desc": "Ein privater Hügel auf Sielsoord, Namibia, für R4 Millionen verfügbar.",
     "meta.hill_reserved_desc": "Sielshorison — Hügel 8 auf Sielsoord, Namibia. Derzeit reserviert.",
@@ -1471,10 +1479,11 @@ const TRANSLATIONS = {
     "map.feature_ongava_title": "Grenze des Ongava-Reservats",
     "map.feature_ongava_desc": "Terrakottafarbene Linie — auch das private Ongava-Wildreservat grenzt an Sielsoord.",
     "map.aria_label": "Interaktive Karte der Farm Sielsoord",
+    "map.legend_title": "Legende",
     "map.legend_sielsoord": "Sielsoord-Grenze (2.500 ha)",
     "map.legend_rustoord": "Grenze der Farm Rustoord",
-    "map.legend_available": "Verfügbar",
-    "map.legend_private": "Privat",
+    "map.legend_available": "Verfügbar (6 Hügel)",
+    "map.legend_private": "Privat (1 Hügel)",
     "map.legend_borehole": "Bohrloch",
     "map.legend_road": "Zufahrtsstraße (D2695)",
     "map.legend_etosha": "Etosha-Grenze",
@@ -1523,7 +1532,7 @@ const TRANSLATIONS = {
     "kontak.faq4_q": "Darf ich auf meinem Hügel bauen?",
     "kontak.faq4_a": "Ja, vorbehaltlich der erforderlichen örtlichen Genehmigungen. Sie können ein Haus, ein Nebengebäude oder ein kleines Gästehaus planen. Eine umweltschonende Gestaltung, die die natürliche Landschaft respektiert, wird empfohlen.",
     "kontak.faq5_q": "Welche Wildtiere gibt es auf der Farm?",
-    "kontak.faq5_a": "Die Farm liegt nahe Etosha und Ongava. Hier leben unter anderem Kudus, Oryxantilopen, Springböcke, Steinböckchen und Schakale. Elefanten und Nashörner können gelegentlich aus den Reservaten durch die Region ziehen. Alle Wildtier- und Jagdaktivitäten müssen namibischen Vorschriften entsprechen.",
+    "kontak.faq5_a": "Die Farm liegt nahe Etosha und Ongava. Hier leben unter anderem Kudus, Oryxantilopen, Springböcke, Steinböckchen und Schakale. Elefanten und Nashörner können gelegentlich aus den Reservaten durch die Region ziehen. Sielsoord hat eine strenge Jagdverbots-Richtlinie. Jegliche Jagd auf der Farm ist untersagt.",
     "kontak.faq6_q": "Wie weit ist es bis zur nächsten Stadt?",
     "kontak.faq6_a": "Die D2695-Schotterstraße bietet direkten Zugang von der Hauptstraße. Outjo und Okaukuejo, das Hauptcamp des Etosha, liegen in der Region. Genaue Entfernungen und Fahrzeiten erhalten Sie bei Ihrer Anfrage.",
     "kontak.faq7_q": "Kann ich die Grenzen in Google Earth überprüfen?",

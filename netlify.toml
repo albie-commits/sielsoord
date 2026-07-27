@@ -1,0 +1,12 @@
+# Sielsoord Netlify config
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+
+# Map /api/counter to the Netlify Function
+[[redirects]]
+  from = "/api/counter"
+  to = "/.netlify/functions/counter"
+  status = 200

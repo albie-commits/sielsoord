@@ -818,6 +818,31 @@ body.hero-dark .hero-bg-fallback {
   border-color: var(--color-gold, #C9842A);
 }
 
+/* Fullscreen toggle button for 3D map */
+.terrain-fullscreen {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 3;
+  font-family: var(--font-label, 'Montserrat', sans-serif);
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  background: rgba(30, 16, 10, 0.55);
+  border: 1px solid rgba(201, 132, 42, 0.45);
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.terrain-fullscreen:hover,
+.terrain-fullscreen--active {
+  background: rgba(201, 132, 42, 0.35);
+  border-color: var(--color-gold, #C9842A);
+}
+
 /* Hill markers floating over the 3D scene */
 .terrain-marker {
   position: absolute;
@@ -1014,6 +1039,24 @@ body.hero-dark .hero-bg-fallback {
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
+/* Grid lock: stretch cards to fill their row height so they can't drift vertically */
+.grid-2 > .card,
+.grid-3 > .card,
+.grid-4 > .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.grid-2 > .card > .card-body,
+.grid-3 > .card > .card-body,
+.grid-4 > .card > .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* ── Stats Section ─────────────────────────────────────────────── */
 
 .stats {
@@ -1128,14 +1171,27 @@ body.hero-dark .hero-bg-fallback {
 }
 
 .map-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-lg);
-  margin-top: var(--space-lg);
-  padding: var(--space-lg);
+  margin-top: var(--space-xl);
+  padding: var(--space-lg) var(--space-xl);
   background: var(--color-white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.legend-title {
+  font-family: var(--font-label, 'Montserrat', sans-serif);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: var(--space-sm) var(--space-lg);
 }
 
 .legend-item {
@@ -1143,62 +1199,26 @@ body.hero-dark .hero-bg-fallback {
   align-items: center;
   gap: var(--space-sm);
   font-size: var(--fs-sm);
-  color: var(--color-text-muted);
+  color: var(--color-text);
+  padding: 4px 0;
 }
 
 .legend-swatch {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
   border-radius: var(--radius-sm);
+  border: 2px solid transparent;
 }
 
-.map-info-box {
-  background: var(--color-white);
-  border-radius: var(--radius-lg);
-  padding: var(--space-xl);
-  box-shadow: var(--shadow-md);
-  margin-bottom: var(--space-xl);
-}
-
-.map-info-box h3 {
-  margin-bottom: var(--space-md);
-}
-
-.feature-list {
-  display: grid;
-  gap: var(--space-md);
-}
-
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-md);
-  padding: var(--space-md);
-  background: var(--color-cream);
-  border-radius: var(--radius-md);
-}
-
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  min-width: 40px;
+.legend-swatch-dot {
   border-radius: 50%;
-  background: var(--color-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--fs-md);
 }
 
-.feature-text strong {
-  display: block;
-  color: var(--color-deep);
-  margin-bottom: 2px;
-}
-
-.feature-text span {
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
+.legend-swatch-line {
+  border-radius: 2px;
+  height: 10px;
+  border-style: solid;
 }
 
 /* KML info panel */

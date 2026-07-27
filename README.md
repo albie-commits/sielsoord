@@ -1,6 +1,6 @@
 # Sielsoord — Waar jou siel tot rus kom
 
-A warm, beautiful marketing website for selling 7 private mountaintop parcels (R3.5M NAD each) on a 2,500-hectare Namibian farm near Etosha National Park.
+A warm, beautiful marketing website for selling 7 private mountaintop parcels (R4M NAD each) on a 2,500-hectare Namibian farm near Etosha National Park.
 
 ## Quick Start
 

@@ -115,6 +115,28 @@ async function init() {
     });
   }
 
+  // Fullscreen toggle (map page)
+  const fsBtn = document.getElementById('terrain-fullscreen');
+  if (fsBtn) {
+    fsBtn.addEventListener('click', () => {
+      const el = container.closest('.map-container') || container;
+      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+      } else {
+        (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+      }
+    });
+    const onFsChange = () => {
+      const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+      fsBtn.textContent = isFs ? '⛶' : '⛶';
+      fsBtn.classList.toggle('terrain-fullscreen--active', isFs);
+      // Re-trigger resize after fullscreen transition
+      setTimeout(resize, 150);
+    };
+    document.addEventListener('fullscreenchange', onFsChange);
+    document.addEventListener('webkitfullscreenchange', onFsChange);
+  }
+
   /* ── Sky dome (gradient shader, day/night lerp) ───────────── */
   const skyMat = new THREE.ShaderMaterial({
     side: THREE.BackSide, depthWrite: false, fog: false,
@@ -309,14 +331,15 @@ async function init() {
   }
 
   /* ── Hill markers (HTML overlay, clickable) ───────────────── */
-  const markers = T.hills.map(h => {
+  const markers = T.hills.map((h, i) => {
     const p = local(h.u, h.v);
     p.y = heightAt(h.u, h.v) + 90;
+    const num = i + 1;
     const el = document.createElement('a');
     el.className = 'terrain-marker terrain-marker-' + h.status;
     el.href = h.link;
     el.innerHTML = `<span class="terrain-marker-dot"></span>
-                    <span class="terrain-marker-label">${h.name}</span>`;
+                    <span class="terrain-marker-label">${num}. ${h.name}</span>`;
     container.appendChild(el);
     return { el, p };
   });

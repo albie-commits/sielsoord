@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Sielsoord — Toestelle</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: #FAF3E7;
+      color: #2C1810;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(44,24,16,0.12);
+      padding: 3rem 4rem;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #8B6914;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+    .count {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 5rem;
+      font-weight: 600;
+      color: #C9842A;
+      line-height: 1;
+    }
+    .label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #8B7355;
+      margin-top: 0.5rem;
+    }
+    .refresh {
+      margin-top: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #C9842A;
+      cursor: pointer;
+      border: 1px solid #C9842A;
+      border-radius: 24px;
+      padding: 0.5rem 1.25rem;
+      background: transparent;
+      transition: all 0.2s;
+    }
+    .refresh:hover {
+      background: #C9842A;
+      color: #fff;
+    }
+    @media (max-width: 480px) {
+      .card { padding: 2rem; margin: 1rem; }
+      .count { font-size: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Sielsoord</h1>
+    <div class="count" id="count">…</div>
+    <div class="label">Unieke Toestelle</div>
+    <button class="refresh" onclick="loadCount()">Herlaai</button>
+  </div>
+  <script>
+    async function loadCount() {
+      try {
+        var r = await fetch("/api/counter");
+        var d = await r.json();
+        document.getElementById("count").textContent = d.count;
+      } catch (e) {
+        document.getElementById("count").textContent = "?";
+      }
+    }
+    loadCount();
+  </script>
+</body>
+</html>
