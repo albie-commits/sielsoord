@@ -80,7 +80,7 @@
   <script>
     async function loadCount() {
       try {
-        var r = await fetch("/api/counter");
+        var r = await fetch("/api/counter.js");
         var d = await r.json();
         document.getElementById("count").textContent = d.count;
       } catch (e) {

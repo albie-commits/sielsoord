@@ -4,5 +4,5 @@
   if (localStorage.getItem(KEY)) return; // already counted this device
   localStorage.setItem(KEY, "1");
   // Fire-and-forget ping to the Netlify Function
-  fetch("/api/counter", { method: "POST", mode: "cors" }).catch(function () {});
+  fetch("/api/counter.js", { method: "POST", mode: "cors" }).catch(function () {});
 })();
