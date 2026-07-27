@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.gallery_title">Sielsoord — Galery</title>
+  <meta name="description" data-i18n-attr="content:meta.gallery_desc" content="Sielsoord Galery — Sien die lewe op die plaas. Die huis, die natuur, die aktiwiteite, die wild. Kom ervaar dit deur ons oë.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" data-i18n-attr="content:meta.gallery_title" content="Sielsoord — Galery">
+  <meta property="og:description" data-i18n-attr="content:meta.gallery_og_desc" content="Sien die lewe op Sielsoord deur foto's. Die huis, die natuur, die aktiwiteite.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/responsive.css?v=5">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
+  <!-- 3D sigil (gold mopane medallion) -->
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Slaan na inhoud oor</a>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav nav-solid" role="navigation" data-i18n-attr="aria-label:nav.aria_label" aria-label="Hoof navigasie">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon" data-sigil3d="nav">S</span>
+        Sielsoord
+      </a>
+      <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu_toggle" aria-label="Kieslys oop/maak" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home" class="nav-link">Tuis</a></li>
+        <li><a href="storie.html" data-i18n="nav.story" class="nav-link">Storie</a></li>
+        <li><a href="koppies.html" data-i18n="nav.peaks" class="nav-link">Koppies</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery" class="nav-link active">Galery</a></li>
+        <li><a href="kaart.html" data-i18n="nav.map" class="nav-link">Kaart</a></li>
+        <li><a href="kontak.html" data-i18n="nav.contact" class="nav-link nav-cta btn btn-primary">Kontak Ons</a></li>
+                <li class="nav-theme-item">
+          <button id="hero-theme-toggle" class="hero-theme-toggle" data-i18n-attr="aria-label:theme.toggle_aria;title:theme.toggle_title" aria-label="Toggle hero background" title="Toggle day/night">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-i18n="theme.toggle_label">Day / Night</span>
+          </button>
+        </li>
+        <li class="nav-lang-item"><div class="lang-switcher"></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ═══ Gallery Hero ═══ -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-bg" style="background-image: url('images/gallery/gallery-hero.jpg');"></div>
+      <div class="gallery-hero-overlay"></div>
+      <div class="gallery-hero-content">
+        <p class="hero-eyebrow" data-i18n="gallery.hero_eyebrow">Galery</p>
+        <h1 class="gallery-hero-title" data-i18n="gallery.hero_title">Sien die lewe</h1>
+        <p class="gallery-hero-subtitle" data-i18n="gallery.hero_subtitle">Stap deur Sielsoord se oë.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Intro Text ═══ -->
+    <section class="section section-tight">
+      <div class="container-narrow text-center">
+        <div class="fade-in">
+          <p class="eyebrow" data-i18n="gallery.intro_eyebrow">Die Ervaring</p>
+          <h2 data-i18n="gallery.intro_title">Kies 'n kategorie en gaan diep in</h2>
+          <div class="divider"><span>❦</span></div>
+          <p class="lead" data-i18n="gallery.intro_p1">
+            Elke foto vertel 'n storie. Van die stil oomblikke by die huis tot die ongelooflike uitsigte oor die veld.
+            Druk op 'n_Category om die foto's te sien.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Floating Bubbles ═══ -->
+    <section class="section gallery-bubbles-section" id="bubble-container-section">
+      <div class="container">
+        <div id="bubble-container" class="bubble-container">
+          <!-- Bubbles rendered by gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Category View (hidden by default) ═══ -->
+    <section class="gallery-category-view" id="gallery-category-view">
+      <div class="container">
+        <!-- Header -->
+        <div class="gallery-cat-header" id="gallery-category-header">
+          <button class="gallery-back-btn" id="gallery-back">
+            <span>←</span> <span data-i18n="gallery.back">Terug na_categories</span>
+          </button>
+          <div class="text-center">
+            <span class="gallery-cat-count badge"></span>
+            <h2 class="gallery-cat-title"></h2>
+            <p class="gallery-cat-desc lead"></p>
+          </div>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Photos rendered by gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Bird Species Checklist ═══ -->
+    <section class="section bg-cream-dark" id="bird-checklist">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="birds.checklist_eyebrow">Voël Spesies</p>
+          <h2 data-i18n="birds.checklist_title">Voëls van die Sielsoord-streek</h2>
+          <div class="divider"><span>🪶</span></div>
+          <p class="lead" style="max-width: 700px; margin: 0 auto;" data-i18n="birds.checklist_intro">
+            Sielsoord lê aan die rand van Etosha — een van Afrika se rykste voëlgebiede.
+          </p>
+        </div>
+
+        <!-- Bird Category Tabs -->
+        <div class="bird-tabs">
+          <button class="bird-tab active" data-bird-cat="raptors" data-i18n="birds.tab_raptors">🦅 Roofvoëls</button>
+          <button class="bird-tab" data-bird-cat="hornbills" data-i18n="birds.tab_hornbills">🦤 Neushoringvoëls en loeries</button>
+          <button class="bird-tab" data-bird-cat="beeaters" data-i18n="birds.tab_beeaters">🐝 Byvangers</button>
+          <button class="bird-tab" data-bird-cat="rollers" data-i18n="birds.tab_rollers">🎨 Troupante en visvangers</button>
+          <button class="bird-tab" data-bird-cat="songbirds" data-i18n="birds.tab_songbirds">🎵 Sangvoëls en laksmanne</button>
+          <button class="bird-tab" data-bird-cat="ground" data-i18n="birds.tab_ground">🐐 Grond- en watervoëls</button>
+        </div>
+
+        <!-- Raptors -->
+        <div class="bird-list" data-bird-cat="raptors">
+          <table class="bird-table">
+            <thead><tr><th>English</th><th>Afrikaans</th><th>Deutsch</th><th>Scientific</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Martial Eagle</td><td>Breëkoparend</td><td>Kampfadler</td><td><i>Polemaetus bellicosus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Tawny Eagle</td><td>Roofarend</td><td>Raubussard</td><td><i>Aquila rapax</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Verreaux's Eagle-Owl</td><td>Grootuil</td><td>Milchuhu</td><td><i>Bubo lacteus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Pale Chanting Goshawk</td><td>Bleeksingvalk</td><td>Blassperber</td><td><i>Melierax canorus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Red-necked Falcon</td><td>Rooinekvalk</td><td>Rothalsfalke</td><td><i>Falco chicquera</i></td><td>🟡 Occasional</td></tr>
+              <tr><td>Lanner Falcon</td><td>Edelvalk</td><td>Lannerfalke</td><td><i>Falco biarmicus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Bateleur</td><td>Bergrat</td><td>Gleitaar</td><td><i>Terathopius ecaudatus</i></td><td>🟡 Occasional</td></tr>
+              <tr><td>White-backed Vulture</td><td>Witrugaasvoël</td><td>Rückenschildgeier</td><td><i>Gyps africanus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Lappet-faced Vulture</td><td>Kalsaasvoël</td><td>Ohrengeier</td><td><i>Torgos tracheliotos</i></td><td>🟡 Occasional</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Hornbills & Turacos -->
+        <div class="bird-list" data-bird-cat="hornbills" style="display:none;">
+          <table class="bird-table">
+            <thead><tr><th>English</th><th>Afrikaans</th><th>Deutsch</th><th>Scientific</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Southern Yellow-billed Hornbill</td><td>Geelbek-neushoringvoël</td><td>Südlicher Gelbschnabeltoko</td><td><i>Tockus leucomelas</i></td><td>🟢 Very common — photographed!</td></tr>
+              <tr><td>Monteiro's Hornbill</td><td>Monteiro se Neushoringvoël</td><td>Monteiro-Toko</td><td><i>Tockus monteiri</i></td><td>🟢 Resident — near-endemic</td></tr>
+              <tr><td>African Grey Hornbill</td><td>Grysneushoringvoël</td><td>Grautoko</td><td><i>Lophoceros nasutus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Red-billed Hornbill</td><td>Rooibekneushoringvoël</td><td>Rotschnabeltoko</td><td><i>Tockus erythrorhynchus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Damara Red-billed Hornbill</td><td>Damara Rooibekneushoringvoël</td><td>Damaratoko</td><td><i>Tockus damarensis</i></td><td>🟢 Near-endemic</td></tr>
+              <tr><td>Kori Bustard</td><td>Gompou</td><td>Riesentrappe</td><td><i>Ardeotis kori</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Red-crested Korhaan</td><td>Rooikroonsprinkaanvoël</td><td>Rotschopf-Frankolin</td><td><i>Lophotis ruficrista</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Rüppell's Parrot</td><td>Rüppell se Papegaai</td><td>Rüppell-Papagei</td><td><i>Poicephalus rueppellii</i></td><td>🟢 Near-endemic</td></tr>
+              <tr><td>Rosy-faced Lovebird</td><td>Perskekoppe</td><td>Rosenpapagei</td><td><i>Agapornis roseicollis</i></td><td>🟢 Resident</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bee-eaters -->
+        <div class="bird-list" data-bird-cat="beeaters" style="display:none;">
+          <table class="bird-table">
+            <thead><tr><th>English</th><th>Afrikaans</th><th>Deutsch</th><th>Scientific</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Little Bee-eater</td><td>Klein Byvanger</td><td>Zwergspint</td><td><i>Merops pusillus</i></td><td>🟢 Resident — photographed!</td></tr>
+              <tr><td>Swallow-tailed Bee-eater</td><td>Swaelstertbyvanger</td><td>Schwalbenschwanzspint</td><td><i>Merops hirundineus</i></td><td>🟢 Resident — photographed!</td></tr>
+              <tr><td>Blue-tailed Bee-eater</td><td>Bloustertbyvanger</td><td>Blauschwanzspint</td><td><i>Merops philippinus</i></td><td>🟡 Summer migrant — photographed!</td></tr>
+              <tr><td>European Bee-eater</td><td>Europese Byvanger</td><td>Bienenfresser</td><td><i>Merops apiaster</i></td><td>🟡 Palearctic migrant</td></tr>
+              <tr><td>White-fronted Bee-eater</td><td>Witfrontbyvanger</td><td>Weißstirnspint</td><td><i>Merops bullockoides</i></td><td>🟡 Occasional</td></tr>
+              <tr><td>Southern Carmine Bee-eater</td><td>Karmynbyvanger</td><td>Karminspint</td><td><i>Merops nubicoides</i></td><td>🟡 Summer migrant</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Rollers & Kingfishers -->
+        <div class="bird-list" data-bird-cat="rollers" style="display:none;">
+          <table class="bird-table">
+            <thead><tr><th>English</th><th>Afrikaans</th><th>Deutsch</th><th>Scientific</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Lilac-breasted Roller</td><td>Trouroust</td><td>Segelracker</td><td><i>Coracias caudatus</i></td><td>🟢 Very common — photographed!</td></tr>
+              <tr><td>Purple Roller</td><td>Groottrouroust</td><td>Rosenroller</td><td><i>Coracias naevius</i></td><td>🟢 Resident</td></tr>
+              <tr><td>European Roller</td><td>Europese Troupant</td><td>Blauracke</td><td><i>Coracias garrulus</i></td><td>🟡 Summer migrant</td></tr>
+              <tr><td>Striped Kingfisher</td><td>Gestreepte Visvanger</td><td>Streifenliest</td><td><i>Halcyon chelicuti</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Woodland Kingfisher</td><td>Bosveldvisvanger</td><td>Senegalliest</td><td><i>Halcyon senegalensis</i></td><td>🟡 Summer migrant</td></tr>
+              <tr><td>Giant Kingfisher</td><td>Reusevisvanger</td><td>Riesenliest</td><td><i>Megaceryle maxima</i></td><td>🟡 Occasional at waterholes</td></tr>
+              <tr><td>Pied Kingfisher</td><td>Bontvisvanger</td><td>Graufischer</td><td><i>Ceryle rudis</i></td><td>🟢 At waterholes</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Songbirds & Shrikes -->
+        <div class="bird-list" data-bird-cat="songbirds" style="display:none;">
+          <table class="bird-table">
+            <thead><tr><th>English</th><th>Afrikaans</th><th>Deutsch</th><th>Scientific</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Crimson-breasted Shrike</td><td>Karmosynboslaksman</td><td>Karmesinwürger</td><td><i>Laniarius atrococcineus</i></td><td>🟢 Resident — photographed!</td></tr>
+              <tr><td>Capped Wheatear</td><td>Rooikroonwyter</td><td>Kappensteinschmätzer</td><td><i>Oenanthe pileata</i></td><td>🟢 Resident — photographed!</td></tr>
+              <tr><td>Rüppell's Starling</td><td>Rüppell se Spreeu</td><td>Rüppellstar</td><td><i>Lamprotornis purpuroptera</i></td><td>🟢 Resident — photographed!</td></tr>
+              <tr><td>Cape Glossy Starling</td><td>Rooiborsglansspreeu</td><td>Kapglanzstar</td><td><i>Lamprotornis nitens</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Great Sparrow</td><td>Grootmossie</td><td>Braunsperling</td><td><i>Passer motitensis</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Sociable Weaver</td><td>Gewone Wewer</td><td>Siedelerweber</td><td><i>Philetairus socius</i></td><td>🟢 Resident — giant nests!</td></tr>
+              <tr><td>Scaly-feathered Finch</td><td>Skelmveerfink</td><td>Schuppenschwingfink</td><td><i>Sporopipes squamifrons</i></td><td>🟢 Resident</td></tr>
+              <tr><td>White-browed Sparrow-Weaver</td><td>Koosvoël</td><td>Brauenweber</td><td><i>Plocepasser mahali</i></td><td>🟢 Very common</td></tr>
+              <tr><td>Red-billed Buffalo-Weaver</td><td>Buffelwewer</td><td>Rotschnabel-Büffelweber</td><td><i>Bubalornis niger</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Marico Flycatcher</td><td>Maricovlieëvanger</td><td>Marico-Fliegenschnäpper</td><td><i>Bradornis mariquensis</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Pririt Batis</td><td>Priritmuggiesnapper</td><td>Pririt-Schnäpper</td><td><i>Batis pririt</i></td><td>🟢 Resident</td></tr>
+              <tr><td>White-tailed Shrike</td><td>Witstertboslaksman</td><td>Weißsterschwacker</td><td><i>Lanioturdus torquatus</i></td><td>🟢 Near-endemic</td></tr>
+              <tr><td>Burnt-necked Eremomela</td><td>Geelbruinbossanger</td><td>Brustband-Eremomela</td><td><i>Eremomela usticollis</i></td><td>🟢 Resident</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Ground & Water Birds -->
+        <div class="bird-list" data-bird-cat="ground" style="display:none;">
+          <table class="bird-table">
+            <thead><tr><th>English</th><th>Afrikaans</th><th>Deutsch</th><th>Scientific</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Ostrich</td><td>Volstruis</td><td>Strauß</td><td><i>Struthio camelus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Helmeted Guineafowl</td><td>Tarentaal</td><td>Helmperlhuhn</td><td><i>Numida meleagris</i></td><td>🟢 Very common</td></tr>
+              <tr><td>Red-billed Francolin</td><td>Rooibekfisant</td><td>Rotschnabel-Frankolin</td><td><i>Pternistis adspersus</td><td>🟢 Resident</td></tr>
+              <tr><td>Namaqua Sandgrouse</td><td>Namaakwasandhoender</td><td>Namaqua-Flughuhn</td><td><i>Pterocles namaqua</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Burchell's Courser</td><td>Burchell se Drawwertjie</td><td>Rennvogel</td><td><i>Cursorius rufus</i></td><td>🟡 Occasional</td></tr>
+              <tr><td>Double-banded Sandgrouse</td><td>Bandster Sandhoender</td><td>Zweiband-Flughuhn</td><td><i>Pterocles bicinctus</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Cape Turtle Dove</td><td>Rooiborsduif</td><td>Kap-Turteltaube</td><td><i>Streptopelia capicola</i></td><td>🟢 Very common</td></tr>
+              <tr><td>Namaqua Dove</td><td>Namakwaduif</td><td>Namaqua-Taube</td><td><i>Oena capensis</i></td><td>🟢 Resident</td></tr>
+              <tr><td>Laughing Dove</td><td>Laggduif</td><td>Palmtaube</td><td><i>Spilopelia senegalensis</i></td><td>🟢 Very common</td></tr>
+              <tr><td>African Jacana</td><td>Grootlangtoon</td><td>Blatthühnchen</td><td><i>Actophilornis africanus</i></td><td>🟡 At waterholes after rain</td></tr>
+              <tr><td>Three-banded Plover</td><td>Driebandstrandkiewiet</td><td>Schwarzbrust-Regenpfeifer</td><td><i>Charadrius tricollaris</i></td><td>🟡 At waterholes</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-center" style="margin-top: var(--space-lg); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="birds.checklist_note">
+          💡 Hierdie lys is 'n begin.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-banner">
+      <div class="container-narrow">
+        <div class="fade-in">
+          <h2 data-i18n="gallery.cta_title">Wil jy dit self kom ervaar?</h2>
+          <p><span data-i18n="gallery.cta_text">Foto's kan net soveel sê. Kom voel die aarde, hoor die stilte, sien die sterre.</span></p>
+          <a href="kontak.html" class="btn btn-ghost btn-lg" data-i18n="gallery.cta_btn">Reël 'n besoek</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ Lightbox ═══ -->
+  <div class="lightbox" id="lightbox" role="dialog" data-i18n-attr="aria-label:gallery.lightbox_aria" aria-label="Fotoaansig" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" data-i18n-attr="aria-label:gallery.close_aria" aria-label="Maak toe">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" data-i18n-attr="aria-label:gallery.prev_aria" aria-label="Vorige">‹</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" data-i18n-attr="alt:gallery.lightbox_alt" alt="Sielsoord galery foto">
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" data-i18n-attr="aria-label:gallery.next_aria" aria-label="Volgende">›</button>
+  </div>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-sigil" data-sigil3d="footer" aria-hidden="true"></div>
+          <h3>Sielsoord</h3>
+          <p data-i18n="footer.brand">Waar jou siel tot rus kom. 2,500 hektaar Namibiese wildernis met 7 privaat koppies. Naby Etosha Nasionale Park.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigasie</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Tuis</a></li>
+            <li><a href="storie.html" data-i18n="nav.story">Storie</a></li>
+            <li><a href="koppies.html" data-i18n="nav.peaks">Koppies</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galery</a></li>
+            <li><a href="kaart.html" data-i18n="nav.map">Kaart</a></li>
+            <li><a href="kontak.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.peaks_title">Koppies</h4>
+          <ul>
+            <li><a href="koppie/sielsrus.html">Sielsrus</a></li>
+            <li><a href="koppie/sielskemering.html">Sielskemering</a></li>
+            <li><a href="koppie/sielsaandster.html">Sielsaandster</a></li>
+            <li><a href="koppie/sielswind.html">Sielswind</a></li>
+            <li><a href="koppie/sielshoogte.html">Sielshoogte</a></li>
+            <li><a href="koppie/sielsstilte.html">Sielsstilte</a></li>
+            <li><a href="koppie/sielsdageraad.html">Sielsdageraad</a></li>
+            <li><a href="koppie/sielshorison.html">Sielshorison</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Kontak</h4>
+          <ul>
+            <li><a href="kontak.html" data-i18n="footer.send">Stuur 'n boodskap</a></li>
+            <li><a href="kontak.html" data-i18n="footer.visit">Besoek Sielsoord</a></li>
+            <li><a href="tel:+264811289994">+264 81 128 9994</a></li>
+            <li><a href="mailto:sielsoord@gmail.com">sielsoord@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Sielsoord. Namibië. Alle regte voorbehou.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=6"></script>
+  <script src="js/translations.js?v=13"></script>
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/gallery.js?v=5"></script>
+  <script src="js/birds.js?v=1"></script>
+  <script src="js/premium.js"></script>
+  <script type="module" src="js/sigil-3d.js?v=4"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.story_title">Storie — Sielsoord</title>
+  <meta name="description" content="Die storie van Sielsoord — 2,500 hektaar Namibiese wildernis met geskiedenis, wild en siel, naby Etosha." data-i18n-attr="content:meta.story_desc">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
+  <!-- 3D sigil (gold mopane medallion) -->
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Slaan na inhoud oor</a>
+
+  <nav class="nav nav-transparent" role="navigation" data-i18n-attr="aria-label:nav.aria_label" aria-label="Hoof navigasie">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon" data-sigil3d="nav">S</span>
+        Sielsoord
+      </a>
+      <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu_toggle" aria-label="Kieslys oop/maak" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home" class="nav-link">Tuis</a></li>
+        <li><a href="storie.html" data-i18n="nav.story" class="nav-link active">Storie</a></li>
+        <li><a href="koppies.html" data-i18n="nav.peaks" class="nav-link">Koppies</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery" class="nav-link">Galery</a></li>
+        <li><a href="kaart.html" data-i18n="nav.map" class="nav-link">Kaart</a></li>
+        <li><a href="kontak.html" data-i18n="nav.contact" class="nav-link nav-cta btn btn-primary">Kontak Ons</a></li>
+                <li class="nav-theme-item">
+          <button id="hero-theme-toggle" class="hero-theme-toggle" data-i18n-attr="aria-label:theme.toggle_aria;title:theme.toggle_title" aria-label="Toggle hero background" title="Toggle day/night">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-i18n="theme.toggle_label">Day / Night</span>
+          </button>
+        </li>
+        <li class="nav-lang-item"><div class="lang-switcher"></div></li>
+      </ul>
+    </div>
+  </nav>
+
+    <main id="main">
+
+    <section class="page-hero">
+      <div class="hero-bg" style="background-image: url('images/gallery/nature/img_6220sielsoord.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="story.hero_eyebrow">Storie</p>
+        <h1 class="hero-title" style="font-size: var(--fs-3xl);"><span data-i18n="story.hero_title">Waar jou siel tot rus kom</span></h1>
+        <p class="hero-subtitle" data-i18n="story.hero_sub">'n Erfenis van die land, 'n belofte aan jou siel.</p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container-narrow fade-in">
+        <div class="divider"><span>❦</span></div>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.p1">Daar is plekke op hierdie aarde wat jy nie met jou oë alleen sien nie. Plekke wat jy voel — diep in jou borskas, daar waar jou hart klop en jou siel tuis is. Sielsoord is so 'n plek.</p>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.p2">Die naam self sê dit alles. <em>Sielsoord.</em> Die plek waar jou siel rus vind. Nie 'n plattelandse perseel op 'n kaart nie, nie net 'n investering in grond nie — maar 'n stuk van die wêreld wat aan jou toebehoor op 'n manier wat geen stadshuis of strandwoonstetoring ooit kan nie. Hier, op die drumpel van een van Afrika se laaste groot wildernisse, vind jy iets wat die moderne wêreld vergeet het hoe om te bied: stilte. Egte, diepe, heilige stilte. En in daardie stilte, die stem van die land self.</p>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.p3">Die eiendom het agt koppies. Een bly by die familie, ses is beskikbaar en een is gereserveer. Die doel is 'n klein groep eienaars wat die grond en natuur verantwoordelik deel.</p>
+
+      </div>
+    </section>
+
+
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center;">
+          <div class="fade-in">
+            <h2 style="font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-lg);" data-i18n="story.land_h">Die Land — 'n Erfenis van Rots en Ruimte</h2>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.land_p1">Sielsoord lê in noordelike Namibië, 108 km noord van Outjo en net 70 km van Okaukuejo — Etosha se hoofhek. Die D2695 gruisweg loop reg tot by die plaas se hek, en 'n bestaande landingstrook net 12 km weg beteken dat jy per vliegtuig hier kan wees wanneer die stemming jou roep. Op koördinate 19.382°S, 15.597°O lê 'n wêreld wat aan beide die antieke en die ewige behoort.</p>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.land_p2">Want dit is wat Sielsoord werklik is: antiek. Die dolomietrots onder jou voete dra 2,500 miljoen jaar se geologiese geskiedenis — dieselfde antieke landskap wat Etosha vorm, strek onder hierdie grond deur. Jy loop letterlik op dieselfde klip as die reuse wat hier gedwaal het toe die wêreld nog jonk was. Die hoogte bo seespieël wissel van 1,170 tot 1,220 meter, wat beteken die lug is dun en skoon, en die horisonne strek oneindig ver.</p>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.land_p3">En wat 'n horisonne. Agt koppies verrys uit die savanne, elk met sy eie karakter, sy eie uitsig, sy eie persoonlikheid. Op die hoogste punt staan die familie se jaghuis — die hart van generasies se bymeenkomste, waar stories vertel is rondom vuur plekke en kinders grootgeword het met die veld as hulle speelgrond. Sewe van hierdie koppies wag nou op nuwe eienaars. Elkeen 'n privaat koninkryk. Elkeen 'n geleentheid om nie net grond te besit nie, maar om 'n stuk van Afrika se siel te besit.</p>
+
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <img src="images/gallery/nature/img_1633sielsoord.jpg" alt="Sielsoord land" loading="lazy" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center;">
+          <div class="fade-in">
+            <h2 style="font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-lg);" data-i18n="story.seasons_h">Die Seisoene — Twee Wêrelde op Een Plek</h2>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.seasons_p1">In die winter — van Mei tot Augustus — is die dae skerp en kristalhelder. Nagtemperatuire daal tot ongeveer 10°C, en jy trek 'n trui aan om buite te sit met jou koffie terwyl die sonsopkoms die vlaktes in goud en amber verf. Die lug is wolkeloos, dag ná dag, en die sterre... die sterre is onbeskryflik. Die Melkweg strek soos 'n rivier van lig oor die hemel, so helder dat jy jou skaduwee in die sterlig kan sien. Hier is geen ligbesoedeling nie. Net jy, die stilte, en die heelal wat homself aan jou vertoon.</p>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.seasons_p2">Dan kom die somer, en die land transformeer. Van November tot Maart styg temperature tot teen 40°C, en die lug word dik en swanger met belofte. En dan — dan kom die reën. Donderstorms rol oor die vlaktes met 'n dramatiese prag wat net Afrika kan bied. Reënbuie val soos gordyne van silwer oor die dorre veld, en binne dae gebeur iets wat na werklike towery lyk: die droë, bruin aarde ontplof in 'n see van groen gras. Wilde blomme bloei — geel, pers, wit — oor hektaar na hektaar. Diere wat wyd versprei was oor die landskap kom saam by watergate, en die hele wêreld lyk asof dit nuut gebore is.</p>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.seasons_p3">Dit is een van die natuur se grootste vertonings — hierdie transformasie van droog na groen, van stilstand na oorvloed. En jy sit bo-op jou koppie en kyk hoe dit gebeur, jaar na jaar, sonder om ooit dieselfde te wees.</p>
+
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <img src="images/gallery/nature/img_1681sielsoord.jpg" alt="Sielsoord seasons" loading="lazy" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center;">
+          <div class="fade-in">
+            <h2 style="font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-lg);" data-i18n="story.wild_h">Die Wild — Bure van Genade en Krag</h2>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.wild_p1">Hulle loop vrylik oor Sielsoord se 2,500 hektaar. Kudde kudu beweeg deur die mopane-bome met 'n waardigheid wat net antilope besit. Gemsbok — daardie ikoniese swart-en-wit gesigte met hulle regop horings soos spiese — staan teen die horison soos beelde uit 'n oertyd. Springbok pronk oor die vlaktes, hulle wit rugkruise flitsend in die son. Hulle is hier. Hulle is altyd hier. Hulle behoort aan niemand en aan iedereen.</p>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.wild_p2">Sielsoord grens aan Ongava Private Game Reserve, en Ongava grens aan Etosha Nasionale Park. Ongava lê dus tussen Sielsoord en Etosha; Sielsoord grens nie direk aan Etosha nie.</p>
+
+            <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.wild_p3">En in die nag — dan hoor jy hulle. Etosha is sedert 2005 'n amptelike Leeubewaringseenheid. Die leeus brul in die donkerte naby die grensdraad, en die klank rol oor die vlaktes en teen die koppies op tot by jou voordeur. Dit is 'n geluid wat deur jou hele lyf tril — oud en wild en onvervalsbare Afrika. Swartrenosters, luiperds, jagluiperds, hiënas, sebra's, kameelperde, blou wildebeeste, eland, hartebeeste, vlakvarke, jakkalse, bakoorvosse, aartvarkies en selfs die seldsame skaapdier.</p>
+
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <img src="images/gallery/nature/img_2647sielsoord.jpg" alt="Sielsoord wild" loading="lazy" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container-narrow fade-in">
+        <h2 style="font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-lg);" data-i18n="story.sky_h">Die Lug — 'n Koninkryk van Vlerke</h2>
+        <div class="divider"><span>❦</span></div>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.sky_p1">Volstruise loop oor die vlaktes met die waardigheid van konings, hulle lang nekke teen die horison. Breëkoparende en kriptoarende sweef op termiekstrome bo die koppies, hulle skerp oë die veld hieronder skandeer vir enige beweging. Aasvoëls — dié stil skoonmakers van die wildernis — wentel in kringe wat lyk asof hulle deur 'n onsigbare hand geteken is.</p>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.sky_p2">Roofvoëls, volstruise en kleiner bosvoëls kan in die streek voorkom. Hulle is nie in elke boom of op elke besoek sigbaar nie; voëlwaarneming hang van seisoen, habitat en geluk af.</p>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.sky_p3">Die voëlgalery bevat foto's wat op of rondom Sielsoord geneem is en gee 'n realistiese beeld van wat besoekers kan verwag.</p>
+
+      </div>
+    </section>
+
+
+    <section class="section bg-cream-dark">
+      <div class="container-narrow fade-in">
+        <h2 style="font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-lg);" data-i18n="story.trees_h">Die Bome — Wagters van die Veld</h2>
+        <div class="divider"><span>❦</span></div>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.trees_p1">Jy sal hulle oral sien. Die mopaneboom — <em>Colophospermum mopane</em> — is die onbetwiste koning van hierdie landskap, en sy skoenlapper-vormige blare is onmiskenbaar. In die groter Etosha-streek maak mopanebome ongeveer 80% van alle bome uit, en op Sielsoord is hulle teenwoordig soos stil wagters wat oor generasies heen gestaan het. Hulle skors is geplooi soos die gesig van 'n ou man wat baie gesien het, en hulle skaduwee is die plek waar wild in die middaghitte rus.</p>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.trees_p2">Tussen die mopane groei acacia-soorte met hulle skerp dorings en sagte geel blomtrosse, commiphora-bome met hulle papieragtige skors, en terminalia met hulle donker, leeragtige blare. In die reënseisoen verskyn welige gras en wilde blomme tussen hierdie ou bome, en die hele landskap verander van goudbruin na die diepste groen wat jy ooit gesien het. In die droë seisoen, as die gras terugtrek en die kleure na amber en oker verskuif, toon hierdie bome hulle ware karakter — hard en droogte-bestand, oorlewers wat al eeue se droogtes deurgestaan het en nog steeds daar staan. Soos die mense wat hierdie land liefhet.</p>
+
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container-narrow fade-in">
+        <h2 style="font-family: var(--font-heading); font-size: var(--fs-2xl); margin-bottom: var(--space-lg);" data-i18n="story.opportunity_h">Die Geleentheid — Sewe Koppies, Sewe Koninkryke</h2>
+        <div class="divider"><span>❦</span></div>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.opportunity_p1">Sielsoord bied privaat koppies binne 'n gedeelde 2,500 hektaar plaas. Elke beskikbare koppie kos N$3.5 miljoen. Kopers moet die eiendomsreg, boureëls, dienste en koste volledig nagaan voordat hulle besluit.</p>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.opportunity_p2">Dink daaraan. Jy staan op jou eie koppie, 1,200 meter bo seespieël, en jy kyk oor Etosha — oor die 4,760 vierkante kilometer se soutpan wat die inheemse bevolking "Die Groot Wit Plek" noem — en in die verte, aan die einde van die sigbare wêreld, sien jy die donderstorms van Angola in die naglig flikker. Jy hoor Etosha se leeus. Jy sien die renosters in die skemer. Jy is omsingel deur die rykste wildernis in Suider-Afrika, en tog staan jy op grond wat joune is.</p>
+
+        <p style="font-size: var(--fs-base); line-height: 1.9; margin-bottom: var(--space-md);" data-i18n="story.opportunity_p3">Die infrastruktuur is reeds daar. Twee boorgate met sonpompe versorg die wild se waterbehoeftes deur die jaar. 'n Elektriese sekuriteitsheining met PTZ-kameras strek langs die Etosha-grens. En as jy wil bou — jou eie lodge, jou eie toevlug, jou eie stukkie van die droom — dan is die grond gereed. Net jy, jou visie, en een van die oudste landskappe op aarde.</p>
+
+      </div>
+    </section>
+
+
+    <section class="section bg-cream-dark">
+      <div class="container-narrow fade-in text-center">
+        <div class="divider"><span>❦</span></div>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.closing_p1">Hierdie is nie 'n advertensie nie. Hierdie is 'n uitnodiging.</p>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.closing_p2">Sielsoord is 'n plek wat verandering bring — nie net in jou portefeulje nie, maar in jouself. Mense kom hierheen om te ontsnap, en hulle bly omdat hulle besef dat dit wat hulle gesoek het nie in 'n stad te vinde is nie. Dit is hier. In die oggendlig oor die mopaneveld. In die brul van 'n leeu in die donker. In die stilte tussen twee hartslae bo-op 'n koppie wat 2,500 miljoen jaar oud is.</p>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.closing_p3">Ons verkoop nie net grond nie. Ons deel 'n stuk van ons siel met diegene wat dit sal verstaan — mense wat weet dat die grootste luukse in die lewe nie dinge is nie, maar plekke. Oomblikke. Stilte. Ruimte. 'n Plek waar jou kinders die sterre kan tel en die wild kan hoor en weet wat dit beteken om deel te wees van iets groter as hulself.</p>
+
+        <p style="font-size: var(--fs-md); line-height: 1.9; margin-bottom: var(--space-lg);" data-i18n="story.closing_p4"><em>Waar jou siel tot rus kom.</em> Dit is nie net 'n slagspreuk nie. Dit is 'n belofte. En dit wag op jou, hier, in die hart van die Namibiese wildernis.</p>
+
+
+        <div style="margin-top: var(--space-2xl);">
+          <a href="kontak.html" class="btn btn-primary btn-lg" data-i18n="story.cta_btn">Reël 'n besoek</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cta-banner">
+      <div class="container-narrow">
+        <div class="fade-in">
+          <h2 data-i18n="story.cta_title">Kom besoek Sielsoord</h2>
+          <p><span data-i18n="story.cta_text">Jou siel se rus wag. Kom vind dit.</span></p>
+          <a href="kontak.html" class="btn btn-ghost btn-lg" data-i18n="story.cta_btn2">Reël 'n besoek</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-sigil" data-sigil3d="footer" aria-hidden="true"></div>
+          <h3>Sielsoord</h3>
+          <p data-i18n="footer.brand">Waar jou siel tot rus kom. 2,500 hektaar Namibiese wildernis met 7 privaat koppies. Naby Etosha Nasionale Park.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigasie</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Tuis</a></li>
+            <li><a href="storie.html" data-i18n="nav.story">Storie</a></li>
+            <li><a href="koppies.html" data-i18n="nav.peaks">Koppies</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galery</a></li>
+            <li><a href="kaart.html" data-i18n="nav.map">Kaart</a></li>
+            <li><a href="kontak.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.peaks_title">Koppies</h4>
+          <ul>
+            <li><a href="koppie/sielsrus.html">Sielsrus</a></li>
+            <li><a href="koppie/sielskemering.html">Sielskemering</a></li>
+            <li><a href="koppie/sielsaandster.html">Sielsaandster</a></li>
+            <li><a href="koppie/sielswind.html">Sielswind</a></li>
+            <li><a href="koppie/sielshoogte.html">Sielshoogte</a></li>
+            <li><a href="koppie/sielsstilte.html">Sielsstilte</a></li>
+            <li><a href="koppie/sielsdageraad.html">Sielsdageraad</a></li>
+            <li><a href="koppie/sielshorison.html">Sielshorison</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Kontak</h4>
+          <ul>
+            <li><a href="kontak.html" data-i18n="footer.send">Stuur 'n boodskap</a></li>
+            <li><a href="kontak.html" data-i18n="footer.visit">Besoek Sielsoord</a></li>
+            <li><a href="tel:+264811289994">+264 81 128 9994</a></li>
+            <li><a href="mailto:sielsoord@gmail.com">sielsoord@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Sielsoord. Namibië. Alle regte voorbehou.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/translations.js?v=13"></script>
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/premium.js"></script>
+  <script type="module" src="js/sigil-3d.js?v=4"></script>
+</body>
+</html>

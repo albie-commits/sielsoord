@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.map_title">Kaart — Sielsoord</title>
+  <meta name="description" data-i18n-attr="content:meta.map_desc" content="Interaktiewe satellietkaart van Sielsoord se 2,500 hektaar. Sien die plaas grens, boreholes, koppies, paaie, en nabyheid aan Etosha.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/responsive.css?v=5">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
+
+  <!-- Sielsoord 3D Terrain map (real SRTM elevation + satellite imagery) -->
+  <script src="js/terrain-data.js"></script>
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    }}
+  </script>
+  <script type="module" src="js/terrain.js"></script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Slaan na inhoud oor</a>
+
+  <nav class="nav nav-transparent" role="navigation" data-i18n-attr="aria-label:nav.aria_label" aria-label="Hoof navigasie">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon" data-sigil3d="nav">S</span>
+        Sielsoord
+      </a>
+      <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu_toggle" aria-label="Kieslys oop/maak" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home" class="nav-link">Tuis</a></li>
+        <li><a href="storie.html" data-i18n="nav.story" class="nav-link">Storie</a></li>
+        <li><a href="koppies.html" data-i18n="nav.peaks" class="nav-link">Koppies</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery" class="nav-link">Galery</a></li>
+        <li><a href="kaart.html" data-i18n="nav.map" class="nav-link active">Kaart</a></li>
+        <li><a href="kontak.html" data-i18n="nav.contact" class="nav-link nav-cta btn btn-primary">Kontak Ons</a></li>
+                <li class="nav-theme-item">
+          <button id="hero-theme-toggle" class="hero-theme-toggle" data-i18n-attr="aria-label:theme.toggle_aria;title:theme.toggle_title" aria-label="Toggle hero background" title="Toggle day/night">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-i18n="theme.toggle_label">Day / Night</span>
+          </button>
+        </li>
+        <li class="nav-lang-item"><div class="lang-switcher"></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ═══ Hero ═══ -->
+    <section class="page-hero">
+      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1452855035540-60249e4a1f08?w=1920&q=80'); background-color: var(--color-deep);"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="map.hero_eyebrow">Die Kaart</p>
+        <h1 class="hero-title" style="font-size: var(--fs-3xl);" data-i18n="map.hero_title">Sien die land</h1>
+        <p class="hero-subtitle" data-i18n="map.hero_sub">Verken Sielsoord se 2,500 hektaar vanaf die lug.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Interactive Map ═══ -->
+    <section class="section map-section">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="map.interactive_eyebrow">Interaktiewe Satellietkaart</p>
+          <h2 data-i18n="map.interactive_title">Sielsoord vanaf die lug</h2>
+          <p class="lead" style="max-width: 700px; margin: 0 auto;" data-i18n="map.interactive_desc">
+            Hierdie kaart toon die amptelike opmeting van Sielsoord se 2,500 hektaar grens,
+            die 8 koppies, 2 boreholes, die toegangspad, en die ongelooflike nabyheid aan Etosha Nasionale Wildreservaat.
+          </p>
+        </div>
+
+        <!-- Info box explaining what they see -->
+        <div class="map-info-box fade-in">
+          <h3 data-i18n="map.info_title">Wat jy op die kaart sien</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: var(--space-lg);" data-i18n="map.info_desc">
+            Hierdie data kom direk vanaf die nuutste Sielsoord KML-lêer wat in Google Earth opgemeet is.
+            Klik op enige element op die kaart vir meer inligting.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #E8B842;">⬖</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_sielsoord_title">Sielsoord 2,500 Hektaar Grens</strong>
+                <span data-i18n="map.feature_sielsoord_desc">Die amptelike plaas grens — die goue lyn. Die hele plaas is 2,500 hektaar.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #C9A84C;">⬖</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_rustoord_title">Plaas Rustoord Grens</strong>
+                <span data-i18n="map.feature_rustoord_desc">Die oorspronklike familieplaas Rustoord se grens — sagte goue lyn.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #E07B39;">▲</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_available_title">6 Koppies (Beskikbaar)</strong>
+                <span data-i18n="map.feature_available_desc">Koraal merkers toon die 6 koppies wat te koop is teen R3.5M NAD elk. Klik vir besonderhede.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #F5A623;">▲</div>
+              <div class="feature-text">
+                <strong data-i18n="map.legend_1reserved">1 Koppie (Gereserveer)</strong>
+                <span data-i18n="map.feature_reserved_desc">Oranje merker — Sielshorison (Koppie 8) is gereserveer. Besig met transaksie.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #78909C;">▲</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_private_title">1 Koppie (Privaat)</strong>
+                <span data-i18n="map.feature_private_desc">Grys merker — Sielsrus (Koppie 1) is privaat en nie te koop nie.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #3498DB;">◉</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_boreholes_title">2 Boorgate</strong>
+                <span data-i18n="map.feature_boreholes_desc">Blou merkers toon boorgate. Volop water vir wild, vee en potensiële bouprojekte.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #F0E6D2;">━</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_road_title">D2695-gruispad</strong>
+                <span data-i18n="map.feature_road_desc">Roomkleurige lyn — die gruispad wat maklike toegang tot die plaas gee. Reg vanaf die hoofweg.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #1B5E20;">━━</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_etosha_title">Etosha Nasionale Park</strong>
+                <span data-i18n="map.feature_etosha_desc">Donkergroen stippellyn — Etosha se suidgrens. Reg langs Sielsoord! Wild beweeg vrylik deur die streek.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon" style="background: #A0522D;">━</div>
+              <div class="feature-text">
+                <strong data-i18n="map.feature_ongava_title">Ongava-reservaatgrens</strong>
+                <span data-i18n="map.feature_ongava_desc">Terracotta lyn — die privaat Ongava-wildreservaat grens ook aan Sielsoord.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The actual 3D map -->
+        <div class="map-container fade-in">
+          <div id="terrain-map" class="terrain-map" role="application" data-i18n-attr="aria-label:map.aria_label" aria-label="Interaktiewe 3D kaart van Sielsoord plaas"></div>
+          <button id="terrain-reset" class="terrain-reset" data-i18n="map.control_reset">Herstel kaartaansig</button>
+        </div>
+
+        <!-- Legend -->
+        <div class="map-legend fade-in">
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #E8B842; opacity: 0.3; border: 2px solid #E8B842;"></span>
+            <span data-i18n="map.legend_sielsoord">Sielsoord-grens (2,500 ha)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #C9A84C; opacity: 0.3; border: 2px solid #C9A84C;"></span>
+            <span data-i18n="map.legend_rustoord">Plaas Rustoord-grens</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #E07B39;"></span>
+            <span data-i18n="map.legend_available">Beskikbaar</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #F5A623;"></span>
+            <span data-i18n="peaks.reserved">Gereserveer</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #78909C;"></span>
+            <span data-i18n="map.legend_private">Privaat</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #3498DB;"></span>
+            <span data-i18n="map.legend_borehole">Boorgat</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #F0E6D2; border: 1px solid #ccc;"></span>
+            <span data-i18n="map.legend_road">Toegangspad (D2695)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #1B5E20;"></span>
+            <span data-i18n="map.legend_etosha">Etosha-grens</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-swatch" style="background: #A0522D;"></span>
+            <span data-i18n="map.legend_ongava">Ongava-grens</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ KML Data Overview ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: start;">
+          <div class="fade-in">
+            <p class="eyebrow" data-i18n="map.data_eyebrow">Amptelike Opmeting</p>
+            <h2 data-i18n="map.data_title">Die data agter die kaart</h2>
+            <p data-i18n="map.data_p">
+              Die grense en punte op hierdie kaart kom vanuit 'n amptelike opmeting wat in
+              Google Earth gedoen is — die "Sielsoord" KML-lêer. Hierdie lêer bevat:
+            </p>
+            <div data-kml-features class="kml-features" style="margin: var(--space-lg) 0;">
+              <!-- Filled by JavaScript from KML data -->
+            </div>
+            <p style="color: var(--color-text-muted); font-size: var(--fs-sm); margin-top: var(--space-lg);" data-i18n="map.kml_note">
+              <strong>Nota:</strong> Albei KML-lêers is gratis aflaaibaar hieronder. Open dit in Google Earth om die grense in 3D te verken.
+            </p>
+          </div>
+
+          <div class="kml-panel fade-in fade-in-delay-1">
+            <h3 data-i18n="map.stats_heading">Statistiek</h3>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_total">Totale Grootte</span>
+              <span class="spec-value" data-i18n="map.stats_total_value">2,500 hektaar</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_peaks">Koppies vir Verkoop</span>
+              <span class="spec-value" data-i18n="map.stats_peaks_value">6 beskikbaar (1 gereserveer)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_price">Prys per Koppie</span>
+              <span class="spec-value">R3,500,000 (NAD)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_water">Boreholes</span>
+              <span class="spec-value" data-i18n="map.stats_water_value">2 met volop water</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_access">Toegang</span>
+              <span class="spec-value" data-i18n="map.stats_access_value">D2695-gruispad</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_reserve">Nabyste Wildreservaat</span>
+              <span class="spec-value" data-i18n="map.stats_reserve_value">Etosha (aangrensend)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_coords">Koördinate (sentrum)</span>
+              <span class="spec-value">15.597°E, 19.382°S</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_alt">Hoogte bo seespieël</span>
+              <span class="spec-value" data-i18n="map.stats_alt_value">~1,180 meter</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-label" data-i18n="map.stats_country">Land</span>
+              <span class="spec-value" data-i18n="map.stats_country_value">Namibië 🇳🇦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ KML Downloads ═══ -->
+    <section class="section kml-download-section">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="map.download_eyebrow">Google Earth Lêers</p>
+          <h2 data-i18n="map.download_title">Laai die KML-lêers af</h2>
+          <p class="lead" style="max-width: 700px; margin: 0 auto;" data-i18n="map.download_desc">
+            Verken Sielsoord se grense, koppies en waterpunte in jou eie Google Earth.
+            Laai die KML-lêer af en open dit direk in Google Earth op jou rekenaar of foon.
+          </p>
+        </div>
+
+        <div class="kml-cards">
+          <!-- Sielsoord.kml -->
+          <div class="kml-card fade-in">
+            <div class="kml-card-icon">🗺️</div>
+            <h3>Sielsoord.kml</h3>
+            <p data-i18n="map.kml1_desc">Die amptelike Sielsoord opmeting — grense, 8 koppies, boreholes, paaie, en wildreservaat grense.</p>
+            <div class="kml-card-actions">
+              <a href="data/Sielsoord.kml" download class="btn btn-primary btn-lg" data-i18n="map.btn_download">
+                ⬇ Laai af
+              </a>
+              <a href="https://earth.google.com/web/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="map.btn_earth">
+                🌍 Open in Google Earth
+              </a>
+            </div>
+            <p class="kml-card-hint" data-i18n="map.hint_download">Klik "Laai af" om die lêer te stoor, dan sleep dit in Google Earth.</p>
+          </div>
+
+          <!-- rustoort-2500.kml -->
+          <div class="kml-card fade-in fade-in-delay-1">
+            <div class="kml-card-icon">📐</div>
+            <h3 data-i18n="map.kml2_name">Plaas Rustoord 2500.kml</h3>
+            <p data-i18n="map.kml2_desc">Die oorspronklike familieplaas Rustoord se 2,500 hektaar opmeting met alle grense en punte.</p>
+            <div class="kml-card-actions">
+              <a href="data/rustoort-2500.kml" download class="btn btn-primary btn-lg" data-i18n="map.btn_download">
+                ⬇ Laai af
+              </a>
+              <a href="https://earth.google.com/web/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="map.btn_earth">
+                🌍 Open in Google Earth
+              </a>
+            </div>
+            <p class="kml-card-hint" data-i18n="map.hint_download">Klik "Laai af" om die lêer te stoor, dan sleep dit in Google Earth.</p>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="kml-instructions fade-in">
+          <h3 data-i18n="map.instr_title">Hoe om te gebruik</h3>
+          <ol>
+            <li data-i18n="map.instr_step1"><strong>Laai af</strong> — Klik die "Laai af" knop bo om die .kml lêer te stoor.</li>
+            <li data-i18n="map.instr_step2"><strong>Open Google Earth</strong> — Gaan na earth.google.com op jou rekenaar, of open die Google Earth app.</li>
+            <li data-i18n="map.instr_step3"><strong>Sleep die lêer</strong> — Sleep die .kml lêer in die Google Earth venster. Die grense verskyn dadelik.</li>
+            <li data-i18n="map.instr_step4"><strong>Verken</strong> — Zoem in op die koppies, boreholes, en grense met satellietbeeld.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-sigil" data-sigil3d="footer" aria-hidden="true"></div>
+          <h3>Sielsoord</h3>
+          <p data-i18n="footer.brand">Waar jou siel tot rus kom. 2,500 hektaar Namibiese wildernis met 7 privaat koppies. Naby Etosha Nasionale Park.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigasie</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Tuis</a></li>
+            <li><a href="storie.html" data-i18n="nav.story">Storie</a></li>
+            <li><a href="koppies.html" data-i18n="nav.peaks">Koppies</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galery</a></li>
+            <li><a href="kaart.html" data-i18n="nav.map">Kaart</a></li>
+            <li><a href="kontak.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.peaks_title">Koppies</h4>
+          <ul>
+            <li><a href="koppie/sielsrus.html">Sielsrus</a></li>
+            <li><a href="koppie/sielskemering.html">Sielskemering</a></li>
+            <li><a href="koppie/sielsaandster.html">Sielsaandster</a></li>
+            <li><a href="koppie/sielswind.html">Sielswind</a></li>
+            <li><a href="koppie/sielshoogte.html">Sielshoogte</a></li>
+            <li><a href="koppie/sielsstilte.html">Sielsstilte</a></li>
+            <li><a href="koppie/sielsdageraad.html">Sielsdageraad</a></li>
+            <li><a href="koppie/sielshorison.html">Sielshorison</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Kontak</h4>
+          <ul>
+            <li><a href="kontak.html" data-i18n="footer.send">Stuur 'n boodskap</a></li>
+            <li><a href="kontak.html" data-i18n="footer.visit">Besoek Sielsoord</a></li>
+            <li><a href="tel:+264811289994">+264 81 128 9994</a></li>
+            <li><a href="mailto:sielsoord@gmail.com">sielsoord@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Sielsoord. Namibië. Alle regte voorbehou.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+  <script src="js/translations.js?v=13"></script>
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/premium.js"></script>
+  <script type="module" src="js/sigil-3d.js?v=4"></script>
+</body>
+</html>

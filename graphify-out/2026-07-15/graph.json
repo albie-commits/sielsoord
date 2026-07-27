@@ -1,0 +1,3225 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "mountain_detail_pages",
+        "label": "Mountain Detail Pages",
+        "nodes": [
+          "berg_sielsrus_html",
+          "berg_sielskemering_html",
+          "berg_sielsaandster_html",
+          "berg_sielswind_html",
+          "berg_sielshoogte_html",
+          "berg_sielsstilte_html",
+          "berg_sielsdageraad_html",
+          "berg_sielshorison_html"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0
+      },
+      {
+        "id": "i18n_system",
+        "label": "Internationalization System",
+        "nodes": [
+          "js_i18n_js",
+          "js_translations_js",
+          "index_html",
+          "die_plaas_html",
+          "koppies_html",
+          "kaart_html",
+          "kontak_html",
+          "gallery_html"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0
+      },
+      {
+        "id": "bird_photography_collection",
+        "label": "Bird Photography Collection",
+        "nodes": [
+          "images_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord",
+          "images_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord",
+          "images_birds_dsc_0010sielsoord",
+          "images_birds_dsc_0158sielsoord",
+          "images_birds_dsc_0190sielsoord",
+          "images_birds_fa5fb12d-ef2b-426f-9cb6-756d98bd6e70sielsoord"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "sielsoord_visual_identity",
+        "label": "Sielsoord Visual Identity",
+        "nodes": [
+          "images_icons_sielsoord_logo",
+          "images_icons_sielsoord_logo_preview",
+          "sielsoord_concept",
+          "mopane_tree_concept"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "images/icons/sielsoord-logo.svg"
+      },
+      {
+        "id": "homestead_facilities",
+        "label": "Homestead Facilities and Amenities",
+        "nodes": [
+          "images_gallery_homestead_img_0157",
+          "images_gallery_homestead_img_0522",
+          "images_gallery_homestead_img_0534_2",
+          "images_gallery_homestead_img_0532"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "images/gallery/homestead/"
+      },
+      {
+        "id": "sielsrus_wildlife_photography",
+        "label": "Wildlife Photography at Sielsrus",
+        "nodes": [
+          "images_sielsrus_dsc_0010sielsoord",
+          "images_sielsrus_dsc_0020sielsoord",
+          "images_sielsrus_dsc_0056sielsoord",
+          "images_sielsrus_dsc_0158sielsoord",
+          "images_sielsrus_dsc_0190sielsoord",
+          "images_sielsrus_dsc_0207sielsoord"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "sielsrus_landscapes",
+        "label": "Sielsrus Property Landscapes",
+        "nodes": [
+          "images_sielsrus_img_1634sielsoord",
+          "images_sielsrus_img_1635sielsoord",
+          "images_sielsrus_img_1698sielsoord",
+          "images_sielsrus_img_3414sielsoord",
+          "images_sielsrus_img_3449sielsoord",
+          "images_sielsrus_img_6220sielsoord",
+          "images_sielsrus_img_6321sielsoord",
+          "images_sielsrus_img_6340sielsoord"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "images/sielsrus/"
+      },
+      {
+        "id": "sielsrus_infrastructure",
+        "label": "Sielsrus Infrastructure and Facilities",
+        "nodes": [
+          "images_sielsrus_img_1681sielsoord",
+          "images_sielsrus_img_2647sielsoord",
+          "images_sielsrus_img_4464sielsoord",
+          "images_sielsrus_img_8020sielsoord",
+          "images_sielsrus_img_8025sielsoord"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "images/sielsrus/"
+      },
+      {
+        "id": "sielsrus_security_infrastructure",
+        "label": "Sielsrus Security Infrastructure",
+        "nodes": [
+          "images_sielsrus_img_8027sielsoord",
+          "images_sielsrus_img_8028sielsoord",
+          "images_sielsrus_img_8029sielsoord",
+          "images_sielsrus_img_8030sielsoord",
+          "images_sielsrus_img_8031sielsoord",
+          "images_sielsrus_img_8032sielsoord",
+          "images_sielsrus_gallery_7"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "sielsrus_wildlife_gallery",
+        "label": "Sielsrus Wildlife and Nature",
+        "nodes": [
+          "images_sielsrus_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord",
+          "images_sielsrus_gallery_1",
+          "images_sielsrus_gallery_2",
+          "images_sielsrus_gallery_3",
+          "images_sielsrus_gallery_4",
+          "images_sielsrus_gallery_5",
+          "images_sielsrus_gallery_6",
+          "images_sielsrus_gallery_8",
+          "images_sielsrus_hero_1",
+          "images_sielsrus_sielsrus_1",
+          "images_sielsrus_sielsrus_2",
+          "images_sielsrus_sielsrus_3"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9
+      },
+      {
+        "id": "sielsrus_wildlife_photography",
+        "label": "Sielsrus Wildlife and Landscape Photography",
+        "nodes": [
+          "images_sielsrus_sielsrus_4",
+          "images_sielsrus_sielsrus_5",
+          "images_sielsrus_sielsrus_6",
+          "images_sielsrus_sielsrus_7",
+          "images_sielsrus_sielsrus_8",
+          "images_sielsrus_sielsrus_9",
+          "images_sielsrus_sielsrus_hero"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "images/sielsrus/"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "form.js",
+      "file_type": "code",
+      "source_file": "js/form.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "form.js",
+      "id": "js_form",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "showError()",
+      "file_type": "code",
+      "source_file": "js/form.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "showerror()",
+      "id": "js_form_showerror",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "clearError()",
+      "file_type": "code",
+      "source_file": "js/form.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "clearerror()",
+      "id": "js_form_clearerror",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "validate()",
+      "file_type": "code",
+      "source_file": "js/form.js",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "validate()",
+      "id": "js_form_validate",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "gallery.js",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "gallery.js",
+      "id": "js_gallery",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "t()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L119",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "t()",
+      "id": "js_gallery_t",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "renderBubbles()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L157",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "renderbubbles()",
+      "id": "js_gallery_renderbubbles",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "openCategory()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L209",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "opencategory()",
+      "id": "js_gallery_opencategory",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "backToBubbles()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L253",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "backtobubbles()",
+      "id": "js_gallery_backtobubbles",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "openLightbox()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L263",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "openlightbox()",
+      "id": "js_gallery_openlightbox",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "closeLightbox()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L271",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "closelightbox()",
+      "id": "js_gallery_closelightbox",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "navLightbox()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L279",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "navlightbox()",
+      "id": "js_gallery_navlightbox",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "initGallery()",
+      "file_type": "code",
+      "source_file": "js/gallery.js",
+      "source_location": "L346",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "initgallery()",
+      "id": "js_gallery_initgallery",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "i18n.js",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "i18n.js",
+      "id": "js_i18n",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "getLang()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "getlang()",
+      "id": "js_i18n_getlang",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "setLang()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "setlang()",
+      "id": "js_i18n_setlang",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "translateElement()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "translateelement()",
+      "id": "js_i18n_translateelement",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "applyTranslations()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L57",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "applytranslations()",
+      "id": "js_i18n_applytranslations",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "updateSwitcherUI()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "updateswitcherui()",
+      "id": "js_i18n_updateswitcherui",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "createSwitcherHTML()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L94",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "createswitcherhtml()",
+      "id": "js_i18n_createswitcherhtml",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "js/i18n.js",
+      "source_location": "L103",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "init()",
+      "id": "js_i18n_init",
+      "community_name": "Internationalization and Language Switcher"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "main.js",
+      "id": "js_main",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "updateNav()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "updatenav()",
+      "id": "js_main_updatenav",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "closeLightbox()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L135",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "closelightbox()",
+      "id": "js_main_closelightbox",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "map.js",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "map.js",
+      "id": "js_map",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "loadLeafletCSS()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "loadleafletcss()",
+      "id": "js_map_loadleafletcss",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "loadLeafletJS()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "loadleafletjs()",
+      "id": "js_map_loadleafletjs",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "HILL_NAMES",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "hill_names",
+      "id": "js_map_hill_names",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "FEATURE_STYLES",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L60",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "feature_styles",
+      "id": "js_map_feature_styles",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "getHillStyle()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L116",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "gethillstyle()",
+      "id": "js_map_gethillstyle",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "SIELSOORD_GEOJSON",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L157",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "sielsoord_geojson",
+      "id": "js_map_sielsoord_geojson",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "SIELSOORD_KML_FEATURES",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L357",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "sielsoord_kml_features",
+      "id": "js_map_sielsoord_kml_features",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "injectPopupStyles()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L373",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "injectpopupstyles()",
+      "id": "js_map_injectpopupstyles",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "getFeatureStyle()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L563",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "getfeaturestyle()",
+      "id": "js_map_getfeaturestyle",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "getDisplayName()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L572",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "getdisplayname()",
+      "id": "js_map_getdisplayname",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "getPopupContent()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L584",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "getpopupcontent()",
+      "id": "js_map_getpopupcontent",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "initSielsoordMap()",
+      "file_type": "code",
+      "source_file": "js/map.js",
+      "source_location": "L608",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "initsielsoordmap()",
+      "id": "js_map_initsielsoordmap",
+      "community_name": "Interactive Map Component"
+    },
+    {
+      "label": "premium.js",
+      "file_type": "code",
+      "source_file": "js/premium.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "premium.js",
+      "id": "js_premium",
+      "community_name": "Premium Features and Animations"
+    },
+    {
+      "label": "updateScrollProgress()",
+      "file_type": "code",
+      "source_file": "js/premium.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "updatescrollprogress()",
+      "id": "js_premium_updatescrollprogress",
+      "community_name": "Premium Features and Animations"
+    },
+    {
+      "label": "animateStats()",
+      "file_type": "code",
+      "source_file": "js/premium.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "animatestats()",
+      "id": "js_premium_animatestats",
+      "community_name": "Premium Features and Animations"
+    },
+    {
+      "label": "updateNavPremium()",
+      "file_type": "code",
+      "source_file": "js/premium.js",
+      "source_location": "L116",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "updatenavpremium()",
+      "id": "js_premium_updatenavpremium",
+      "community_name": "Premium Features and Animations"
+    },
+    {
+      "label": "translations.js",
+      "file_type": "code",
+      "source_file": "js/translations.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "translations.js",
+      "id": "js_translations",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "TRANSLATIONS",
+      "file_type": "code",
+      "source_file": "js/translations.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "translations",
+      "id": "js_translations_translations",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "run_server.py",
+      "file_type": "code",
+      "source_file": "run_server.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "run_server.py",
+      "id": "run_server",
+      "community_name": "Server Management Script"
+    },
+    {
+      "label": "find_free_port()",
+      "file_type": "code",
+      "source_file": "run_server.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "find_free_port()",
+      "id": "run_server_find_free_port",
+      "community_name": "Server Management Script"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "run_server.py",
+      "source_location": "L49",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "main()",
+      "id": "run_server_main",
+      "community_name": "Server Management Script"
+    },
+    {
+      "label": "Try the preferred port; if taken, walk up to find a free one.",
+      "file_type": "rationale",
+      "source_file": "run_server.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "try the preferred port; if taken, walk up to find a free one.",
+      "id": "run_server_rationale_38",
+      "community_name": "Server Management Script"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "community": 35,
+      "norm_label": "claude.md",
+      "id": "claude_md",
+      "community_name": "Claude Documentation"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "community": 88,
+      "norm_label": "readme.md",
+      "id": "readme_md",
+      "community_name": "Project Readme"
+    },
+    {
+      "label": "Home Page",
+      "file_type": "code",
+      "source_file": "index.html",
+      "source_location": null,
+      "community": 0,
+      "norm_label": "home page",
+      "id": "index_html",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "Die Plaas Page",
+      "file_type": "code",
+      "source_file": "die-plaas.html",
+      "source_location": null,
+      "community": 36,
+      "norm_label": "die plaas page",
+      "id": "die_plaas_html",
+      "community_name": "Die Plaas Page"
+    },
+    {
+      "label": "Koppies Page",
+      "file_type": "code",
+      "source_file": "koppies.html",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "koppies page",
+      "id": "koppies_html",
+      "community_name": "Property Detail Pages"
+    },
+    {
+      "label": "Kaart Page",
+      "file_type": "code",
+      "source_file": "kaart.html",
+      "source_location": null,
+      "community": 0,
+      "norm_label": "kaart page",
+      "id": "kaart_html",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "Kontak Page",
+      "file_type": "code",
+      "source_file": "kontak.html",
+      "source_location": null,
+      "community": 0,
+      "norm_label": "kontak page",
+      "id": "kontak_html",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "Gallery Page",
+      "file_type": "code",
+      "source_file": "gallery.html",
+      "source_location": null,
+      "community": 2,
+      "norm_label": "gallery page",
+      "id": "gallery_html",
+      "community_name": "Gallery Navigation and Lightbox"
+    },
+    {
+      "label": "Sielsrus Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielsrus.html",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "sielsrus detail page",
+      "id": "berg_sielsrus_html",
+      "community_name": "Property Detail Pages"
+    },
+    {
+      "label": "Sielskemering Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielskemering.html",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "sielskemering detail page",
+      "id": "berg_sielskemering_html",
+      "community_name": "Property Detail Pages"
+    },
+    {
+      "label": "Sielsaandster Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielsaandster.html",
+      "source_location": null,
+      "community": 5,
+      "norm_label": "sielsaandster detail page",
+      "id": "berg_sielsaandster_html",
+      "community_name": "Property Detail Pages"
+    },
+    {
+      "label": "Sielswind Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielswind.html",
+      "source_location": null,
+      "community": 34,
+      "norm_label": "sielswind detail page",
+      "id": "berg_sielswind_html",
+      "community_name": "Sielswind Page"
+    },
+    {
+      "label": "Sielshoogte Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielshoogte.html",
+      "source_location": null,
+      "community": 31,
+      "norm_label": "sielshoogte detail page",
+      "id": "berg_sielshoogte_html",
+      "community_name": "Sielshoogte Page"
+    },
+    {
+      "label": "Sielsstilte Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielsstilte.html",
+      "source_location": null,
+      "community": 33,
+      "norm_label": "sielsstilte detail page",
+      "id": "berg_sielsstilte_html",
+      "community_name": "Sielsstilte Page"
+    },
+    {
+      "label": "Sielsdageraad Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielsdageraad.html",
+      "source_location": null,
+      "community": 30,
+      "norm_label": "sielsdageraad detail page",
+      "id": "berg_sielsdageraad_html",
+      "community_name": "Sielsdageraad Page"
+    },
+    {
+      "label": "Sielshorison Detail Page",
+      "file_type": "code",
+      "source_file": "berg/sielshorison.html",
+      "source_location": null,
+      "community": 32,
+      "norm_label": "sielshorison detail page",
+      "id": "berg_sielshorison_html",
+      "community_name": "Sielshorison Page"
+    },
+    {
+      "label": "Sunset over Sielsoord (Dark)",
+      "file_type": "image",
+      "source_file": "images/hero-dark.jpg",
+      "source_location": null,
+      "community": 0,
+      "norm_label": "sunset over sielsoord (dark)",
+      "id": "images_hero_dark_jpg",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "Sunset over Sielsoord (Light)",
+      "file_type": "image",
+      "source_file": "images/hero-light.jpg",
+      "source_location": null,
+      "community": 0,
+      "norm_label": "sunset over sielsoord (light)",
+      "id": "images_hero_light_jpg",
+      "community_name": "Home Page Logic"
+    },
+    {
+      "label": "Photo of a Little Bee-eater on a branch",
+      "file_type": "image",
+      "source_file": "images/birds/64113ef4-a4d5-43ae-a8ce-e3a88b292246Sielsoord.JPG",
+      "community": 10,
+      "norm_label": "photo of a little bee-eater on a branch",
+      "id": "images_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord",
+      "community_name": "Little Bee-eater Photos"
+    },
+    {
+      "label": "Photo of a Little Bee-eater facing right",
+      "file_type": "image",
+      "source_file": "images/birds/74366822-33c4-4821-ba41-972769cb48c1Sielsoord.JPG",
+      "community": 11,
+      "norm_label": "photo of a little bee-eater facing right",
+      "id": "images_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord",
+      "community_name": "Little Bee-eater Profiles"
+    },
+    {
+      "label": "Photo of a Plum-colored Starling in a tree",
+      "file_type": "image",
+      "source_file": "images/birds/DSC_0010Sielsoord.JPG",
+      "community": 12,
+      "norm_label": "photo of a plum-colored starling in a tree",
+      "id": "images_birds_dsc_0010sielsoord",
+      "community_name": "Plum-colored Starling Photos"
+    },
+    {
+      "label": "Photo of a Southern Yellow-billed Hornbill in a tree",
+      "file_type": "image",
+      "source_file": "images/birds/DSC_0158Sielsoord.JPG",
+      "community": 13,
+      "norm_label": "photo of a southern yellow-billed hornbill in a tree",
+      "id": "images_birds_dsc_0158sielsoord",
+      "community_name": "Southern Yellow-billed Hornbill Photos"
+    },
+    {
+      "label": "Photo of a Short-toed Rock Thrush on a branch",
+      "file_type": "image",
+      "source_file": "images/birds/DSC_0190Sielsoord.JPG",
+      "community": 14,
+      "norm_label": "photo of a short-toed rock thrush on a branch",
+      "id": "images_birds_dsc_0190sielsoord",
+      "community_name": "Short-toed Rock Thrush Photos"
+    },
+    {
+      "label": "Photo of a woman looking over a savanna landscape",
+      "file_type": "image",
+      "source_file": "images/gallery/gallery-hero.jpg",
+      "community": 41,
+      "norm_label": "photo of a woman looking over a savanna landscape",
+      "id": "images_gallery_gallery-hero",
+      "community_name": "Savanna Landscape View"
+    },
+    {
+      "label": "Gallery photo of a Little Bee-eater",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord.jpg",
+      "community": 10,
+      "norm_label": "gallery photo of a little bee-eater",
+      "id": "images_gallery_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord",
+      "community_name": "Little Bee-eater Photos"
+    },
+    {
+      "label": "Gallery photo of a Little Bee-eater profile",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/74366822-33c4-4821-ba41-972769cb48c1sielsoord.jpg",
+      "community": 11,
+      "norm_label": "gallery photo of a little bee-eater profile",
+      "id": "images_gallery_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord",
+      "community_name": "Little Bee-eater Profiles"
+    },
+    {
+      "label": "Gallery photo of a Plum-colored Starling",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0010sielsoord.jpg",
+      "community": 12,
+      "norm_label": "gallery photo of a plum-colored starling",
+      "id": "images_gallery_birds_dsc_0010sielsoord",
+      "community_name": "Plum-colored Starling Photos"
+    },
+    {
+      "label": "Gallery photo of a Lilac-breasted Roller in a tree",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0020sielsoord.jpg",
+      "community": 37,
+      "norm_label": "gallery photo of a lilac-breasted roller in a tree",
+      "id": "images_gallery_birds_dsc_0020sielsoord",
+      "community_name": "Roller Tree Gallery"
+    },
+    {
+      "label": "Gallery photo of a Southern Yellow-billed Hornbill",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0158sielsoord.jpg",
+      "community": 13,
+      "norm_label": "gallery photo of a southern yellow-billed hornbill",
+      "id": "images_gallery_birds_dsc_0158sielsoord",
+      "community_name": "Southern Yellow-billed Hornbill Photos"
+    },
+    {
+      "label": "Gallery photo of a Short-toed Rock Thrush",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0190sielsoord.jpg",
+      "community": 14,
+      "norm_label": "gallery photo of a short-toed rock thrush",
+      "id": "images_gallery_birds_dsc_0190sielsoord",
+      "community_name": "Short-toed Rock Thrush Photos"
+    },
+    {
+      "label": "Gallery photo of a Southern Yellow-billed Hornbill on the ground",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0200sielsoord.jpg",
+      "community": 38,
+      "norm_label": "gallery photo of a southern yellow-billed hornbill on the ground",
+      "id": "images_gallery_birds_dsc_0200sielsoord",
+      "community_name": "Hornbill Ground Gallery"
+    },
+    {
+      "label": "Gallery photo of a Cinnamon-breasted Bunting on a rock",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0209sielsoord.jpg",
+      "community": 39,
+      "norm_label": "gallery photo of a cinnamon-breasted bunting on a rock",
+      "id": "images_gallery_birds_dsc_0209sielsoord",
+      "community_name": "Bunting Rock Gallery"
+    },
+    {
+      "label": "Gallery photo of a Lilac-breasted Roller on a dead branch",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/dsc_0352sielsoord.jpg",
+      "community": 40,
+      "norm_label": "gallery photo of a lilac-breasted roller on a dead branch",
+      "id": "images_gallery_birds_dsc_0352sielsoord",
+      "community_name": "Roller Branch Gallery"
+    },
+    {
+      "label": "Sielsoord Logo",
+      "file_type": "code",
+      "source_file": "images/icons/sielsoord-logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "sielsoord logo",
+      "id": "images_icons_sielsoord_logo",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Bird on Mopane Branch",
+      "file_type": "image",
+      "source_file": "images/gallery/birds/fa5fb12d-ef2b-426f-9cb6-756d98bd6e70sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "bird on mopane branch",
+      "id": "images_gallery_birds_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Homestead Overview with Solar Panels",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/123sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "homestead overview with solar panels",
+      "id": "images_gallery_homestead_123sielsoord",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Patio with Solar Roof",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/76503e53-f9ee-45a4-8f6b-acef3f8d2ae9sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 42,
+      "norm_label": "patio with solar roof",
+      "id": "images_gallery_homestead_76503e53_f9ee_45a4_8f6b_acef3f8d2ae9sielsoord",
+      "community_name": "Solar Roof Patio"
+    },
+    {
+      "label": "Patio at Sunset",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/bd790f07-8a57-42ed-9d6e-eaa4056e223esielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 43,
+      "norm_label": "patio at sunset",
+      "id": "images_gallery_homestead_bd790f07_8a57_42ed_9d6e_eaa4056e223esielsoord",
+      "community_name": "Sunset Patio View"
+    },
+    {
+      "label": "KolKol Wood-Fired Hot Tub with View",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0157.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "kolkol wood-fired hot tub with view",
+      "id": "images_gallery_homestead_img_0157",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Outdoor Seating Area",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0162.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 44,
+      "norm_label": "outdoor seating area",
+      "id": "images_gallery_homestead_img_0162",
+      "community_name": "Outdoor Seating Area"
+    },
+    {
+      "label": "Wide Patio View",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0518.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 45,
+      "norm_label": "wide patio view",
+      "id": "images_gallery_homestead_img_0518",
+      "community_name": "Wide Patio Perspective"
+    },
+    {
+      "label": "Boma and Hot Tub Area",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0522.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 46,
+      "norm_label": "boma and hot tub area",
+      "id": "images_gallery_homestead_img_0522",
+      "community_name": "Boma and Hot Tub"
+    },
+    {
+      "label": "Interior Living and Dining Area",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0532.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 47,
+      "norm_label": "interior living and dining area",
+      "id": "images_gallery_homestead_img_0532",
+      "community_name": "Interior Living Space"
+    },
+    {
+      "label": "Interior Dining Table with Guests",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0533.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 48,
+      "norm_label": "interior dining table with guests",
+      "id": "images_gallery_homestead_img_0533",
+      "community_name": "Dining Area Guests"
+    },
+    {
+      "label": "Indoor Braai and Kitchen Area",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0534_2.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 49,
+      "norm_label": "indoor braai and kitchen area",
+      "id": "images_gallery_homestead_img_0534_2",
+      "community_name": "Kitchen and Braai"
+    },
+    {
+      "label": "Interior Lounge with TV and Trophies",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0538.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 50,
+      "norm_label": "interior lounge with tv and trophies",
+      "id": "images_gallery_homestead_img_0538",
+      "community_name": "Lounge and Trophies"
+    },
+    {
+      "label": "Patio and Boma at Dusk",
+      "file_type": "image",
+      "source_file": "images/gallery/homestead/img_0552.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 51,
+      "norm_label": "patio and boma at dusk",
+      "id": "images_gallery_homestead_img_0552",
+      "community_name": "Dusk Boma View"
+    },
+    {
+      "label": "Sielsoord Logo Preview",
+      "file_type": "image",
+      "source_file": "images/icons/sielsoord-logo-preview.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "sielsoord logo preview",
+      "id": "images_icons_sielsoord_logo_preview",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Sielsrus Homestead Overview",
+      "file_type": "image",
+      "source_file": "images/sielsrus/123Sielsoord.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "sielsrus homestead overview",
+      "id": "images_sielsrus_123sielsoord",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Green Bee-eater Bird",
+      "file_type": "image",
+      "source_file": "images/sielsrus/64113ef4-a4d5-43ae-a8ce-e3a88b292246Sielsoord.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 52,
+      "norm_label": "green bee-eater bird",
+      "id": "images_sielsrus_64113ef4_a4d5_43ae_a8ce_e3a88b292246sielsoord",
+      "community_name": "Green Bee-eater Photos"
+    },
+    {
+      "label": "Landscape View of Bushveld",
+      "file_type": "image",
+      "source_file": "images/sielsrus/643BFC00-0EE9-4F72-9C51-FFD00A43F510Sielsoord.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 53,
+      "norm_label": "landscape view of bushveld",
+      "id": "images_sielsrus_643bfc00_0ee9_4f72_9c51_ffd00a43f510sielsoord",
+      "community_name": "Bushveld Landscape"
+    },
+    {
+      "label": "Bird on Branch Profile",
+      "file_type": "image",
+      "source_file": "images/sielsrus/74366822-33c4-4821-ba41-972769cb48c1Sielsoord.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 54,
+      "norm_label": "bird on branch profile",
+      "id": "images_sielsrus_74366822_33c4_4821_ba41_972769cb48c1sielsoord",
+      "community_name": "Bird Profile Shots"
+    },
+    {
+      "label": "Sielsrus Patio View",
+      "file_type": "image",
+      "source_file": "images/sielsrus/76503E53-F9EE-45A4-8F6B-ACEF3F8D2AE9Sielsoord.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 55,
+      "norm_label": "sielsrus patio view",
+      "id": "images_sielsrus_76503e53_f9ee_45a4_8f6b_acef3f8d2ae9sielsoord",
+      "community_name": "Sielsrus Patio"
+    },
+    {
+      "label": "Sielsrus Boma and Hot Tub",
+      "file_type": "image",
+      "source_file": "images/sielsrus/8E0CAC25-3033-4763-8885-F81354D561CFSielsoord.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 56,
+      "norm_label": "sielsrus boma and hot tub",
+      "id": "images_sielsrus_8e0cac25_3033_4763_8885_f81354d561cfsielsoord",
+      "community_name": "Sielsrus Outdoor Amenities"
+    },
+    {
+      "label": "Sielsoord Estate",
+      "file_type": "concept",
+      "source_file": "images/icons/sielsoord-logo.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "sielsoord estate",
+      "id": "sielsoord_concept",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Mopane Tree Symbolism",
+      "file_type": "concept",
+      "source_file": "images/icons/sielsoord-logo.svg",
+      "source_location": null,
+      "community": 3,
+      "norm_label": "mopane tree symbolism",
+      "id": "mopane_tree_concept",
+      "community_name": "Estate Branding and Overview"
+    },
+    {
+      "label": "Patio and landscape view of Sielsoord",
+      "file_type": "image",
+      "source_file": "images/sielsrus/B78A727C-A4BA-4AE7-80AE-A2ADC1198494Sielsoord.JPG",
+      "community": 15,
+      "norm_label": "patio and landscape view of sielsoord",
+      "id": "images_sielsrus_b78a727c_a4ba_4ae7_80ae_a2adc1198494sielsoord",
+      "community_name": "Exterior Building Views"
+    },
+    {
+      "label": "Sielsoord building exterior at sunset",
+      "file_type": "image",
+      "source_file": "images/sielsrus/BD790F07-8A57-42ED-9D6E-EAA4056E223ESielsoord.JPG",
+      "community": 15,
+      "norm_label": "sielsoord building exterior at sunset",
+      "id": "images_sielsrus_bd790f07_8a57_42ed_9d6e_eaa4056e223esielsoord",
+      "community_name": "Exterior Building Views"
+    },
+    {
+      "label": "Small purple and white bird in a tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0010Sielsoord.JPG",
+      "community": 57,
+      "norm_label": "small purple and white bird in a tree",
+      "id": "images_sielsrus_dsc_0010sielsoord",
+      "community_name": "Purple and White Bird"
+    },
+    {
+      "label": "Lilac-breasted roller perched in a tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0020Sielsoord.JPG",
+      "community": 16,
+      "norm_label": "lilac-breasted roller perched in a tree",
+      "id": "images_sielsrus_dsc_0020sielsoord",
+      "community_name": "Lilac-breasted Roller Perched"
+    },
+    {
+      "label": "Lilac-breasted roller on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0025Sielsoord.JPG",
+      "community": 16,
+      "norm_label": "lilac-breasted roller on a branch",
+      "id": "images_sielsrus_dsc_0025sielsoord",
+      "community_name": "Lilac-breasted Roller Perched"
+    },
+    {
+      "label": "Small brown bird on a thorny branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0056Sielsoord.JPG",
+      "community": 58,
+      "norm_label": "small brown bird on a thorny branch",
+      "id": "images_sielsrus_dsc_0056sielsoord",
+      "community_name": "Thorny Branch Perch"
+    },
+    {
+      "label": "Small brown bird looking sideways on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0059Sielsoord.JPG",
+      "community": 59,
+      "norm_label": "small brown bird looking sideways on a branch",
+      "id": "images_sielsrus_dsc_0059sielsoord",
+      "community_name": "Sideways Bird Profile"
+    },
+    {
+      "label": "Yellow-billed hornbill with food in its beak",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0158Sielsoord.JPG",
+      "community": 17,
+      "norm_label": "yellow-billed hornbill with food in its beak",
+      "id": "images_sielsrus_dsc_0158sielsoord",
+      "community_name": "Hornbill Feeding Photos"
+    },
+    {
+      "label": "Yellow-billed hornbill perched in green foliage",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0189Sielsoord.JPG",
+      "community": 17,
+      "norm_label": "yellow-billed hornbill perched in green foliage",
+      "id": "images_sielsrus_dsc_0189sielsoord",
+      "community_name": "Hornbill Feeding Photos"
+    },
+    {
+      "label": "Orange-breasted bird on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0190Sielsoord.JPG",
+      "community": 60,
+      "norm_label": "orange-breasted bird on a branch",
+      "id": "images_sielsrus_dsc_0190sielsoord",
+      "community_name": "Orange-breasted Bird"
+    },
+    {
+      "label": "Yellow-billed hornbill on the ground",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0200Sielsoord.JPG",
+      "community": 61,
+      "norm_label": "yellow-billed hornbill on the ground",
+      "id": "images_sielsrus_dsc_0200sielsoord",
+      "community_name": "Yellow-billed Hornbill Ground"
+    },
+    {
+      "label": "Small striped-head bird on rocky ground",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0207Sielsoord.JPG",
+      "community": 18,
+      "norm_label": "small striped-head bird on rocky ground",
+      "id": "images_sielsrus_dsc_0207sielsoord",
+      "community_name": "Ground-dwelling Bird Photos"
+    },
+    {
+      "label": "Small striped-head bird looking back on ground",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0208Sielsoord.JPG",
+      "community": 18,
+      "norm_label": "small striped-head bird looking back on ground",
+      "id": "images_sielsrus_dsc_0208sielsoord",
+      "community_name": "Ground-dwelling Bird Photos"
+    },
+    {
+      "label": "Small striped-head bird on a rock",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0209Sielsoord.JPG",
+      "community": 62,
+      "norm_label": "small striped-head bird on a rock",
+      "id": "images_sielsrus_dsc_0209sielsoord",
+      "community_name": "Striped-head Rock Bird"
+    },
+    {
+      "label": "Lilac-breasted roller back view on a dead tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0350Sielsoord.JPG",
+      "community": 19,
+      "norm_label": "lilac-breasted roller back view on a dead tree",
+      "id": "images_sielsrus_dsc_0350sielsoord",
+      "community_name": "Roller Dead Tree Profiles"
+    },
+    {
+      "label": "Lilac-breasted roller side profile on a dead tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0351Sielsoord.JPG",
+      "community": 19,
+      "norm_label": "lilac-breasted roller side profile on a dead tree",
+      "id": "images_sielsrus_dsc_0351sielsoord",
+      "community_name": "Roller Dead Tree Profiles"
+    },
+    {
+      "label": "Lilac-breasted roller looking right on a dead tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0352Sielsoord.JPG",
+      "community": 63,
+      "norm_label": "lilac-breasted roller looking right on a dead tree",
+      "id": "images_sielsrus_dsc_0352sielsoord",
+      "community_name": "Roller Dead Tree View"
+    },
+    {
+      "label": "Lilac-breasted roller facing forward on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0364 2Sielsoord.JPG",
+      "community": 64,
+      "norm_label": "lilac-breasted roller facing forward on a branch",
+      "id": "images_sielsrus_dsc_0364_2sielsoord",
+      "community_name": "Roller Forward Facing"
+    },
+    {
+      "label": "Lilac-breasted roller perched on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/DSC_0364Sielsoord.JPG",
+      "community": 65,
+      "norm_label": "lilac-breasted roller perched on a branch",
+      "id": "images_sielsrus_dsc_0364sielsoord",
+      "community_name": "Roller Branch Perch"
+    },
+    {
+      "label": "Vibrant purple and pink sunset over the bushveld",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_1633Sielsoord.jpg",
+      "community": 71,
+      "norm_label": "vibrant purple and pink sunset over the bushveld",
+      "id": "images_sielsrus_img_1633sielsoord",
+      "community_name": "Vibrant Bushveld Sunset"
+    },
+    {
+      "label": "Sunset landscape with tree branches in foreground",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_1634Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 24,
+      "norm_label": "sunset landscape with tree branches in foreground",
+      "id": "images_sielsrus_img_1634sielsoord",
+      "community_name": "Dusk Landscape Silhouettes"
+    },
+    {
+      "label": "Dusk landscape with purple sky and silhouette of a tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_1635Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 24,
+      "norm_label": "dusk landscape with purple sky and silhouette of a tree",
+      "id": "images_sielsrus_img_1635sielsoord",
+      "community_name": "Dusk Landscape Silhouettes"
+    },
+    {
+      "label": "Outdoor seating area with fire pit overlooking a valley",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_1681Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 72,
+      "norm_label": "outdoor seating area with fire pit overlooking a valley",
+      "id": "images_sielsrus_img_1681sielsoord",
+      "community_name": "Valley View Fire Pit"
+    },
+    {
+      "label": "Dirt road winding through bushveld at sunset",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_1698Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 73,
+      "norm_label": "dirt road winding through bushveld at sunset",
+      "id": "images_sielsrus_img_1698sielsoord",
+      "community_name": "Sunset Bushveld Road"
+    },
+    {
+      "label": "Small stone building in a grassy field under a dramatic sky",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_2647Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 74,
+      "norm_label": "small stone building in a grassy field under a dramatic sky",
+      "id": "images_sielsrus_img_2647sielsoord",
+      "community_name": "Stone Building Field"
+    },
+    {
+      "label": "Blue quad bike parked in the bush at sunset",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_3413Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 75,
+      "norm_label": "blue quad bike parked in the bush at sunset",
+      "id": "images_sielsrus_img_3413sielsoord",
+      "community_name": "Sunset Quad Bike"
+    },
+    {
+      "label": "Vibrant orange sunset over silhouetted trees",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_3414Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 76,
+      "norm_label": "vibrant orange sunset over silhouetted trees",
+      "id": "images_sielsrus_img_3414sielsoord",
+      "community_name": "Orange Tree Silhouettes"
+    },
+    {
+      "label": "Wide view of bushveld under a blue sky with wispy clouds",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_3449Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 77,
+      "norm_label": "wide view of bushveld under a blue sky with wispy clouds",
+      "id": "images_sielsrus_img_3449sielsoord",
+      "community_name": "Blue Sky Bushveld"
+    },
+    {
+      "label": "Stone cottage on a hillside under a cloudy sky",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_4464Sielsoord 2.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 25,
+      "norm_label": "stone cottage on a hillside under a cloudy sky",
+      "id": "images_sielsrus_img_4464sielsoord_2",
+      "community_name": "Stone Cottage Hillside"
+    },
+    {
+      "label": "Stone cottage on a hillside under a cloudy sky (duplicate)",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_4464Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 25,
+      "norm_label": "stone cottage on a hillside under a cloudy sky (duplicate)",
+      "id": "images_sielsrus_img_4464sielsoord",
+      "community_name": "Stone Cottage Hillside"
+    },
+    {
+      "label": "Sunlight breaking through clouds over a hilly landscape",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_4466Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 78,
+      "norm_label": "sunlight breaking through clouds over a hilly landscape",
+      "id": "images_sielsrus_img_4466sielsoord",
+      "community_name": "Hilly Landscape Sunlight"
+    },
+    {
+      "label": "Vast green landscape under a bright blue sky with cumulus clouds",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_6220Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 79,
+      "norm_label": "vast green landscape under a bright blue sky with cumulus clouds",
+      "id": "images_sielsrus_img_6220sielsoord",
+      "community_name": "Green Landscape Clouds"
+    },
+    {
+      "label": "Rainbow appearing in a purple and pink sunset sky",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_6321Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 80,
+      "norm_label": "rainbow appearing in a purple and pink sunset sky",
+      "id": "images_sielsrus_img_6321sielsoord",
+      "community_name": "Sunset Rainbow View"
+    },
+    {
+      "label": "Orange clouds at sunset over a green ridge",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_6340Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 81,
+      "norm_label": "orange clouds at sunset over a green ridge",
+      "id": "images_sielsrus_img_6340sielsoord",
+      "community_name": "Sunset Ridge Clouds"
+    },
+    {
+      "label": "Fence line along a dirt road in dry grass",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8020Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 26,
+      "norm_label": "fence line along a dirt road in dry grass",
+      "id": "images_sielsrus_img_8020sielsoord",
+      "community_name": "Road and Fence Perspectives"
+    },
+    {
+      "label": "Long perspective of a fence and dirt road",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8021Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 26,
+      "norm_label": "long perspective of a fence and dirt road",
+      "id": "images_sielsrus_img_8021sielsoord",
+      "community_name": "Road and Fence Perspectives"
+    },
+    {
+      "label": "Fence and road stretching into the distance",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8022Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 82,
+      "norm_label": "fence and road stretching into the distance",
+      "id": "images_sielsrus_img_8022sielsoord",
+      "community_name": "Distant Fence Road"
+    },
+    {
+      "label": "Fence line in the late afternoon sun",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8023Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 83,
+      "norm_label": "fence line in the late afternoon sun",
+      "id": "images_sielsrus_img_8023sielsoord",
+      "community_name": "Afternoon Fence Line"
+    },
+    {
+      "label": "Solar powered security or communication tower behind a fence",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8025Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 27,
+      "norm_label": "solar powered security or communication tower behind a fence",
+      "id": "images_sielsrus_img_8025sielsoord",
+      "community_name": "Solar Communication Towers"
+    },
+    {
+      "label": "Close up of solar powered tower with camera and antenna",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8026Sielsoord.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 27,
+      "norm_label": "close up of solar powered tower with camera and antenna",
+      "id": "images_sielsrus_img_8026sielsoord",
+      "community_name": "Solar Communication Towers"
+    },
+    {
+      "label": "Solar powered security camera tower in arid landscape",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8027Sielsoord.jpg",
+      "community": 8,
+      "norm_label": "solar powered security camera tower in arid landscape",
+      "id": "images_sielsrus_img_8027sielsoord",
+      "community_name": "Solar Security Infrastructure"
+    },
+    {
+      "label": "Close-up of solar powered security camera tower",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8028Sielsoord.jpg",
+      "community": 8,
+      "norm_label": "close-up of solar powered security camera tower",
+      "id": "images_sielsrus_img_8028sielsoord",
+      "community_name": "Solar Security Infrastructure"
+    },
+    {
+      "label": "Detailed view of security camera and solar panel assembly",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8029Sielsoord.jpg",
+      "community": 8,
+      "norm_label": "detailed view of security camera and solar panel assembly",
+      "id": "images_sielsrus_img_8029sielsoord",
+      "community_name": "Solar Security Infrastructure"
+    },
+    {
+      "label": "Electric fence infrastructure in dry terrain",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8030Sielsoord.jpg",
+      "community": 28,
+      "norm_label": "electric fence infrastructure in dry terrain",
+      "id": "images_sielsrus_img_8030sielsoord",
+      "community_name": "Electric Fence Details"
+    },
+    {
+      "label": "Close-up of electric fence insulators and wiring",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8031Sielsoord.jpg",
+      "community": 28,
+      "norm_label": "close-up of electric fence insulators and wiring",
+      "id": "images_sielsrus_img_8031sielsoord",
+      "community_name": "Electric Fence Details"
+    },
+    {
+      "label": "Long view of perimeter fencing along a dirt road at sunset",
+      "file_type": "image",
+      "source_file": "images/sielsrus/IMG_8032Sielsoord.jpg",
+      "community": 84,
+      "norm_label": "long view of perimeter fencing along a dirt road at sunset",
+      "id": "images_sielsrus_img_8032sielsoord",
+      "community_name": "Perimeter Fence Sunset"
+    },
+    {
+      "label": "Patio of a building at sunset with lounge chairs",
+      "file_type": "image",
+      "source_file": "images/sielsrus/Sielsoord.JPG",
+      "community": 85,
+      "norm_label": "patio of a building at sunset with lounge chairs",
+      "id": "images_sielsrus_sielsoord",
+      "community_name": "Sunset Lounge Patio"
+    },
+    {
+      "label": "Green bee-eater bird perched on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/fa5fb12d-ef2b-426f-9cb6-756d98bd6e70Sielsoord.JPG",
+      "community": 66,
+      "norm_label": "green bee-eater bird perched on a branch",
+      "id": "images_sielsrus_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord",
+      "community_name": "Green Bee-eater Perch"
+    },
+    {
+      "label": "Yellow-billed hornbill on the ground",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-1.jpg",
+      "community": 20,
+      "norm_label": "yellow-billed hornbill on the ground",
+      "id": "images_sielsrus_gallery_1",
+      "community_name": "Hornbill Ground Photos"
+    },
+    {
+      "label": "Small brown bird perched in a leafy bush",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-2.jpg",
+      "community": 21,
+      "norm_label": "small brown bird perched in a leafy bush",
+      "id": "images_sielsrus_gallery_2",
+      "community_name": "Bush-dwelling Bird Photos"
+    },
+    {
+      "label": "Cinnamon-breasted bunting on rocky ground",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-3.jpg",
+      "community": 22,
+      "norm_label": "cinnamon-breasted bunting on rocky ground",
+      "id": "images_sielsrus_gallery_3",
+      "community_name": "Cinnamon-breasted Bunting Photos"
+    },
+    {
+      "label": "Lilac-breasted roller perched on a tree trunk",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-4.jpg",
+      "community": 23,
+      "norm_label": "lilac-breasted roller perched on a tree trunk",
+      "id": "images_sielsrus_gallery_4",
+      "community_name": "Roller Trunk Perch"
+    },
+    {
+      "label": "Vast landscape view under a purple and pink sunset sky",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-5.jpg",
+      "community": 67,
+      "norm_label": "vast landscape view under a purple and pink sunset sky",
+      "id": "images_sielsrus_gallery_5",
+      "community_name": "Purple Sunset Landscape"
+    },
+    {
+      "label": "Sunlight breaking through clouds over a hilly landscape",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-6.jpg",
+      "community": 68,
+      "norm_label": "sunlight breaking through clouds over a hilly landscape",
+      "id": "images_sielsrus_gallery_6",
+      "community_name": "Cloud Sunlight Rays"
+    },
+    {
+      "label": "Electric fence line in a rural setting",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-7.jpg",
+      "community": 69,
+      "norm_label": "electric fence line in a rural setting",
+      "id": "images_sielsrus_gallery_7",
+      "community_name": "Rural Electric Fencing"
+    },
+    {
+      "label": "Orange sunset clouds over a green hillside",
+      "file_type": "image",
+      "source_file": "images/sielsrus/gallery-8.jpg",
+      "community": 70,
+      "norm_label": "orange sunset clouds over a green hillside",
+      "id": "images_sielsrus_gallery_8",
+      "community_name": "Orange Sunset Hillside"
+    },
+    {
+      "label": "Cinnamon-breasted bunting bird",
+      "file_type": "image",
+      "source_file": "images/sielsrus/hero-1.jpg",
+      "community": 22,
+      "norm_label": "cinnamon-breasted bunting bird",
+      "id": "images_sielsrus_hero_1",
+      "community_name": "Cinnamon-breasted Bunting Photos"
+    },
+    {
+      "label": "Lilac-breasted roller bird",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-1.jpg",
+      "community": 23,
+      "norm_label": "lilac-breasted roller bird",
+      "id": "images_sielsrus_sielsrus_1",
+      "community_name": "Roller Trunk Perch"
+    },
+    {
+      "label": "Yellow-billed hornbill",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-2.jpg",
+      "community": 20,
+      "norm_label": "yellow-billed hornbill",
+      "id": "images_sielsrus_sielsrus_2",
+      "community_name": "Hornbill Ground Photos"
+    },
+    {
+      "label": "Small bird in a bush",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-3.jpg",
+      "community": 21,
+      "norm_label": "small bird in a bush",
+      "id": "images_sielsrus_sielsrus_3",
+      "community_name": "Bush-dwelling Bird Photos"
+    },
+    {
+      "label": "Photo of a small brown bird on a rock",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-4.jpg",
+      "community": 9,
+      "norm_label": "photo of a small brown bird on a rock",
+      "id": "images_sielsrus_sielsrus_4",
+      "community_name": "Bird Photography Collection"
+    },
+    {
+      "label": "Photo of a wire fence in a dry landscape",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-5.jpg",
+      "community": 86,
+      "norm_label": "photo of a wire fence in a dry landscape",
+      "id": "images_sielsrus_sielsrus_5",
+      "community_name": "Dry Landscape Fence"
+    },
+    {
+      "label": "Photo of a sunset over a scrubland hill",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-6.jpg",
+      "community": 29,
+      "norm_label": "photo of a sunset over a scrubland hill",
+      "id": "images_sielsrus_sielsrus_6",
+      "community_name": "Scrubland Sunset Vistas"
+    },
+    {
+      "label": "Photo of sun rays breaking through clouds over a hill",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-7.jpg",
+      "community": 87,
+      "norm_label": "photo of sun rays breaking through clouds over a hill",
+      "id": "images_sielsrus_sielsrus_7",
+      "community_name": "Sun Rays Hillside"
+    },
+    {
+      "label": "Photo of a Yellow-billed Hornbill in a tree",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-8.jpg",
+      "community": 9,
+      "norm_label": "photo of a yellow-billed hornbill in a tree",
+      "id": "images_sielsrus_sielsrus_8",
+      "community_name": "Bird Photography Collection"
+    },
+    {
+      "label": "Photo of a purple and pink sunset over a vast landscape",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-9.jpg",
+      "community": 29,
+      "norm_label": "photo of a purple and pink sunset over a vast landscape",
+      "id": "images_sielsrus_sielsrus_9",
+      "community_name": "Scrubland Sunset Vistas"
+    },
+    {
+      "label": "Photo of a Lilac-breasted Roller perched on a branch",
+      "file_type": "image",
+      "source_file": "images/sielsrus/sielsrus-hero.jpg",
+      "community": 9,
+      "norm_label": "photo of a lilac-breasted roller perched on a branch",
+      "id": "images_sielsrus_sielsrus_hero",
+      "community_name": "Bird Photography Collection"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/form.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_form",
+      "target": "js_form_clearerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/form.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_form",
+      "target": "js_form_showerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/form.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_form",
+      "target": "js_form_validate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "kontak.html",
+      "source": "kontak_html",
+      "target": "js_form"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/form.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_form_validate",
+      "target": "js_form_showerror"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/form.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_form_validate",
+      "target": "js_form_clearerror"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "gallery.html",
+      "source": "gallery_html",
+      "target": "js_gallery"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L253",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_backtobubbles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L271",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_closelightbox"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L346",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_initgallery"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L279",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_navlightbox"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L209",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_opencategory"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L263",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_openlightbox"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_renderbubbles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery",
+      "target": "js_gallery_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L216",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery_opencategory",
+      "target": "js_gallery_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L167",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery_renderbubbles",
+      "target": "js_gallery_t"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L347",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery_initgallery",
+      "target": "js_gallery_renderbubbles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery_renderbubbles",
+      "target": "js_gallery_opencategory"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/gallery.js",
+      "source_location": "L239",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_gallery_opencategory",
+      "target": "js_gallery_openlightbox"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "js_i18n"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_applytranslations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_createswitcherhtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_getlang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_init"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_setlang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_translateelement"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_updateswitcherui"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "js/i18n.js",
+      "source": "js_i18n",
+      "target": "js_translations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_init",
+      "target": "js_i18n_getlang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_init",
+      "target": "js_i18n_setlang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_setlang",
+      "target": "js_i18n_applytranslations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_setlang",
+      "target": "js_i18n_updateswitcherui"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_applytranslations",
+      "target": "js_i18n_translateelement"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_init",
+      "target": "js_i18n_applytranslations"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/i18n.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_i18n_init",
+      "target": "js_i18n_createswitcherhtml"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "js_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_closelightbox"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main",
+      "target": "js_main_updatenav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_feature_styles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L572",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_getdisplayname"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L563",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_getfeaturestyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_gethillstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L584",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_getpopupcontent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_hill_names"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L608",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_initsielsoordmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L373",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_injectpopupstyles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_loadleafletcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_loadleafletjs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L157",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_sielsoord_geojson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L357",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map",
+      "target": "js_map_sielsoord_kml_features"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "js/map.js",
+      "source": "js_map",
+      "target": "kaart_html"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L565",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_getfeaturestyle",
+      "target": "js_map_gethillstyle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L775",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_initsielsoordmap",
+      "target": "js_map_gethillstyle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L612",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_initsielsoordmap",
+      "target": "js_map_injectpopupstyles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L587",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_getpopupcontent",
+      "target": "js_map_getfeaturestyle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L707",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_initsielsoordmap",
+      "target": "js_map_getfeaturestyle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L586",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_getpopupcontent",
+      "target": "js_map_getdisplayname"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "js/map.js",
+      "source_location": "L744",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_map_initsielsoordmap",
+      "target": "js_map_getpopupcontent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/premium.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_premium",
+      "target": "js_premium_animatestats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/premium.js",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_premium",
+      "target": "js_premium_updatenavpremium"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/premium.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_premium",
+      "target": "js_premium_updatescrollprogress"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "js_translations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/translations.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_translations",
+      "target": "js_translations_translations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "run_server.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "run_server",
+      "target": "run_server_find_free_port"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "run_server.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "run_server",
+      "target": "run_server_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "run_server.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "run_server_main",
+      "target": "run_server_find_free_port"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "run_server.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "run_server_rationale_38",
+      "target": "run_server_find_free_port"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/hero-dark.jpg",
+      "source": "images_hero_dark_jpg",
+      "target": "index_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "images_hero_light_jpg"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "kaart_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "kontak_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source": "index_html",
+      "target": "koppies_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "berg/sielsrus.html",
+      "source": "berg_sielsrus_html",
+      "target": "koppies_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "berg/sielskemering.html",
+      "source": "berg_sielskemering_html",
+      "target": "berg_sielsrus_html"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "berg/sielskemering.html",
+      "source": "berg_sielskemering_html",
+      "target": "berg_sielsaandster_html"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/gallery/birds/64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord.jpg",
+      "source": "images_gallery_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord",
+      "target": "images_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/gallery/birds/74366822-33c4-4821-ba41-972769cb48c1sielsoord.jpg",
+      "source": "images_gallery_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord",
+      "target": "images_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/gallery/birds/dsc_0010sielsoord.jpg",
+      "source": "images_gallery_birds_dsc_0010sielsoord",
+      "target": "images_birds_dsc_0010sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/gallery/birds/dsc_0158sielsoord.jpg",
+      "source": "images_gallery_birds_dsc_0158sielsoord",
+      "target": "images_birds_dsc_0158sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/gallery/birds/dsc_0190sielsoord.jpg",
+      "source": "images_gallery_birds_dsc_0190sielsoord",
+      "target": "images_birds_dsc_0190sielsoord"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/icons/sielsoord-logo.svg",
+      "source": "images_icons_sielsoord_logo",
+      "target": "mopane_tree_concept"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/icons/sielsoord-logo.svg",
+      "source": "images_icons_sielsoord_logo",
+      "target": "sielsoord_concept"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/icons/sielsoord-logo-preview.png",
+      "source": "images_icons_sielsoord_logo_preview",
+      "target": "images_icons_sielsoord_logo"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/gallery/birds/fa5fb12d-ef2b-426f-9cb6-756d98bd6e70sielsoord.jpg",
+      "source": "images_gallery_birds_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord",
+      "target": "mopane_tree_concept"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/gallery/homestead/123sielsoord.jpg",
+      "source": "images_gallery_homestead_123sielsoord",
+      "target": "sielsoord_concept"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/123Sielsoord.JPG",
+      "source": "images_sielsrus_123sielsoord",
+      "target": "images_gallery_homestead_123sielsoord"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/gallery/homestead/img_0157.jpg",
+      "source": "images_gallery_homestead_img_0157",
+      "target": "sielsoord_concept"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/sielsrus/B78A727C-A4BA-4AE7-80AE-A2ADC1198494Sielsoord.JPG",
+      "source": "images_sielsrus_b78a727c_a4ba_4ae7_80ae_a2adc1198494sielsoord",
+      "target": "images_sielsrus_bd790f07_8a57_42ed_9d6e_eaa4056e223esielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/DSC_0020Sielsoord.JPG",
+      "source": "images_sielsrus_dsc_0020sielsoord",
+      "target": "images_sielsrus_dsc_0025sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/DSC_0158Sielsoord.JPG",
+      "source": "images_sielsrus_dsc_0158sielsoord",
+      "target": "images_sielsrus_dsc_0189sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/DSC_0207Sielsoord.JPG",
+      "source": "images_sielsrus_dsc_0207sielsoord",
+      "target": "images_sielsrus_dsc_0208sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/DSC_0350Sielsoord.JPG",
+      "source": "images_sielsrus_dsc_0350sielsoord",
+      "target": "images_sielsrus_dsc_0351sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/sielsrus/IMG_1634Sielsoord.jpg",
+      "source": "images_sielsrus_img_1634sielsoord",
+      "target": "images_sielsrus_img_1635sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/IMG_4464Sielsoord.jpg",
+      "source": "images_sielsrus_img_4464sielsoord",
+      "target": "images_sielsrus_img_4464sielsoord_2"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "images/sielsrus/IMG_8020Sielsoord.jpg",
+      "source": "images_sielsrus_img_8020sielsoord",
+      "target": "images_sielsrus_img_8021sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/IMG_8025Sielsoord.jpg",
+      "source": "images_sielsrus_img_8025sielsoord",
+      "target": "images_sielsrus_img_8026sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/IMG_8027Sielsoord.jpg",
+      "source": "images_sielsrus_img_8027sielsoord",
+      "target": "images_sielsrus_img_8028sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/IMG_8028Sielsoord.jpg",
+      "source": "images_sielsrus_img_8028sielsoord",
+      "target": "images_sielsrus_img_8029sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/IMG_8030Sielsoord.jpg",
+      "source": "images_sielsrus_img_8030sielsoord",
+      "target": "images_sielsrus_img_8031sielsoord"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/gallery-1.jpg",
+      "source": "images_sielsrus_gallery_1",
+      "target": "images_sielsrus_sielsrus_2"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/gallery-2.jpg",
+      "source": "images_sielsrus_gallery_2",
+      "target": "images_sielsrus_sielsrus_3"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/gallery-3.jpg",
+      "source": "images_sielsrus_gallery_3",
+      "target": "images_sielsrus_hero_1"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/gallery-4.jpg",
+      "source": "images_sielsrus_gallery_4",
+      "target": "images_sielsrus_sielsrus_1"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/sielsrus/sielsrus-4.jpg",
+      "source": "images_sielsrus_sielsrus_4",
+      "target": "images_sielsrus_sielsrus_8"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/sielsrus/sielsrus-6.jpg",
+      "source": "images_sielsrus_sielsrus_6",
+      "target": "images_sielsrus_sielsrus_9"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/sielsrus/sielsrus-8.jpg",
+      "source": "images_sielsrus_sielsrus_8",
+      "target": "images_sielsrus_sielsrus_hero"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "mountain_detail_pages",
+      "label": "Mountain Detail Pages",
+      "nodes": [
+        "berg_sielsrus_html",
+        "berg_sielskemering_html",
+        "berg_sielsaandster_html",
+        "berg_sielswind_html",
+        "berg_sielshoogte_html",
+        "berg_sielsstilte_html",
+        "berg_sielsdageraad_html",
+        "berg_sielshorison_html"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "i18n_system",
+      "label": "Internationalization System",
+      "nodes": [
+        "js_i18n_js",
+        "js_translations_js",
+        "index_html",
+        "die_plaas_html",
+        "koppies_html",
+        "kaart_html",
+        "kontak_html",
+        "gallery_html"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0
+    },
+    {
+      "id": "bird_photography_collection",
+      "label": "Bird Photography Collection",
+      "nodes": [
+        "images_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord",
+        "images_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord",
+        "images_birds_dsc_0010sielsoord",
+        "images_birds_dsc_0158sielsoord",
+        "images_birds_dsc_0190sielsoord",
+        "images_birds_fa5fb12d-ef2b-426f-9cb6-756d98bd6e70sielsoord"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "sielsoord_visual_identity",
+      "label": "Sielsoord Visual Identity",
+      "nodes": [
+        "images_icons_sielsoord_logo",
+        "images_icons_sielsoord_logo_preview",
+        "sielsoord_concept",
+        "mopane_tree_concept"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/icons/sielsoord-logo.svg"
+    },
+    {
+      "id": "homestead_facilities",
+      "label": "Homestead Facilities and Amenities",
+      "nodes": [
+        "images_gallery_homestead_img_0157",
+        "images_gallery_homestead_img_0522",
+        "images_gallery_homestead_img_0534_2",
+        "images_gallery_homestead_img_0532"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "images/gallery/homestead/"
+    },
+    {
+      "id": "sielsrus_wildlife_photography",
+      "label": "Wildlife Photography at Sielsrus",
+      "nodes": [
+        "images_sielsrus_dsc_0010sielsoord",
+        "images_sielsrus_dsc_0020sielsoord",
+        "images_sielsrus_dsc_0056sielsoord",
+        "images_sielsrus_dsc_0158sielsoord",
+        "images_sielsrus_dsc_0190sielsoord",
+        "images_sielsrus_dsc_0207sielsoord"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "sielsrus_landscapes",
+      "label": "Sielsrus Property Landscapes",
+      "nodes": [
+        "images_sielsrus_img_1634sielsoord",
+        "images_sielsrus_img_1635sielsoord",
+        "images_sielsrus_img_1698sielsoord",
+        "images_sielsrus_img_3414sielsoord",
+        "images_sielsrus_img_3449sielsoord",
+        "images_sielsrus_img_6220sielsoord",
+        "images_sielsrus_img_6321sielsoord",
+        "images_sielsrus_img_6340sielsoord"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/sielsrus/"
+    },
+    {
+      "id": "sielsrus_infrastructure",
+      "label": "Sielsrus Infrastructure and Facilities",
+      "nodes": [
+        "images_sielsrus_img_1681sielsoord",
+        "images_sielsrus_img_2647sielsoord",
+        "images_sielsrus_img_4464sielsoord",
+        "images_sielsrus_img_8020sielsoord",
+        "images_sielsrus_img_8025sielsoord"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "images/sielsrus/"
+    },
+    {
+      "id": "sielsrus_security_infrastructure",
+      "label": "Sielsrus Security Infrastructure",
+      "nodes": [
+        "images_sielsrus_img_8027sielsoord",
+        "images_sielsrus_img_8028sielsoord",
+        "images_sielsrus_img_8029sielsoord",
+        "images_sielsrus_img_8030sielsoord",
+        "images_sielsrus_img_8031sielsoord",
+        "images_sielsrus_img_8032sielsoord",
+        "images_sielsrus_gallery_7"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "sielsrus_wildlife_gallery",
+      "label": "Sielsrus Wildlife and Nature",
+      "nodes": [
+        "images_sielsrus_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord",
+        "images_sielsrus_gallery_1",
+        "images_sielsrus_gallery_2",
+        "images_sielsrus_gallery_3",
+        "images_sielsrus_gallery_4",
+        "images_sielsrus_gallery_5",
+        "images_sielsrus_gallery_6",
+        "images_sielsrus_gallery_8",
+        "images_sielsrus_hero_1",
+        "images_sielsrus_sielsrus_1",
+        "images_sielsrus_sielsrus_2",
+        "images_sielsrus_sielsrus_3"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9
+    },
+    {
+      "id": "sielsrus_wildlife_photography",
+      "label": "Sielsrus Wildlife and Landscape Photography",
+      "nodes": [
+        "images_sielsrus_sielsrus_4",
+        "images_sielsrus_sielsrus_5",
+        "images_sielsrus_sielsrus_6",
+        "images_sielsrus_sielsrus_7",
+        "images_sielsrus_sielsrus_8",
+        "images_sielsrus_sielsrus_9",
+        "images_sielsrus_sielsrus_hero"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/sielsrus/"
+    }
+  ]
+}

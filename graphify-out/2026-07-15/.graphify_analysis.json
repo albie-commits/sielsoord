@@ -1,0 +1,569 @@
+{
+  "communities": {
+    "0": [
+      "images_hero_dark_jpg",
+      "images_hero_light_jpg",
+      "index_html",
+      "js_form",
+      "js_form_clearerror",
+      "js_form_showerror",
+      "js_form_validate",
+      "js_main",
+      "js_main_closelightbox",
+      "js_main_updatenav",
+      "js_translations",
+      "js_translations_translations",
+      "kaart_html",
+      "kontak_html"
+    ],
+    "1": [
+      "js_map",
+      "js_map_feature_styles",
+      "js_map_getdisplayname",
+      "js_map_getfeaturestyle",
+      "js_map_gethillstyle",
+      "js_map_getpopupcontent",
+      "js_map_hill_names",
+      "js_map_initsielsoordmap",
+      "js_map_injectpopupstyles",
+      "js_map_loadleafletcss",
+      "js_map_loadleafletjs",
+      "js_map_sielsoord_geojson",
+      "js_map_sielsoord_kml_features"
+    ],
+    "2": [
+      "gallery_html",
+      "js_gallery",
+      "js_gallery_backtobubbles",
+      "js_gallery_closelightbox",
+      "js_gallery_initgallery",
+      "js_gallery_navlightbox",
+      "js_gallery_opencategory",
+      "js_gallery_openlightbox",
+      "js_gallery_renderbubbles",
+      "js_gallery_t"
+    ],
+    "3": [
+      "images_gallery_birds_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord",
+      "images_gallery_homestead_123sielsoord",
+      "images_gallery_homestead_img_0157",
+      "images_icons_sielsoord_logo",
+      "images_icons_sielsoord_logo_preview",
+      "images_sielsrus_123sielsoord",
+      "mopane_tree_concept",
+      "sielsoord_concept"
+    ],
+    "4": [
+      "js_i18n",
+      "js_i18n_applytranslations",
+      "js_i18n_createswitcherhtml",
+      "js_i18n_getlang",
+      "js_i18n_init",
+      "js_i18n_setlang",
+      "js_i18n_translateelement",
+      "js_i18n_updateswitcherui"
+    ],
+    "5": [
+      "berg_sielsaandster_html",
+      "berg_sielskemering_html",
+      "berg_sielsrus_html",
+      "koppies_html"
+    ],
+    "6": [
+      "js_premium",
+      "js_premium_animatestats",
+      "js_premium_updatenavpremium",
+      "js_premium_updatescrollprogress"
+    ],
+    "7": [
+      "run_server",
+      "run_server_find_free_port",
+      "run_server_main",
+      "run_server_rationale_38"
+    ],
+    "8": [
+      "images_sielsrus_img_8027sielsoord",
+      "images_sielsrus_img_8028sielsoord",
+      "images_sielsrus_img_8029sielsoord"
+    ],
+    "9": [
+      "images_sielsrus_sielsrus_4",
+      "images_sielsrus_sielsrus_8",
+      "images_sielsrus_sielsrus_hero"
+    ],
+    "10": [
+      "images_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord",
+      "images_gallery_birds_64113ef4-a4d5-43ae-a8ce-e3a88b292246sielsoord"
+    ],
+    "11": [
+      "images_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord",
+      "images_gallery_birds_74366822-33c4-4821-ba41-972769cb48c1sielsoord"
+    ],
+    "12": [
+      "images_birds_dsc_0010sielsoord",
+      "images_gallery_birds_dsc_0010sielsoord"
+    ],
+    "13": [
+      "images_birds_dsc_0158sielsoord",
+      "images_gallery_birds_dsc_0158sielsoord"
+    ],
+    "14": [
+      "images_birds_dsc_0190sielsoord",
+      "images_gallery_birds_dsc_0190sielsoord"
+    ],
+    "15": [
+      "images_sielsrus_b78a727c_a4ba_4ae7_80ae_a2adc1198494sielsoord",
+      "images_sielsrus_bd790f07_8a57_42ed_9d6e_eaa4056e223esielsoord"
+    ],
+    "16": [
+      "images_sielsrus_dsc_0020sielsoord",
+      "images_sielsrus_dsc_0025sielsoord"
+    ],
+    "17": [
+      "images_sielsrus_dsc_0158sielsoord",
+      "images_sielsrus_dsc_0189sielsoord"
+    ],
+    "18": [
+      "images_sielsrus_dsc_0207sielsoord",
+      "images_sielsrus_dsc_0208sielsoord"
+    ],
+    "19": [
+      "images_sielsrus_dsc_0350sielsoord",
+      "images_sielsrus_dsc_0351sielsoord"
+    ],
+    "20": [
+      "images_sielsrus_gallery_1",
+      "images_sielsrus_sielsrus_2"
+    ],
+    "21": [
+      "images_sielsrus_gallery_2",
+      "images_sielsrus_sielsrus_3"
+    ],
+    "22": [
+      "images_sielsrus_gallery_3",
+      "images_sielsrus_hero_1"
+    ],
+    "23": [
+      "images_sielsrus_gallery_4",
+      "images_sielsrus_sielsrus_1"
+    ],
+    "24": [
+      "images_sielsrus_img_1634sielsoord",
+      "images_sielsrus_img_1635sielsoord"
+    ],
+    "25": [
+      "images_sielsrus_img_4464sielsoord",
+      "images_sielsrus_img_4464sielsoord_2"
+    ],
+    "26": [
+      "images_sielsrus_img_8020sielsoord",
+      "images_sielsrus_img_8021sielsoord"
+    ],
+    "27": [
+      "images_sielsrus_img_8025sielsoord",
+      "images_sielsrus_img_8026sielsoord"
+    ],
+    "28": [
+      "images_sielsrus_img_8030sielsoord",
+      "images_sielsrus_img_8031sielsoord"
+    ],
+    "29": [
+      "images_sielsrus_sielsrus_6",
+      "images_sielsrus_sielsrus_9"
+    ],
+    "30": [
+      "berg_sielsdageraad_html"
+    ],
+    "31": [
+      "berg_sielshoogte_html"
+    ],
+    "32": [
+      "berg_sielshorison_html"
+    ],
+    "33": [
+      "berg_sielsstilte_html"
+    ],
+    "34": [
+      "berg_sielswind_html"
+    ],
+    "35": [
+      "claude_md"
+    ],
+    "36": [
+      "die_plaas_html"
+    ],
+    "37": [
+      "images_gallery_birds_dsc_0020sielsoord"
+    ],
+    "38": [
+      "images_gallery_birds_dsc_0200sielsoord"
+    ],
+    "39": [
+      "images_gallery_birds_dsc_0209sielsoord"
+    ],
+    "40": [
+      "images_gallery_birds_dsc_0352sielsoord"
+    ],
+    "41": [
+      "images_gallery_gallery-hero"
+    ],
+    "42": [
+      "images_gallery_homestead_76503e53_f9ee_45a4_8f6b_acef3f8d2ae9sielsoord"
+    ],
+    "43": [
+      "images_gallery_homestead_bd790f07_8a57_42ed_9d6e_eaa4056e223esielsoord"
+    ],
+    "44": [
+      "images_gallery_homestead_img_0162"
+    ],
+    "45": [
+      "images_gallery_homestead_img_0518"
+    ],
+    "46": [
+      "images_gallery_homestead_img_0522"
+    ],
+    "47": [
+      "images_gallery_homestead_img_0532"
+    ],
+    "48": [
+      "images_gallery_homestead_img_0533"
+    ],
+    "49": [
+      "images_gallery_homestead_img_0534_2"
+    ],
+    "50": [
+      "images_gallery_homestead_img_0538"
+    ],
+    "51": [
+      "images_gallery_homestead_img_0552"
+    ],
+    "52": [
+      "images_sielsrus_64113ef4_a4d5_43ae_a8ce_e3a88b292246sielsoord"
+    ],
+    "53": [
+      "images_sielsrus_643bfc00_0ee9_4f72_9c51_ffd00a43f510sielsoord"
+    ],
+    "54": [
+      "images_sielsrus_74366822_33c4_4821_ba41_972769cb48c1sielsoord"
+    ],
+    "55": [
+      "images_sielsrus_76503e53_f9ee_45a4_8f6b_acef3f8d2ae9sielsoord"
+    ],
+    "56": [
+      "images_sielsrus_8e0cac25_3033_4763_8885_f81354d561cfsielsoord"
+    ],
+    "57": [
+      "images_sielsrus_dsc_0010sielsoord"
+    ],
+    "58": [
+      "images_sielsrus_dsc_0056sielsoord"
+    ],
+    "59": [
+      "images_sielsrus_dsc_0059sielsoord"
+    ],
+    "60": [
+      "images_sielsrus_dsc_0190sielsoord"
+    ],
+    "61": [
+      "images_sielsrus_dsc_0200sielsoord"
+    ],
+    "62": [
+      "images_sielsrus_dsc_0209sielsoord"
+    ],
+    "63": [
+      "images_sielsrus_dsc_0352sielsoord"
+    ],
+    "64": [
+      "images_sielsrus_dsc_0364_2sielsoord"
+    ],
+    "65": [
+      "images_sielsrus_dsc_0364sielsoord"
+    ],
+    "66": [
+      "images_sielsrus_fa5fb12d_ef2b_426f_9cb6_756d98bd6e70sielsoord"
+    ],
+    "67": [
+      "images_sielsrus_gallery_5"
+    ],
+    "68": [
+      "images_sielsrus_gallery_6"
+    ],
+    "69": [
+      "images_sielsrus_gallery_7"
+    ],
+    "70": [
+      "images_sielsrus_gallery_8"
+    ],
+    "71": [
+      "images_sielsrus_img_1633sielsoord"
+    ],
+    "72": [
+      "images_sielsrus_img_1681sielsoord"
+    ],
+    "73": [
+      "images_sielsrus_img_1698sielsoord"
+    ],
+    "74": [
+      "images_sielsrus_img_2647sielsoord"
+    ],
+    "75": [
+      "images_sielsrus_img_3413sielsoord"
+    ],
+    "76": [
+      "images_sielsrus_img_3414sielsoord"
+    ],
+    "77": [
+      "images_sielsrus_img_3449sielsoord"
+    ],
+    "78": [
+      "images_sielsrus_img_4466sielsoord"
+    ],
+    "79": [
+      "images_sielsrus_img_6220sielsoord"
+    ],
+    "80": [
+      "images_sielsrus_img_6321sielsoord"
+    ],
+    "81": [
+      "images_sielsrus_img_6340sielsoord"
+    ],
+    "82": [
+      "images_sielsrus_img_8022sielsoord"
+    ],
+    "83": [
+      "images_sielsrus_img_8023sielsoord"
+    ],
+    "84": [
+      "images_sielsrus_img_8032sielsoord"
+    ],
+    "85": [
+      "images_sielsrus_sielsoord"
+    ],
+    "86": [
+      "images_sielsrus_sielsrus_5"
+    ],
+    "87": [
+      "images_sielsrus_sielsrus_7"
+    ],
+    "88": [
+      "readme_md"
+    ]
+  },
+  "cohesion": {
+    "0": 0.16483516483516483,
+    "1": 0.24358974358974358,
+    "2": 0.3111111111111111,
+    "3": 0.25,
+    "4": 0.5,
+    "5": 0.5,
+    "6": 0.5,
+    "7": 0.6666666666666666,
+    "8": 0.6666666666666666,
+    "9": 0.6666666666666666,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0
+  },
+  "gods": [
+    {
+      "id": "index_html",
+      "label": "Home Page",
+      "degree": 8
+    },
+    {
+      "id": "js_i18n_init",
+      "label": "init()",
+      "degree": 5
+    },
+    {
+      "id": "js_map_initsielsoordmap",
+      "label": "initSielsoordMap()",
+      "degree": 5
+    },
+    {
+      "id": "js_gallery_renderbubbles",
+      "label": "renderBubbles()",
+      "degree": 4
+    },
+    {
+      "id": "js_gallery_opencategory",
+      "label": "openCategory()",
+      "degree": 4
+    },
+    {
+      "id": "js_i18n_setlang",
+      "label": "setLang()",
+      "degree": 4
+    },
+    {
+      "id": "js_i18n_applytranslations",
+      "label": "applyTranslations()",
+      "degree": 4
+    },
+    {
+      "id": "js_map_getfeaturestyle",
+      "label": "getFeatureStyle()",
+      "degree": 4
+    },
+    {
+      "id": "js_map_getpopupcontent",
+      "label": "getPopupContent()",
+      "degree": 4
+    },
+    {
+      "id": "js_form_validate",
+      "label": "validate()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Sunset over Sielsoord (Dark)",
+      "target": "Home Page",
+      "source_files": [
+        "images/hero-dark.jpg",
+        "index.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc ↔ image); connects across different repos/directories; peripheral node `Sunset over Sielsoord (Dark)` unexpectedly reaches hub `Home Page`"
+    },
+    {
+      "source": "Home Page",
+      "target": "Sunset over Sielsoord (Light)",
+      "source_files": [
+        "index.html",
+        "images/hero-light.jpg"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (doc ↔ image); connects across different repos/directories; peripheral node `Sunset over Sielsoord (Light)` unexpectedly reaches hub `Home Page`"
+    },
+    {
+      "source": "Home Page",
+      "target": "Koppies Page",
+      "source_files": [
+        "index.html",
+        "koppies.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities; peripheral node `Koppies Page` unexpectedly reaches hub `Home Page`"
+    },
+    {
+      "source": "Home Page",
+      "target": "Kaart Page",
+      "source_files": [
+        "index.html",
+        "kaart.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Kaart Page` unexpectedly reaches hub `Home Page`"
+    },
+    {
+      "source": "Home Page",
+      "target": "Kontak Page",
+      "source_files": [
+        "index.html",
+        "kontak.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Kontak Page` unexpectedly reaches hub `Home Page`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Home Page` connect `Home Page Logic` to `Internationalization and Language Switcher`, `Property Detail Pages`?",
+      "why": "High betweenness centrality (0.039) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Kaart Page` connect `Home Page Logic` to `Interactive Map Component`?",
+      "why": "High betweenness centrality (0.023) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `HILL_NAMES`, `FEATURE_STYLES`, `SIELSOORD_GEOJSON` to the rest of the system?",
+      "why": "114 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

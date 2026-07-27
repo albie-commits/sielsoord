@@ -1,0 +1,592 @@
+/* ═══════════════════════════════════════════════════════════════════
+   SIELSOORD — Premium Responsive Design
+   Mobile-first. Every breakpoint carefully crafted.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Extra Large Desktop (≥ 1440px) ────────────────────────────── */
+
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1400px;
+    --fs-hero: 5.5rem;
+  }
+  
+  .hero-content {
+    max-width: 900px;
+  }
+}
+
+/* ── Large Desktop (≤ 1280px) ──────────────────────────────────── */
+
+@media (max-width: 1280px) {
+  :root {
+    --fs-hero: 4.2rem;
+  }
+  
+  .nav-links {
+    gap: var(--space-lg);
+  }
+}
+
+/* ── Tablet Landscape (≤ 1024px) ───────────────────────────────── */
+
+@media (max-width: 1024px) {
+  :root {
+    --fs-hero: 3.5rem;
+    --fs-3xl: 2.5rem;
+    --fs-2xl: 2rem;
+    --space-3xl: 64px;
+    --space-4xl: 96px;
+    --space-2xl: 48px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+    gap: var(--space-lg);
+  }
+
+  .map-container {
+    height: 550px;
+  }
+
+  /* Feature list wraps on tablet */
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Pros-cons still side by side on tablet landscape */
+  .pros-cons-grid {
+    gap: var(--space-lg);
+  }
+}
+
+/* ── Tablet Portrait / Mobile Landscape (≤ 970px) ──────────────── */
+/* This is where navigation switches to hamburger */
+
+@media (max-width: 970px) {
+  /* Premium mobile navigation */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-xl);
+    transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: var(--z-nav);
+    box-shadow: -20px 0 60px rgba(44, 24, 16, 0.15);
+    padding: var(--space-3xl) var(--space-xl);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: var(--fs-lg);
+    color: var(--color-deep);
+    font-weight: 500;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  /* Nav CTA becomes full-width in mobile menu */
+  .nav-cta {
+    width: auto;
+    padding: var(--space-md) var(--space-2xl);
+    font-size: var(--fs-sm);
+  }
+
+  /* Overlay behind mobile menu */
+  .nav-links.open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(44, 24, 16, 0.4);
+    z-index: -1;
+    margin-left: -100vw;
+    backdrop-filter: blur(2px);
+  }
+
+  /* Theme toggle inside mobile slide-out menu */
+  .nav-theme-item {
+    margin-top: var(--space-sm, 0.5rem);
+  }
+
+  .nav-theme-item .hero-theme-toggle {
+    width: auto;
+    height: auto;
+    padding: 12px 28px;
+    border-radius: 28px;
+    gap: 10px;
+    font-family: var(--font-heading, 'Cormorant Garamond', serif);
+    font-size: var(--fs-lg, 1.25rem);
+    background: rgba(201, 132, 42, 0.1);
+    border-color: rgba(201, 132, 42, 0.3);
+    color: var(--color-espresso, #2C1810);
+  }
+
+  .nav-theme-item .hero-theme-toggle:hover {
+    background: rgba(201, 132, 42, 0.15);
+    color: var(--color-gold, #C9842A);
+  }
+
+  .nav-theme-item .theme-toggle-label {
+    display: inline;
+  }
+}
+
+/* ── Mobile Portrait (≤ 768px) ─────────────────────────────────── */
+
+@media (max-width: 768px) {
+  :root {
+    --fs-hero: 2.6rem;
+    --fs-3xl: 1.9rem;
+    --fs-2xl: 1.65rem;
+    --fs-xl: 1.4rem;
+    --fs-lg: 1.2rem;
+    --fs-md: 1.05rem;
+    --fs-base: 1rem;
+    --space-3xl: 48px;
+    --space-4xl: 56px;
+    --space-2xl: 36px;
+    --space-xl: 24px;
+    --nav-height: 64px;
+  }
+
+  /* Container padding tighter on mobile */
+  .container,
+  .container-narrow {
+    padding: 0 var(--space-md);
+  }
+
+  /* Navigation adjustments */
+  .nav {
+    height: var(--nav-height);
+  }
+
+  .nav-logo {
+    font-size: var(--fs-md);
+  }
+
+  .nav-logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: var(--fs-sm);
+  }
+
+  /* Hero — full height on mobile, optimized */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh; /* Small viewport height — handles mobile browser bars */
+  }
+
+  .page-hero {
+    min-height: 50vh;
+    min-height: 50svh;
+  }
+
+  .hero-content {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* Touch-friendly: larger tap targets */
+  .btn {
+    min-height: 48px;
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .btn-lg {
+    min-height: 54px;
+    padding: var(--space-md) var(--space-xl);
+  }
+
+  /* Grids — single column */
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats — stack vertically with tighter spacing */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .stat-number {
+    font-size: var(--fs-2xl);
+  }
+
+  /* Gallery — 2 columns on mobile */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+
+  /* Pros/cons stack */
+  .pros-cons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer — single column */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-col ul {
+    align-items: center;
+  }
+
+  /* Map — shorter on mobile */
+  .map-container {
+    height: 400px;
+  }
+
+  /* Mountain nav stacks */
+  .mountain-nav {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+
+  /* Comparison table — make it scrollable */
+  .comparison-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .comparison-table {
+    min-width: 600px;
+  }
+
+  /* Section padding — tighter on mobile */
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  /* Farm facts — single column on mobile */
+  .farm-facts {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .farm-fact {
+    padding: var(--space-md);
+  }
+
+  /* Values banner stacks */
+  .values-banner {
+    grid-template-columns: 1fr;
+  }
+
+  /* Invest box tighter padding */
+  .invest-box {
+    padding: var(--space-xl);
+  }
+
+  /* Lightbox close button easier to tap */
+  .lightbox-close {
+    width: 56px;
+    height: 56px;
+    top: var(--space-md);
+    right: var(--space-md);
+  }
+
+  /* Disable 3D card tilt on touch devices */
+  .card {
+    transform: none !important;
+  }
+
+  /* Spec rows — stack label/value if tight */
+  .spec-row {
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+
+  /* Form inputs — prevent iOS zoom by keeping 16px */
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px;
+  }
+
+  /* Language switcher in mobile menu */
+  .lang-switcher {
+    margin: var(--space-lg) auto;
+  }
+
+  .lang-switcher .lang-btn {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  /* Map info box tighter */
+  .map-info-box {
+    padding: var(--space-lg);
+  }
+
+  /* KML panel tighter */
+  .kml-panel {
+    padding: var(--space-lg);
+  }
+
+  /* CTA banner tighter */
+  .cta-banner {
+    padding: var(--space-2xl) 0;
+  }
+
+  .cta-banner h2 {
+    font-size: var(--fs-xl);
+  }
+}
+
+/* ── Small Phones (≤ 480px) ────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  :root {
+    --fs-hero: 2rem;
+    --fs-3xl: 1.6rem;
+    --fs-2xl: 1.4rem;
+    --space-xl: 20px;
+    --space-lg: 16px;
+  }
+
+  .container,
+  .container-narrow {
+    padding: 0 var(--space-sm);
+  }
+
+  .hero-title {
+    letter-spacing: 0;
+    line-height: 1.1;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .map-container {
+    height: 320px;
+  }
+
+  /* Full width buttons */
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    max-width: 100%;
+  }
+
+  /* Tighter card body on tiny screens */
+  .card-body {
+    padding: var(--space-lg);
+  }
+
+  /* Stats number smaller */
+  .stat-number {
+    font-size: var(--fs-xl);
+  }
+
+  /* Footer bottom copyright wraps */
+  .footer-bottom p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+
+  /* Gallery captions always visible on touch */
+  .gallery-caption {
+    opacity: 1;
+  }
+
+  /* Nav logo smaller */
+  .nav-logo {
+    font-size: var(--fs-sm);
+  }
+
+  .nav-logo-icon {
+    width: 28px;
+    height: 28px;
+    font-size: var(--fs-xs);
+  }
+
+  /* Mobile menu full width */
+  .nav-links {
+    max-width: 100%;
+  }
+
+  /* Eyebrow text smaller */
+  .eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+  }
+
+  /* Hero subtitle tighter */
+  .hero-subtitle {
+    font-size: var(--fs-sm);
+  }
+
+  /* Lead paragraph tighter */
+  .lead {
+    font-size: var(--fs-base);
+  }
+}
+
+/* ── Very Small Phones (≤ 360px) ───────────────────────────────── */
+
+@media (max-width: 360px) {
+  :root {
+    --fs-hero: 1.7rem;
+  }
+
+  .hero-content {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .container,
+  .container-narrow {
+    padding: 0 12px;
+  }
+}
+
+/* ── Landscape Phone — fix height issues ───────────────────────── */
+
+@media (max-width: 970px) and (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding-top: var(--nav-height);
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    padding-top: var(--space-xl);
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    padding-top: var(--space-2xl);
+    gap: var(--space-lg);
+  }
+
+  .nav-link {
+    font-size: var(--fs-md);
+  }
+}
+
+/* ── Touch Device Optimizations ────────────────────────────────── */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Disable hover-only effects on touch devices */
+  .card:hover {
+    transform: none;
+    box-shadow: var(--shadow-md);
+  }
+
+  .gallery-item:hover img {
+    transform: none;
+  }
+
+  .gallery-caption {
+    opacity: 1;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  /* Larger touch targets */
+  .nav-link {
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .footer-col a {
+    padding: var(--space-xs) 0;
+    display: block;
+  }
+}
+
+/* ── Dark Mode Support ─────────────────────────────────────────── */
+
+@media (prefers-color-scheme: dark) {
+  /* Keep the warm earthy palette but adjust for dark mode comfort */
+  /* Currently the site is warm/earthy — not enabling full dark mode
+     but keeping this hook for future use */
+}
+
+/* ── Print ─────────────────────────────────────────────────────── */
+
+@media print {
+  .nav,
+  .nav-toggle,
+  .hero-scroll,
+  .hero-theme-toggle,
+  .footer,
+  .scroll-progress,
+  .lang-switcher,
+  .cta-banner {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .section {
+    padding: 20px 0;
+    page-break-inside: avoid;
+  }
+}

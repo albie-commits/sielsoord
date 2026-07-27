@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.home_title">Sielsoord — Waar jou siel tot rus kom</title>
+  <meta name="description" content="Sielsoord — 2,500 hektaar Namibiese wildernis met privaat koppies naby Etosha. Waar jou siel tot rus kom." data-i18n-attr="content:meta.home_desc">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sielsoord — Waar jou siel tot rus kom" data-i18n-attr="content:meta.home_title">
+  <meta property="og:description" content="Sielsoord — 2,500 hektaar Namibiese wildernis met privaat koppies naby Etosha." data-i18n-attr="content:meta.home_desc">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
+
+  <!-- Sielsoord "Golden Hour" 3D hero — procedural bushveld vignette -->
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    }}
+  </script>
+  <script type="module" src="js/hero-scene.js?v=3"></script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Slaan na inhoud oor</a>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav nav-transparent" role="navigation" data-i18n-attr="aria-label:nav.aria_label" aria-label="Hoof navigasie">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon" data-sigil3d="nav">S</span>
+        Sielsoord
+      </a>
+      <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu_toggle" aria-label="Kieslys oop/maak" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home" class="nav-link active">Tuis</a></li>
+        <li><a href="storie.html" data-i18n="nav.story" class="nav-link">Storie</a></li>
+        <li><a href="koppies.html" data-i18n="nav.peaks" class="nav-link">Koppies</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery" class="nav-link">Galery</a></li>
+        <li><a href="kaart.html" data-i18n="nav.map" class="nav-link">Kaart</a></li>
+        <li><a href="kontak.html" data-i18n="nav.contact" class="nav-link nav-cta btn btn-primary">Kontak Ons</a></li>
+        <li class="nav-theme-item">
+          <button id="hero-theme-toggle" class="hero-theme-toggle" data-i18n-attr="aria-label:theme.toggle_label;title:theme.toggle_title" aria-label="Wissel helden-agtergrond" title="Wissel dag/nag">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-i18n="theme.toggle_label">Dag / Nag</span>
+          </button>
+        </li>
+        <li class="nav-lang-item"><div class="lang-switcher"></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ═══ Hero ═══ -->
+    <section class="hero">
+      <!-- "Golden Hour" 3D bushveld — photo shows while loading -->
+      <div class="hero-terrain" id="hero-3d" aria-hidden="true"></div>
+      <div class="hero-bg hero-bg-fallback" style="background-image: url('images/hero-light.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="index.hero_eyebrow">Namibië</p>
+        <h1 class="hero-title">Sielsoord</h1>
+        <p class="hero-subtitle" data-i18n="index.hero_subtitle">Waar jou siel tot rus kom.</p>
+        <div class="hero-actions">
+          <a href="koppies.html" class="btn btn-primary btn-lg" data-i18n="index.hero_btn1">Ontdek die Koppies</a>
+          <a href="kaart.html" class="btn btn-ghost btn-lg" data-i18n="index.hero_btn2">Bekyk die Kaart</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span data-i18n="index.hero_scroll">Ontdek</span>
+      </div>
+    </section>
+
+    <!-- ═══ The Feeling ═══ -->
+    <section class="section">
+      <div class="container-narrow text-center">
+        <div class="fade-in">
+          <p class="eyebrow" data-i18n="index.feeling_eyebrow">Die Gevoel</p>
+          <h2 data-i18n="index.feeling_title">'n Plek waar die wêreld stil word</h2>
+          <div class="divider"><span>❦</span></div>
+          <p class="lead" data-i18n="index.feeling_p1">
+            Hier, bo op die koppie, is dit net jy en die stilte. Geen verkeer, geen geraas,
+            geen haas. Net die wind deur die gras, die son wat oor die vlakte sak,
+            en die onuitgesproke belofte van vryheid wat net Afrika se wildernis kan bied.
+          </p>
+          <p class="lead" data-i18n="index.feeling_p2">
+            Sielsoord is meer as 'n stuk aarde. Dit is 'n erfenis — 'n plek wat deur generasies
+            van 'n familie lief gehou is, en nou wag om nuwe stories te dra.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Stats ═══ -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat fade-in">
+            <div class="stat-number">2,500</div>
+            <div class="stat-label" data-i18n="index.stats_ha">Hektaar</div>
+          </div>
+          <div class="stat fade-in fade-in-delay-1">
+            <div class="stat-number">8</div>
+            <div class="stat-label" data-i18n="index.stats_peaks">Koppies</div>
+          </div>
+          <div class="stat fade-in fade-in-delay-2">
+            <div class="stat-number">∞</div>
+            <div class="stat-label" data-i18n="index.stats_soul">Plek vir jou Siel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Sielsrus Featured ═══ -->
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="index.sielsrus_eyebrow">Koppie 1 — Ons Koppie</p>
+          <h2>Sielsrus</h2>
+          <p class="lead" data-i18n="index.sielsrus_desc">Ons familie se tuis. Die jaghuis bo-op die hoogste punt.</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <a href="berg/sielsrus.html" class="card fade-in" style="display: block;">
+            <img src="images/sielsrus/sielsrus-hero.jpg" alt="Sielsrus — ons koppie" data-i18n-attr="alt:mtn.sielsrus_img_alt" class="card-image" style="height: 400px; object-fit: cover;" loading="lazy">
+            <div class="card-body" style="text-align: center;">
+              <h3 class="card-title" style="font-size: var(--fs-xl);" data-i18n="mtn.sielsrus_sub">Sielsrus — Ons Koppie</h3>
+              <p class="card-text"><span data-i18n="index.sielsrus_card">Nie te koop nie. Hier is ons jaghuis. Dit bly ons s'n.</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Hills For Sale ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="index.sale_eyebrow">Koppies 2–7 — Beskikbaar</p>
+          <h2 data-i18n="index.sale_title">Ses koppies. Elkeen R3.5 miljoen.</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <a href="berg/sielskemering.html" class="card fade-in">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_2">Koppie 2</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielskemering</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <a href="berg/sielsaandster.html" class="card fade-in fade-in-delay-1">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_3">Koppie 3</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsaandster</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <a href="berg/sielswind.html" class="card fade-in fade-in-delay-2">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_4">Koppie 4</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielswind</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <a href="berg/sielshoogte.html" class="card fade-in">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_5">Koppie 5</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielshoogte</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <a href="berg/sielsstilte.html" class="card fade-in fade-in-delay-1">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_6">Koppie 6</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsstilte</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <a href="berg/sielsdageraad.html" class="card fade-in fade-in-delay-2">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_7">Koppie 7</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsdageraad</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <a href="berg/sielshorison.html" class="card fade-in" style="grid-column: 1 / -1; max-width: 400px; margin: 0 auto;">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" style="margin-bottom: 4px;" data-i18n="peaks.hill_8">Koppie 8</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielshorison</h3>
+              <p class="card-price" style="color: #F5A623;" data-i18n="peaks.reserved">Gereserveer</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center fade-in" style="margin-top: var(--space-2xl);">
+          <a href="koppies.html" class="btn btn-secondary btn-lg" data-i18n="index.sale_all">Sien alle koppies</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Location Highlight ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center;">
+          <div class="fade-in">
+            <p class="eyebrow" data-i18n="index.loc_eyebrow">Ligging</p>
+            <h2 data-i18n="index.loc_title">Naby Etosha. Ver van alles.</h2>
+            <p data-i18n="index.loc_p1">
+              Sielsoord lê in noordelike Namibië, op die drumpel van een van Afrika se
+              grootste wildreservate. Etosha Nasionale Park is jou buurman — die groot
+              wildtog beweeg vrylik in die omgewing.
+            </p>
+            <p data-i18n="index.loc_p2">
+              Die D2695 gruispad gee jou maklike toegang reg tot by die plaas. Jy is naby
+              genoeg aan beskawing, maar ver genoeg dat die sterre nog onbesoedeld skitter.
+            </p>
+            <ul style="margin-top: var(--space-lg); display: grid; gap: var(--space-sm);">
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">◉</span>
+                <span data-i18n="index.loc_li1">Reg langs Etosha Nasionale Wildreservaat</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">◉</span>
+                <span data-i18n="index.loc_li2">2 boreholes met volop water op die plaas</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">◉</span>
+                <span data-i18n="index.loc_li3">D2695 gruisweg — goeie toegang</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">◉</span>
+                <span data-i18n="index.loc_li4">Volop wild — kudu, gemsbok, springbok</span>
+              </li>
+            </ul>
+            <div style="margin-top: var(--space-xl);">
+              <a href="kaart.html" class="btn btn-primary" data-i18n="index.loc_btn">Bekyk die Interaktiewe Kaart</a>
+            </div>
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800&q=80"
+                 alt="Namibiese wildernis uitsig"
+                 data-i18n-attr="alt:index.wilderness_img_alt"
+                 style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; object-fit: cover; aspect-ratio: 4/3;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Bird Watching Highlight ═══ -->
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="index.bird_eyebrow">Voëlkyk</p>
+          <h2 data-i18n="index.bird_title">'n Voëlkyker se parays</h2>
+          <div class="divider"><span>🦅</span></div>
+        </div>
+
+        <div class="grid grid-2" style="align-items: center;">
+          <div class="fade-in">
+            <p data-i18n="index.bird_p1">
+              Met twee boreholes en 'n mengsel van savanne, doringveld en rotsagtige koppies, is Sielsoord 'n Magnete vir meer as 300 voëlspesies.
+            </p>
+            <p data-i18n="index.bird_p2">
+              Die beste voëlkyk-ure is vroegoggend en laatmiddag by die boreholes.
+            </p>
+            <ul style="margin-top: var(--space-lg); display: grid; gap: var(--space-sm);">
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">🐦</span>
+                <span data-i18n="index.bird_li1">Lila-bors hadida — Namibië se nasionale voël</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">🐦</span>
+                <span data-i18n="index.bird_li2">Geelbek-neushoringvoëls oral in die bome</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">🐦</span>
+                <span data-i18n="index.bird_li3">Roofvoëls soos arende en valke bo die koppies</span>
+              </li>
+              <li style="display: flex; gap: 12px; align-items: center;">
+                <span style="color: var(--color-sunset); font-size: 1.2rem;">🐦</span>
+                <span data-i18n="index.bird_li4">Trekvoëls van Europa en Asië in die somer</span>
+              </li>
+            </ul>
+            <div style="margin-top: var(--space-xl);">
+              <a href="gallery.html#bird-checklist" class="btn btn-primary" data-i18n="index.bird_btn">Sien die Voël Galery</a>
+            </div>
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <img src="images/gallery/birds/dsc_0352sielsoord.jpg"
+                 alt="Lilac-breasted Roller at Sielsoord"
+                 style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; object-fit: cover; aspect-ratio: 4/3;"
+                 loading="lazy">
+          </div>
+        </div>
+
+        <!-- Bird stats -->
+        <div class="stats-grid" style="margin-top: var(--space-2xl);">
+          <div class="stat fade-in">
+            <div class="stat-number" data-i18n="index.bird_stat1">300+</div>
+            <div class="stat-label" data-i18n="index.bird_stat1_label">Voëlspesies</div>
+          </div>
+          <div class="stat fade-in fade-in-delay-1">
+            <div class="stat-number" data-i18n="index.bird_stat2">3</div>
+            <div class="stat-label" data-i18n="index.bird_stat2_label">Waterpunte</div>
+          </div>
+          <div class="stat fade-in fade-in-delay-2">
+            <div class="stat-number" data-i18n="index.bird_stat3">Jaarrond</div>
+            <div class="stat-label" data-i18n="index.bird_stat3_label">Voëlkyk Seisoen</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-banner">
+      <div class="container-narrow">
+        <div class="fade-in">
+          <h2 data-i18n="index.cta_title">Kom vind jou rus.</h2>
+          <p><span data-i18n="index.cta_text">Skakel ons vandag nog. Kom besoek Sielsoord.</span> <span data-i18n="index.cta_text2">Voel die aarde onder jou voete en die stilte in jou siel.</span></p>
+          <a href="kontak.html" class="btn btn-ghost btn-lg" data-i18n="index.cta_btn">Registreer jou belangstelling</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-sigil" data-sigil3d="footer" aria-hidden="true"></div>
+          <h3>Sielsoord</h3>
+          <p data-i18n="footer.brand">Waar jou siel tot rus kom. 2,500 hektaar Namibiese wildernis met 7 privaat koppies. Naby Etosha Nasionale Park.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigasie</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Tuis</a></li>
+            <li><a href="storie.html" data-i18n="nav.story">Storie</a></li>
+            <li><a href="koppies.html" data-i18n="nav.peaks">Koppies</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galery</a></li>
+            <li><a href="kaart.html" data-i18n="nav.map">Kaart</a></li>
+            <li><a href="kontak.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.peaks_title">Koppies</h4>
+          <ul>
+            <li><a href="berg/sielsrus.html">Sielsrus</a></li>
+            <li><a href="berg/sielskemering.html">Sielskemering</a></li>
+            <li><a href="berg/sielsaandster.html">Sielsaandster</a></li>
+            <li><a href="berg/sielswind.html">Sielswind</a></li>
+            <li><a href="berg/sielshoogte.html">Sielshoogte</a></li>
+            <li><a href="berg/sielsstilte.html">Sielsstilte</a></li>
+            <li><a href="berg/sielsdageraad.html">Sielsdageraad</a></li>
+            <li><a href="berg/sielshorison.html">Sielshorison</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Kontak</h4>
+          <ul>
+            <li><a href="kontak.html" data-i18n="footer.send">Stuur 'n boodskap</a></li>
+            <li><a href="kontak.html" data-i18n="footer.visit">Besoek Sielsoord</a></li>
+            <li><a href="tel:+264811289994">+264 81 128 9994</a></li>
+            <li><a href="mailto:sielsoord@gmail.com">sielsoord@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Sielsoord. Namibië. Alle regte voorbehou.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/translations.js?v=13"></script>
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/premium.js"></script>
+  <script type="module" src="js/sigil-3d.js?v=4"></script>
+</body>
+</html>

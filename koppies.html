@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.peaks_title">Koppies — Sielsoord</title>
+  <meta name="description" data-i18n-attr="content:meta.peaks_desc" content="8 koppies op Sielsoord, Namibië. Een familie koppie (Sielsrus), een gereserveer (Sielshorison), ses beskikbaar teen R3.5 miljoen elk.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
+  <!-- 3D sigil (gold mopane medallion) -->
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Slaan na inhoud oor</a>
+
+  <nav class="nav nav-transparent" role="navigation" data-i18n-attr="aria-label:nav.aria_label" aria-label="Hoof navigasie">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon" data-sigil3d="nav">S</span>
+        Sielsoord
+      </a>
+      <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu_toggle" aria-label="Kieslys oop/maak" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home" class="nav-link">Tuis</a></li>
+        <li><a href="storie.html" data-i18n="nav.story" class="nav-link">Storie</a></li>
+        <li><a href="koppies.html" data-i18n="nav.peaks" class="nav-link active">Koppies</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery" class="nav-link">Galery</a></li>
+        <li><a href="kaart.html" data-i18n="nav.map" class="nav-link">Kaart</a></li>
+        <li><a href="kontak.html" data-i18n="nav.contact" class="nav-link nav-cta btn btn-primary">Kontak Ons</a></li>
+                <li class="nav-theme-item">
+          <button id="hero-theme-toggle" class="hero-theme-toggle" data-i18n-attr="aria-label:theme.toggle_aria;title:theme.toggle_title" aria-label="Toggle hero background" title="Toggle day/night">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-i18n="theme.toggle_label">Day / Night</span>
+          </button>
+        </li>
+        <li class="nav-lang-item"><div class="lang-switcher"></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="hero-bg" style="background-image: url('images/sielsrus/sielsrus-hero.jpg');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="peaks.hero_eyebrow">Die Koppies</p>
+        <h1 class="hero-title" style="font-size: var(--fs-3xl);" data-i18n="peaks.hero_title">Kies jou koppie</h1>
+        <p class="hero-subtitle" data-i18n="peaks.hero_sub">Agt koppies. Een familie. Sewe vir jou.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Intro ═══ -->
+    <section class="section">
+      <div class="container-narrow text-center fade-in">
+        <p class="eyebrow" data-i18n="peaks.intro_eyebrow">Die Geleentheid</p>
+        <h2 data-i18n="peaks.intro_title">Agt koppies op een plaas</h2>
+        <div class="divider"><span>&#10086;</span></div>
+        <p class="lead" data-i18n="peaks.intro_p1">
+          Ons het 2,500 hektaar opgemeet en 8 koppies afgebaken — elkeen 'n selfstandige
+          stuk aarde met sy eie karakter, sy eie uitsig, sy eie gees.
+        </p>
+        <p class="lead" data-i18n="peaks.intro_p2">
+          <strong>Koppie 1 — Sielsrus</strong> is ons familie se koppie. Daar's ons jaghuis.
+          Koppie 8 — Sielshorison is gereserveer. Die ander <strong>6 koppies is beskikbaar</strong> teen R3.5 miljoen (NAD) elk.
+          Regte titel akte. Namibiese eiendomsreg. Jy besit dit vir ewig.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ Availability Table ═══ -->
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="peaks.availability_eyebrow">Beskikbaarheid</p>
+          <h2 data-i18n="peaks.availability_title">Watter koppies is nog beskikbaar?</h2>
+          <p class="lead" data-i18n="peaks.availability_desc" style="max-width: 700px; margin: 0 auto;">
+            Hier is die huidige status van al 8 koppies. Opdateer in reële tyd.
+          </p>
+        </div>
+
+        <div class="fade-in" style="max-width: 800px; margin: 0 auto;">
+          <table class="availability-table" style="width: 100%; border-collapse: collapse; background: var(--color-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+            <thead>
+              <tr style="background: var(--color-deep); color: var(--color-cream);">
+                <th style="padding: 14px 16px; text-align: left; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;" data-i18n="peaks.th_hill">Koppie</th>
+                <th style="padding: 14px 16px; text-align: left; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;" data-i18n="peaks.th_name">Naam</th>
+                <th style="padding: 14px 16px; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;" data-i18n="peaks.th_price">Prys</th>
+                <th style="padding: 14px 16px; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase;" data-i18n="peaks.th_status">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">1</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielsrus.html" style="color: var(--color-text); text-decoration: none;">Sielsrus</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text-muted);">&mdash;</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #78909C; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_private">Privaat</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">2</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielskemering.html" style="color: var(--color-text); text-decoration: none;">Sielskemering</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #E07B39; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_available">Beskikbaar</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">3</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielsaandster.html" style="color: var(--color-text); text-decoration: none;">Sielsaandster</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #E07B39; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_available">Beskikbaar</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">4</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielswind.html" style="color: var(--color-text); text-decoration: none;">Sielswind</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #E07B39; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_available">Beskikbaar</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">5</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielshoogte.html" style="color: var(--color-text); text-decoration: none;">Sielshoogte</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #E07B39; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_available">Beskikbaar</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">6</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielsstilte.html" style="color: var(--color-text); text-decoration: none;">Sielsstilte</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #E07B39; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_available">Beskikbaar</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">7</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielsdageraad.html" style="color: var(--color-text); text-decoration: none;">Sielsdageraad</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #E07B39; color: #fff; text-transform: uppercase;" data-i18n="peaks.status_available">Beskikbaar</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+                <td style="padding: 12px 16px; font-weight: 600; color: var(--color-text);">8</td>
+                <td style="padding: 12px 16px;"><a href="berg/sielshorison.html" style="color: var(--color-text); text-decoration: none;">Sielshorison</a></td>
+                <td style="padding: 12px 16px; text-align: center; color: var(--color-text);">R3,500,000</td>
+                <td style="padding: 12px 16px; text-align: center;"><span data-i18n="peaks.reserved" style="display: inline-block; padding: 4px 14px; border-radius: 20px; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; background: #F5A623; color: #fff; text-transform: uppercase;">Gereserveer</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Summary bar -->
+          <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap; margin-top: var(--space-xl);">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="width: 14px; height: 14px; border-radius: 50%; background: #E07B39; display: inline-block;"></span>
+              <span data-i18n="peaks.legend_available" style="font-size: var(--fs-sm); color: var(--color-text-muted);">6 Beskikbaar</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="width: 14px; height: 14px; border-radius: 50%; background: #F5A623; display: inline-block;"></span>
+              <span data-i18n="peaks.legend_reserved" style="font-size: var(--fs-sm); color: var(--color-text-muted);">1 Gereserveer</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="width: 14px; height: 14px; border-radius: 50%; background: #78909C; display: inline-block;"></span>
+              <span data-i18n="peaks.legend_private" style="font-size: var(--fs-sm); color: var(--color-text-muted);">1 Privaat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Sielsrus (Our Hill — featured) ═══ -->
+    <section class="section bg-cream-dark">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="peaks.sielsrus_eyebrow">Koppie 1 — Ons Koppie</p>
+          <h2>Sielsrus</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <a href="berg/sielsrus.html" class="card fade-in" style="display: block;">
+            <img src="images/sielsrus/sielsrus-hero.jpg" data-i18n-attr="alt:mtn.sielsrus_img_alt" alt="Sielsrus — ons koppie" class="card-image" style="height: 400px; object-fit: cover;" loading="lazy">
+            <div class="card-body" style="text-align: center;">
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsrus</h3>
+              <p class="card-text" data-i18n="peaks.sielsrus_card">Ons familie se tuis. Die jaghuis bo-op die hoogste punt. Nie te koop nie — dit bly ons s'n.</p>
+              <p style="margin-top: var(--space-md); color: var(--color-text-muted); font-size: var(--fs-sm);" data-i18n="peaks.sielsrus_view">Bekyk die galery &rsaquo;</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Hills For Sale ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="peaks.sale_eyebrow">Koppies 2–7 — Beskikbaar</p>
+          <h2 data-i18n="peaks.sale_title">Ses koppies beskikbaar</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Hill 2 -->
+          <a href="berg/sielskemering.html" class="card fade-in">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_2" style="margin-bottom: 4px;">Koppie 2</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielskemering</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <!-- Hill 3 -->
+          <a href="berg/sielsaandster.html" class="card fade-in fade-in-delay-1">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_3" style="margin-bottom: 4px;">Koppie 3</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsaandster</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <!-- Hill 4 -->
+          <a href="berg/sielswind.html" class="card fade-in fade-in-delay-2">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_4" style="margin-bottom: 4px;">Koppie 4</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielswind</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <!-- Hill 5 -->
+          <a href="berg/sielshoogte.html" class="card fade-in">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_5" style="margin-bottom: 4px;">Koppie 5</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielshoogte</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <!-- Hill 6 -->
+          <a href="berg/sielsstilte.html" class="card fade-in fade-in-delay-1">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_6" style="margin-bottom: 4px;">Koppie 6</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsstilte</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <!-- Hill 7 -->
+          <a href="berg/sielsdageraad.html" class="card fade-in fade-in-delay-2">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_7" style="margin-bottom: 4px;">Koppie 7</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielsdageraad</h3>
+              <p class="card-price">R3,500,000</p>
+            </div>
+          </a>
+          <!-- Hill 8 -->
+          <a href="berg/sielshorison.html" class="card fade-in" style="grid-column: 1 / -1; max-width: 400px; margin: 0 auto;">
+            <div class="card-body" style="text-align: center; padding: var(--space-2xl) var(--space-xl);">
+              <p class="eyebrow" data-i18n="peaks.hill_8" style="margin-bottom: 4px;">Koppie 8</p>
+              <h3 class="card-title" style="font-size: var(--fs-xl);">Sielshorison</h3>
+              <p class="card-price" data-i18n="peaks.reserved" style="color: #F5A623;">Gereserveer</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-banner">
+      <div class="container-narrow">
+        <div class="fade-in">
+          <h2 data-i18n="peaks.cta_title">Watter koppie roep jou?</h2>
+          <p data-i18n="peaks.cta_text">Kom besoek Sielsoord. Loop die koppies. Voel die aarde. Laat die koppie kies vir jou.</p>
+          <a href="kontak.html" class="btn btn-ghost btn-lg" data-i18n="peaks.cta_btn">Registreer jou belangstelling</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-sigil" data-sigil3d="footer" aria-hidden="true"></div>
+          <h3>Sielsoord</h3>
+          <p data-i18n="footer.brand">Waar jou siel tot rus kom. 2,500 hektaar Namibiese wildernis met 7 privaat koppies. Naby Etosha Nasionale Park.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigasie</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Tuis</a></li>
+            <li><a href="storie.html" data-i18n="nav.story">Storie</a></li>
+            <li><a href="koppies.html" data-i18n="nav.peaks">Koppies</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galery</a></li>
+            <li><a href="kaart.html" data-i18n="nav.map">Kaart</a></li>
+            <li><a href="kontak.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.peaks_title">Koppies</h4>
+          <ul>
+            <li><a href="berg/sielsrus.html">Sielsrus</a></li>
+            <li><a href="berg/sielskemering.html">Sielskemering</a></li>
+            <li><a href="berg/sielsaandster.html">Sielsaandster</a></li>
+            <li><a href="berg/sielswind.html">Sielswind</a></li>
+            <li><a href="berg/sielshoogte.html">Sielshoogte</a></li>
+            <li><a href="berg/sielsstilte.html">Sielsstilte</a></li>
+            <li><a href="berg/sielsdageraad.html">Sielsdageraad</a></li>
+            <li><a href="berg/sielshorison.html">Sielshorison</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Kontak</h4>
+          <ul>
+            <li><a href="kontak.html" data-i18n="footer.send">Stuur 'n boodskap</a></li>
+            <li><a href="kontak.html" data-i18n="footer.visit">Besoek Sielsoord</a></li>
+            <li><a href="tel:+264811289994">+264 81 128 9994</a></li>
+            <li><a href="mailto:sielsoord@gmail.com">sielsoord@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Sielsoord. Namibië. Alle regte voorbehou.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+  <script src="js/translations.js?v=13"></script>
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/premium.js"></script>
+  <script type="module" src="js/sigil-3d.js?v=4"></script>
+</body>
+</html>

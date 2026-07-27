@@ -1,0 +1,2913 @@
+{
+ "directed": true,
+ "nodes": [
+  {
+   "id": "CLAUDE_md",
+   "label": "CLAUDE.md",
+   "community": 11,
+   "community_name": "Documentation",
+   "source_file": "CLAUDE.md",
+   "file_type": "data",
+   "degree": 0
+  },
+  {
+   "id": "IDEA_md",
+   "label": "IDEA.md",
+   "community": 11,
+   "community_name": "Documentation",
+   "source_file": "IDEA.md",
+   "file_type": "data",
+   "degree": 0
+  },
+  {
+   "id": "README_md",
+   "label": "README.md",
+   "community": 11,
+   "community_name": "Documentation",
+   "source_file": "README.md",
+   "file_type": "data",
+   "degree": 0
+  },
+  {
+   "id": "berg_sielsaandster_html",
+   "label": "sielsaandster.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielsaandster.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielsdageraad_html",
+   "label": "sielsdageraad.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielsdageraad.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielshoogte_html",
+   "label": "sielshoogte.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielshoogte.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielshorison_html",
+   "label": "sielshorison.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielshorison.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielskemering_html",
+   "label": "sielskemering.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielskemering.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielsrus_html",
+   "label": "sielsrus.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielsrus.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielsstilte_html",
+   "label": "sielsstilte.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielsstilte.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "berg_sielswind_html",
+   "label": "sielswind.html",
+   "community": 4,
+   "community_name": "Mountain Detail Pages",
+   "source_file": "berg/sielswind.html",
+   "file_type": "code",
+   "degree": 18
+  },
+  {
+   "id": "connect_card_preview_jpg",
+   "label": "connect-card-preview.jpg",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "connect-card-preview.jpg",
+   "file_type": "data",
+   "degree": 0
+  },
+  {
+   "id": "css_responsive_css",
+   "label": "responsive.css",
+   "community": 10,
+   "community_name": "Design System (CSS)",
+   "source_file": "css/responsive.css",
+   "file_type": "code",
+   "degree": 6
+  },
+  {
+   "id": "css_style_css",
+   "label": "style.css",
+   "community": 10,
+   "community_name": "Design System (CSS)",
+   "source_file": "css/style.css",
+   "file_type": "code",
+   "degree": 6
+  },
+  {
+   "id": "data_Sielsoord_kml",
+   "label": "Sielsoord.kml",
+   "community": 12,
+   "community_name": "Farm Data (KML)",
+   "source_file": "data/Sielsoord.kml",
+   "file_type": "data",
+   "degree": 1
+  },
+  {
+   "id": "data_rustoort_2500_kml",
+   "label": "rustoort-2500.kml",
+   "community": 12,
+   "community_name": "Farm Data (KML)",
+   "source_file": "data/rustoort-2500.kml",
+   "file_type": "data",
+   "degree": 1
+  },
+  {
+   "id": "gallery_html",
+   "label": "gallery.html",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "gallery.html",
+   "file_type": "code",
+   "degree": 21
+  },
+  {
+   "id": "index_html",
+   "label": "index.html",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "index.html",
+   "file_type": "code",
+   "degree": 28
+  },
+  {
+   "id": "js_birds_js",
+   "label": "birds.js",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/birds.js",
+   "file_type": "code",
+   "degree": 5
+  },
+  {
+   "id": "js_contact_card_js",
+   "label": "contact-card.js",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "code",
+   "degree": 7
+  },
+  {
+   "id": "js_form_js",
+   "label": "form.js",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/form.js",
+   "file_type": "code",
+   "degree": 5
+  },
+  {
+   "id": "js_gallery_js",
+   "label": "gallery.js",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "code",
+   "degree": 10
+  },
+  {
+   "id": "js_hero_scene_js",
+   "label": "hero-scene.js",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "code",
+   "degree": 10
+  },
+  {
+   "id": "js_i18n_js",
+   "label": "i18n.js",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "code",
+   "degree": 15
+  },
+  {
+   "id": "js_main_js",
+   "label": "main.js",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/main.js",
+   "file_type": "code",
+   "degree": 9
+  },
+  {
+   "id": "js_map_js",
+   "label": "map.js",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "code",
+   "degree": 15
+  },
+  {
+   "id": "js_premium_js",
+   "label": "premium.js",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "code",
+   "degree": 16
+  },
+  {
+   "id": "js_sigil_3d_js",
+   "label": "sigil-3d.js",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "code",
+   "degree": 13
+  },
+  {
+   "id": "js_terrain_data_js",
+   "label": "terrain-data.js",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain-data.js",
+   "file_type": "code",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js",
+   "label": "terrain.js",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "code",
+   "degree": 11
+  },
+  {
+   "id": "js_translations_js",
+   "label": "translations.js",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/translations.js",
+   "file_type": "code",
+   "degree": 6
+  },
+  {
+   "id": "kaart_html",
+   "label": "kaart.html",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "kaart.html",
+   "file_type": "code",
+   "degree": 23
+  },
+  {
+   "id": "kontak_html",
+   "label": "kontak.html",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "kontak.html",
+   "file_type": "code",
+   "degree": 21
+  },
+  {
+   "id": "koppies_html",
+   "label": "koppies.html",
+   "community": 5,
+   "community_name": "Mountain Catalogue",
+   "source_file": "koppies.html",
+   "file_type": "code",
+   "degree": 27
+  },
+  {
+   "id": "middleware_js",
+   "label": "middleware.js",
+   "community": 18,
+   "community_name": "Server & Middleware",
+   "source_file": "middleware.js",
+   "file_type": "code",
+   "degree": 3
+  },
+  {
+   "id": "run_server_py",
+   "label": "run_server.py",
+   "community": 18,
+   "community_name": "Server & Middleware",
+   "source_file": "run_server.py",
+   "file_type": "code",
+   "degree": 0
+  },
+  {
+   "id": "storie_tekst_md",
+   "label": "storie-tekst.md",
+   "community": 6,
+   "community_name": "Story Page",
+   "source_file": "storie-tekst.md",
+   "file_type": "data",
+   "degree": 0
+  },
+  {
+   "id": "storie_html",
+   "label": "storie.html",
+   "community": 6,
+   "community_name": "Story Page",
+   "source_file": "storie.html",
+   "file_type": "code",
+   "degree": 19
+  },
+  {
+   "id": "tools_build_graph_py",
+   "label": "build_graph.py",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "tools/build_graph.py",
+   "file_type": "code",
+   "degree": 0
+  },
+  {
+   "id": "tools_build_terrain_py",
+   "label": "build_terrain.py",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "tools/build_terrain.py",
+   "file_type": "code",
+   "degree": 0
+  },
+  {
+   "id": "tools_spline_preview_check_jpg",
+   "label": "spline_preview_check.jpg",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "tools/spline_preview_check.jpg",
+   "file_type": "data",
+   "degree": 0
+  },
+  {
+   "id": "images",
+   "label": "images/ (2 imgs)",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "images",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 2
+  },
+  {
+   "id": "images_birds",
+   "label": "birds/ (10 imgs)",
+   "community": 14,
+   "community_name": "Bird Photography",
+   "source_file": "images/birds",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 10
+  },
+  {
+   "id": "images_gallery",
+   "label": "gallery/ (1 imgs)",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "images/gallery",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 1
+  },
+  {
+   "id": "images_gallery_birds",
+   "label": "birds/ (10 imgs)",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "images/gallery/birds",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 10
+  },
+  {
+   "id": "images_gallery_homestead",
+   "label": "homestead/ (12 imgs)",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "images/gallery/homestead",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 12
+  },
+  {
+   "id": "images_gallery_nature",
+   "label": "nature/ (21 imgs)",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "images/gallery/nature",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 21
+  },
+  {
+   "id": "images_icons",
+   "label": "icons/ (2 imgs)",
+   "community": 17,
+   "community_name": "Brand Assets",
+   "source_file": "images/icons",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 2
+  },
+  {
+   "id": "images_sielsrus",
+   "label": "sielsrus/ (73 imgs)",
+   "community": 16,
+   "community_name": "Nature Photography",
+   "source_file": "images/sielsrus",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 73
+  },
+  {
+   "id": "images_terrain",
+   "label": "terrain/ (3 imgs)",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "images/terrain",
+   "file_type": "assets",
+   "degree": 0,
+   "count": 3
+  },
+  {
+   "id": "js_birds_js_currentLang",
+   "label": "currentLang()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/birds.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_birds_js_t",
+   "label": "t()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/birds.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_birds_js_prepareTables",
+   "label": "prepareTables()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/birds.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_birds_js_renderTables",
+   "label": "renderTables()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/birds.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_contact_card_js_init",
+   "label": "init()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_contact_card_js_roundedRect",
+   "label": "roundedRect()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_contact_card_js_drawFace",
+   "label": "drawFace()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_contact_card_js_tagline",
+   "label": "tagline()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_contact_card_js_pushSegment",
+   "label": "pushSegment()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_contact_card_js_resize",
+   "label": "resize()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/contact-card.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_form_js_t",
+   "label": "t()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/form.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_form_js_showError",
+   "label": "showError()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/form.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_form_js_clearError",
+   "label": "clearError()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/form.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_form_js_validate",
+   "label": "validate()",
+   "community": 3,
+   "community_name": "Contact & Form",
+   "source_file": "js/form.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_t",
+   "label": "t()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_format",
+   "label": "format()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_renderBubbles",
+   "label": "renderBubbles()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_openCategory",
+   "label": "openCategory()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_backToBubbles",
+   "label": "backToBubbles()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_openLightbox",
+   "label": "openLightbox()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_closeLightbox",
+   "label": "closeLightbox()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_navLightbox",
+   "label": "navLightbox()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_gallery_js_initGallery",
+   "label": "initGallery()",
+   "community": 7,
+   "community_name": "Gallery System",
+   "source_file": "js/gallery.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_init",
+   "label": "init()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_glowTexture",
+   "label": "glowTexture()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_ridge",
+   "label": "ridge()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_rnd",
+   "label": "rnd()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_branch",
+   "label": "branch()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_V",
+   "label": "V()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_birdTexture",
+   "label": "birdTexture()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_applyDayNight",
+   "label": "applyDayNight()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_hero_scene_js_resize",
+   "label": "resize()",
+   "community": 0,
+   "community_name": "3D Golden-Hour Hero",
+   "source_file": "js/hero-scene.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_getLang",
+   "label": "getLang()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_browserLang",
+   "label": "browserLang()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_setLang",
+   "label": "setLang()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_translateElement",
+   "label": "translateElement()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_dict",
+   "label": "dict()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_applyTranslations",
+   "label": "applyTranslations()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_updateSwitcherUI",
+   "label": "updateSwitcherUI()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_createSwitcherHTML",
+   "label": "createSwitcherHTML()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_i18n_js_init",
+   "label": "init()",
+   "community": 8,
+   "community_name": "i18n & Language",
+   "source_file": "js/i18n.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_main_js_updateNav",
+   "label": "updateNav()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/main.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_main_js_closeLightbox",
+   "label": "closeLightbox()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/main.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_main_js_renderKmlFeatures",
+   "label": "renderKmlFeatures()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/main.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_loadLeafletCSS",
+   "label": "loadLeafletCSS()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_loadLeafletJS",
+   "label": "loadLeafletJS()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_mapT",
+   "label": "mapT()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_getHillStyle",
+   "label": "getHillStyle()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_injectPopupStyles",
+   "label": "injectPopupStyles()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_getFeatureStyle",
+   "label": "getFeatureStyle()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_getDisplayName",
+   "label": "getDisplayName()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_getPopupContent",
+   "label": "getPopupContent()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_initSielsoordMap",
+   "label": "initSielsoordMap()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_bindLocalizedPopup",
+   "label": "bindLocalizedPopup()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_updateLabelOpacity",
+   "label": "updateLabelOpacity()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_updateTransportOpacity",
+   "label": "updateTransportOpacity()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_midLon",
+   "label": "midLon()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_midLat",
+   "label": "midLat()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_map_js_updateZoomBadge",
+   "label": "updateZoomBadge()",
+   "community": 2,
+   "community_name": "Interactive Map Page",
+   "source_file": "js/map.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_updateScrollProgress",
+   "label": "updateScrollProgress()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_scrolled",
+   "label": "scrolled()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_animateStats",
+   "label": "animateStats()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_tick",
+   "label": "tick()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_dx",
+   "label": "dx()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_dy",
+   "label": "dy()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_updateNavPremium",
+   "label": "updateNavPremium()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_toggleSharePanel",
+   "label": "toggleSharePanel()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_flashCopyFeedback",
+   "label": "flashCopyFeedback()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_premium_js_updateShareVisibility",
+   "label": "updateShareVisibility()",
+   "community": 9,
+   "community_name": "Home Page",
+   "source_file": "js/premium.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_parseSigilShapes",
+   "label": "parseSigilShapes()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_getSigilGeometry",
+   "label": "getSigilGeometry()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_scale",
+   "label": "scale()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_init",
+   "label": "init()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_nx",
+   "label": "nx()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_ny",
+   "label": "ny()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_sigil_3d_js_loop",
+   "label": "loop()",
+   "community": 19,
+   "community_name": "Build Tools",
+   "source_file": "js/sigil-3d.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_init",
+   "label": "init()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_heightAt",
+   "label": "heightAt()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_local",
+   "label": "local()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_h",
+   "label": "h()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_tubeAlong",
+   "label": "tubeAlong()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_makeCloudTexture",
+   "label": "makeCloudTexture()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_rnd",
+   "label": "rnd()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_makeBirdTexture",
+   "label": "makeBirdTexture()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_applyDayNight",
+   "label": "applyDayNight()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "js_terrain_js_resize",
+   "label": "resize()",
+   "community": 1,
+   "community_name": "3D Terrain Map",
+   "source_file": "js/terrain.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "middleware_js_middleware",
+   "label": "middleware()",
+   "community": 18,
+   "community_name": "Server & Middleware",
+   "source_file": "middleware.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "middleware_js_user",
+   "label": "user()",
+   "community": 18,
+   "community_name": "Server & Middleware",
+   "source_file": "middleware.js",
+   "file_type": "function",
+   "degree": 1
+  },
+  {
+   "id": "middleware_js_pass",
+   "label": "pass()",
+   "community": 18,
+   "community_name": "Server & Middleware",
+   "source_file": "middleware.js",
+   "file_type": "function",
+   "degree": 1
+  }
+ ],
+ "edges": [
+  {
+   "from": "js_birds_js",
+   "to": "js_birds_js_currentLang",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_birds_js",
+   "to": "js_birds_js_t",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_birds_js",
+   "to": "js_birds_js_prepareTables",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_birds_js",
+   "to": "js_birds_js_renderTables",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_contact_card_js",
+   "to": "js_contact_card_js_init",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_contact_card_js",
+   "to": "js_contact_card_js_roundedRect",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_contact_card_js",
+   "to": "js_contact_card_js_drawFace",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_contact_card_js",
+   "to": "js_contact_card_js_tagline",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_contact_card_js",
+   "to": "js_contact_card_js_pushSegment",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_contact_card_js",
+   "to": "js_contact_card_js_resize",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_form_js",
+   "to": "js_form_js_t",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_form_js",
+   "to": "js_form_js_showError",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_form_js",
+   "to": "js_form_js_clearError",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_form_js",
+   "to": "js_form_js_validate",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_t",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_format",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_renderBubbles",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_openCategory",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_backToBubbles",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_openLightbox",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_closeLightbox",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_navLightbox",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_gallery_js",
+   "to": "js_gallery_js_initGallery",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_init",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_glowTexture",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_ridge",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_rnd",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_branch",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_V",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_birdTexture",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_applyDayNight",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_hero_scene_js",
+   "to": "js_hero_scene_js_resize",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_getLang",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_browserLang",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_setLang",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_translateElement",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_dict",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_applyTranslations",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_updateSwitcherUI",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_createSwitcherHTML",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_i18n_js",
+   "to": "js_i18n_js_init",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_main_js",
+   "to": "js_main_js_updateNav",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_main_js",
+   "to": "js_main_js_closeLightbox",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_main_js",
+   "to": "js_main_js_renderKmlFeatures",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_loadLeafletCSS",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_loadLeafletJS",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_mapT",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_getHillStyle",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_injectPopupStyles",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_getFeatureStyle",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_getDisplayName",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_getPopupContent",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_initSielsoordMap",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_bindLocalizedPopup",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_updateLabelOpacity",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_updateTransportOpacity",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_midLon",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_midLat",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_map_js",
+   "to": "js_map_js_updateZoomBadge",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_updateScrollProgress",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_scrolled",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_animateStats",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_tick",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_dx",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_dy",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_updateNavPremium",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_toggleSharePanel",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_flashCopyFeedback",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_premium_js",
+   "to": "js_premium_js_updateShareVisibility",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_parseSigilShapes",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_getSigilGeometry",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_scale",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_init",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_nx",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_ny",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_sigil_3d_js",
+   "to": "js_sigil_3d_js_loop",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_init",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_heightAt",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_local",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_h",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_tubeAlong",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_makeCloudTexture",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_rnd",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_makeBirdTexture",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_applyDayNight",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "js_terrain_js",
+   "to": "js_terrain_js_resize",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "middleware_js",
+   "to": "middleware_js_middleware",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "middleware_js",
+   "to": "middleware_js_user",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "middleware_js",
+   "to": "middleware_js_pass",
+   "label": "contains",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsaandster_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsdageraad_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshoogte_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielshorison_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielskemering_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsrus_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielsstilte_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "berg_sielswind_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "css_style_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "css_responsive_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "index_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "storie_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "koppies_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "gallery_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "kaart_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "kontak_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_main_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_translations_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_i18n_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_gallery_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_birds_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_premium_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "gallery_html",
+   "to": "js_sigil_3d_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "css_style_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "css_responsive_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "js_hero_scene_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "index_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "storie_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "koppies_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "gallery_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "kaart_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "kontak_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "js_main_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "js_translations_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "js_i18n_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "js_premium_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "index_html",
+   "to": "js_sigil_3d_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "css_style_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "css_responsive_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_terrain_data_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_terrain_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "index_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "storie_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "koppies_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "gallery_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "kaart_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "kontak_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "data_Sielsoord_kml",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "data_rustoort_2500_kml",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_main_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_translations_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_i18n_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_premium_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kaart_html",
+   "to": "js_sigil_3d_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "css_style_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "css_responsive_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_contact_card_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "index_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "storie_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "koppies_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "gallery_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "kaart_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "kontak_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_main_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_form_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_translations_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_i18n_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_premium_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "kontak_html",
+   "to": "js_sigil_3d_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "css_style_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "css_responsive_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "index_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "storie_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "koppies_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "gallery_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "kaart_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "kontak_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielsrus_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielskemering_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielsaandster_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielswind_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielshoogte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielsstilte_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielsdageraad_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "berg_sielshorison_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "js_main_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "js_translations_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "js_i18n_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "js_premium_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "koppies_html",
+   "to": "js_sigil_3d_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "css_style_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "css_responsive_css",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "index_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "storie_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "koppies_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "gallery_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "kaart_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "kontak_html",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "js_main_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "js_translations_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "js_i18n_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "js_premium_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  },
+  {
+   "from": "storie_html",
+   "to": "js_sigil_3d_js",
+   "label": "references",
+   "confidence": "EXTRACTED"
+  }
+ ],
+ "communities": [
+  {
+   "cid": 9,
+   "label": "Home Page",
+   "count": 21,
+   "color": "#4E79A7"
+  },
+  {
+   "cid": 2,
+   "label": "Interactive Map Page",
+   "count": 17,
+   "color": "#F28E2B"
+  },
+  {
+   "cid": 7,
+   "label": "Gallery System",
+   "count": 15,
+   "color": "#E15759"
+  },
+  {
+   "cid": 1,
+   "label": "3D Terrain Map",
+   "count": 14,
+   "color": "#76B7B2"
+  },
+  {
+   "cid": 3,
+   "label": "Contact & Form",
+   "count": 13,
+   "color": "#59A14F"
+  },
+  {
+   "cid": 19,
+   "label": "Build Tools",
+   "count": 12,
+   "color": "#EDC948"
+  },
+  {
+   "cid": 8,
+   "label": "i18n & Language",
+   "count": 11,
+   "color": "#B07AA1"
+  },
+  {
+   "cid": 0,
+   "label": "3D Golden-Hour Hero",
+   "count": 10,
+   "color": "#FF9DA7"
+  },
+  {
+   "cid": 4,
+   "label": "Mountain Detail Pages",
+   "count": 8,
+   "color": "#9C755F"
+  },
+  {
+   "cid": 18,
+   "label": "Server & Middleware",
+   "count": 5,
+   "color": "#BAB0AC"
+  },
+  {
+   "cid": 11,
+   "label": "Documentation",
+   "count": 3,
+   "color": "#4E79A7"
+  },
+  {
+   "cid": 10,
+   "label": "Design System (CSS)",
+   "count": 2,
+   "color": "#F28E2B"
+  },
+  {
+   "cid": 12,
+   "label": "Farm Data (KML)",
+   "count": 2,
+   "color": "#E15759"
+  },
+  {
+   "cid": 6,
+   "label": "Story Page",
+   "count": 2,
+   "color": "#76B7B2"
+  },
+  {
+   "cid": 5,
+   "label": "Mountain Catalogue",
+   "count": 1,
+   "color": "#59A14F"
+  },
+  {
+   "cid": 14,
+   "label": "Bird Photography",
+   "count": 1,
+   "color": "#EDC948"
+  },
+  {
+   "cid": 17,
+   "label": "Brand Assets",
+   "count": 1,
+   "color": "#B07AA1"
+  },
+  {
+   "cid": 16,
+   "label": "Nature Photography",
+   "count": 1,
+   "color": "#FF9DA7"
+  }
+ ]
+}

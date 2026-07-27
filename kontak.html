@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.contact_title">Kontak — Sielsoord</title>
+  <meta name="description" data-i18n-attr="content:meta.contact_desc" content="Kontak Sielsoord. Registreer jou belangstelling in 'n koppie, versoek die KML-lêer, of reël 'n besoek.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/responsive.css?v=4">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
+
+  <!-- Interactive 3D connecting card -->
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    }}
+  </script>
+  <script type="module" src="js/contact-card.js?v=1"></script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link" data-i18n="skip">Slaan na inhoud oor</a>
+
+  <nav class="nav nav-transparent" role="navigation" data-i18n-attr="aria-label:nav.aria_label" aria-label="Hoof navigasie">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-icon" data-sigil3d="nav">S</span>
+        Sielsoord
+      </a>
+      <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu_toggle" aria-label="Kieslys oop/maak" aria-expanded="false"><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home" class="nav-link">Tuis</a></li>
+        <li><a href="storie.html" data-i18n="nav.story" class="nav-link">Storie</a></li>
+        <li><a href="koppies.html" data-i18n="nav.peaks" class="nav-link">Koppies</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery" class="nav-link">Galery</a></li>
+        <li><a href="kaart.html" data-i18n="nav.map" class="nav-link">Kaart</a></li>
+        <li><a href="kontak.html" data-i18n="nav.contact" class="nav-link nav-cta btn btn-primary active">Kontak Ons</a></li>
+                <li class="nav-theme-item">
+          <button id="hero-theme-toggle" class="hero-theme-toggle" data-i18n-attr="aria-label:theme.toggle_aria;title:theme.toggle_title" aria-label="Toggle hero background" title="Toggle day/night">
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span class="theme-toggle-label" data-i18n="theme.toggle_label">Day / Night</span>
+          </button>
+        </li>
+        <li class="nav-lang-item"><div class="lang-switcher"></div></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1920&q=80');"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="kontak.hero_eyebrow">Kontak</p>
+        <h1 class="hero-title" style="font-size: var(--fs-3xl);" data-i18n="kontak.hero_title">Kom praat met ons</h1>
+        <p class="hero-subtitle" data-i18n="kontak.hero_sub">Ons luister. Ons antwoord. Ons wys jou die land.</p>
+      </div>
+    </section>
+
+    <!-- ═══ Interactive 3D Connecting Card ═══ -->
+    <section class="section connect-section">
+      <div class="container">
+        <div class="text-center fade-in" style="margin-bottom: var(--space-xl);">
+          <p class="eyebrow" data-i18n="kontak.card_eyebrow">Groetnis van die land</p>
+          <h2 data-i18n="kontak.card_title">Sielsoord wag op jou</h2>
+          <p style="color: var(--color-text-muted);" data-i18n="kontak.card_sub">Beweeg jou muis oor die kaart — dit antwoord.</p>
+        </div>
+        <div id="connect-card" class="connect-panel fade-in fade-in-delay-1" role="img" aria-label="Interactive 3D Sielsoord greeting card">
+          <div class="connect-panel-fallback" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ Contact Form + Info ═══ -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: start; gap: var(--space-2xl);">
+
+          <!-- Form -->
+          <div class="fade-in">
+            <p class="eyebrow" data-i18n="kontak.form_eyebrow">Registreer jou belangstelling</p>
+            <h2 data-i18n="kontak.form_title">Stuur 'n boodskap</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl);" data-i18n="kontak.form_desc">
+              Vul die vorm in en ons kontak jou binne 24 uur. Geen verpligting nie.
+            </p>
+
+            <div class="form-success">
+              <span data-i18n="kontak.form_success">✅ Dankie! Jou boodskap is gestuur. Ons kontak jou binnekort.</span>
+            </div>
+
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <p style="display: none;">
+                <label><span data-i18n="kontak.honeypot">Moenie dit vul nie:</span> <input name="bot-field"></label>
+              </p>
+
+              <div class="form-group">
+                <label class="form-label" for="name" data-i18n="kontak.form_name">Naam *</label>
+                <input type="text" id="name" name="name" class="form-input" required aria-required="true">
+                <div class="form-error" data-error-for="name"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email" data-i18n="kontak.form_email">E-pos *</label>
+                <input type="email" id="email" name="email" class="form-input" required aria-required="true">
+                <div class="form-error" data-error-for="email"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone" data-i18n="kontak.form_phone">Telefoon / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+264 ...">
+                <div class="form-error" data-error-for="phone"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="hill" data-i18n="kontak.form_hill">Watter koppie interesseer jou?</label>
+                <select id="hill" name="hill" class="form-select">
+                  <option value="" data-i18n="kontak.form_hill_default">— Ek is nog besluit —</option>
+                  <option value="sielskemering">Sielskemering</option>
+                  <option value="sielsaandster">Sielsaandster</option>
+                  <option value="sielswind">Sielswind</option>
+                  <option value="sielshoogte">Sielshoogte</option>
+                  <option value="sielsstilte">Sielsstilte</option>
+                  <option value="sielsdageraad">Sielsdageraad</option>
+                  <option value="sielshorison">Sielshorison</option>
+                  <option value="meerdere" data-i18n="kontak.form_hill_multiple">Meer as een koppie</option>
+                  <option value="kml" data-i18n="kontak.form_hill_kml">Ek wil die KML-lêer versoek</option>
+                  <option value="besoek" data-i18n="kontak.form_hill_visit">Ek wil die plaas besoek</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message" data-i18n="kontak.form_msg">Boodskap *</label>
+                <textarea id="message" name="message" class="form-textarea" required aria-required="true" data-i18n-attr="placeholder:kontak.form_msg_ph" placeholder="Vertel ons wat jy soek..."></textarea>
+                <div class="form-error" data-error-for="message"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="kontak.form_submit">Stuur Boodskap</button>
+            </form>
+          </div>
+
+          <!-- Contact info sidebar -->
+          <div class="fade-in fade-in-delay-1">
+            <div class="card" style="margin-bottom: var(--space-xl);">
+              <div class="card-body">
+                <h3 class="card-title" data-i18n="kontak.direct_title">Direkte Kontak</h3>
+                <div style="display: grid; gap: var(--space-md); margin-top: var(--space-md);">
+                  <div style="display: flex; gap: var(--space-md); align-items: center;">
+                    <span style="font-size: 1.5rem;">📞</span>
+                    <div>
+                      <strong data-i18n="kontak.direct_phone">Telefoon</strong><br>
+                      <a href="tel:+264811289994" style="color: var(--color-gold); text-decoration: none;">+264 81 128 9994</a>
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: var(--space-md); align-items: center;">
+                    <span style="font-size: 1.5rem;">✉️</span>
+                    <div>
+                      <strong data-i18n="kontak.direct_email">E-pos</strong><br>
+                      <a href="mailto:sielsoord@gmail.com" style="color: var(--color-gold); text-decoration: none;">sielsoord@gmail.com</a>
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: var(--space-md); align-items: center;">
+                    <span style="font-size: 1.5rem;">💬</span>
+                    <div>
+                      <strong data-i18n="kontak.direct_wa">WhatsApp</strong><br>
+                      <a href="https://wa.me/264811289994" target="_blank" rel="noopener" style="color: var(--color-gold); text-decoration: none;">+264 81 128 9994</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-bottom: var(--space-xl);">
+              <div class="card-body">
+                <h3 class="card-title" data-i18n="kontak.visit_title">Besoek Sielsoord</h3>
+                <p class="card-text" style="margin-top: var(--space-md);" data-i18n="kontak.visit_p">
+                  Wil jy die plaas self kom sien? Ons nooi ernstige kopers uit vir 'n persoonlike
+                  toer. Kom loop die koppies, voel die aarde, en laat die land self met jou praat.
+                </p>
+                <p style="margin-top: var(--space-md); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="kontak.visit_note">
+                  Besoeke word per afspraak gereël. Vul die vorm links in met "besoek" as jou boodskap.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title" data-i18n="kontak.kml_title">KML-lêer Versoek</h3>
+                <p class="card-text" style="margin-top: var(--space-md);" data-i18n="kontak.kml_p">
+                  Die volledige opmetings-lêer (KML) word met ernstige kopers gedeel sodat hulle
+                  die grense in hul eie Google Earth kan verifieer.
+                </p>
+                <p style="margin-top: var(--space-md); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="kontak.kml_note">
+                  Kies "Ek wil die KML-lêer versoek" in die vorm, of noem dit in jou boodskap.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="section bg-cream-dark">
+      <div class="container-narrow">
+        <div class="text-center fade-in mb-lg">
+          <p class="eyebrow" data-i18n="kontak.faq_eyebrow">Veelgestelde Vrae</p>
+          <h2 data-i18n="kontak.faq_title">Goed om te weet</h2>
+        </div>
+
+        <div class="fade-in">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq1_q">Kan buitelanders grond in Namibië koop?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq1_a">
+                Ja, met sekere voorwaardes. Buitelanders kan grond in Namibië besit, maar dit moet
+                deur die Minister van Lande Goedgekeur word. Ons sal jou deur die proses lei. Dit
+                is 'n standaard proses wat gereeld gedoen word.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq2_q">Wat is die betalingsbepalings?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq2_a">
+                Die prys is R3,500,000 (NAD) per koppie. Betalingstermyne kan bespreek word —
+                kontant of finansiering. Akte van oordrag word deur 'n Namibiese prokureur hanteer.
+                Kontak ons vir spesifieke reëlings.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq3_q">Is daar water en elektrisiteit op die koppies?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq3_a">
+                Daar is twee boreholes op die plaas. Vir 'n spesifieke koppie sal
+                waterbron en koppieingsopsies ondersoek moet word. Elektrisiteit is nie tans op die
+                koppies nie — sonkrag en genereerders is dieopsie. Dit is wildernis — af is die punt.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq4_q">Mag ek op my koppie bou?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq4_a">
+                Ja, met die nodige plaaslike bougoedkeuring. Jy kan 'n huis, buitehuis, of
+                klein gastehuis bou. Die idee is om die natuurlike skoonheid te bewaar — lae-impak
+                bou wat met die landskap harmoniseer word aangemoedig.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq5_q">Watter wild is op die plaas?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq5_a">
+                Die plaas is naby Etosha en Ongava, so die wild is volop. Kudu, gemsbok, springbok,
+                steenbok, jakkals, en soms olifant en renosters wat vanuit die reservate dwaal.
+                Vir jaglisensoies moet plaaslike regulasies gevolg word.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq6_q">Hoe ver is dit vanaf die naaste dorp?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq6_a">
+                Die D2695 gruispad gee direkte toegang vanaf die hoofweg. Outshoorn en Okaukuejo
+                (Etosha se hoofkamp) is in die omgewing. Ons sal presiese afstande en rytyd verskaf
+                by jou eerste navrae.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" data-i18n="kontak.faq7_q">Kan ek die grense op Google Earth verifieer?</button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner" data-i18n="kontak.faq7_a">
+                Ja! Die amptelike KML-lêer word met ernstige kopers gedeel sodat hulle elke grenslyn
+                en borehole in hul eie Google Earth kan sien en verifieer. Die interaktiewe kaart
+                op hierdie webwerf toon reeds dieselfde data — kyk by die <a href="kaart.html">Kaart bladsy</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-sigil" data-sigil3d="footer" aria-hidden="true"></div>
+          <h3>Sielsoord</h3>
+          <p data-i18n="footer.brand">Waar jou siel tot rus kom. 2,500 hektaar Namibiese wildernis met 7 privaat koppies. Naby Etosha Nasionale Park.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav_title">Navigasie</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Tuis</a></li>
+            <li><a href="storie.html" data-i18n="nav.story">Storie</a></li>
+            <li><a href="koppies.html" data-i18n="nav.peaks">Koppies</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galery</a></li>
+            <li><a href="kaart.html" data-i18n="nav.map">Kaart</a></li>
+            <li><a href="kontak.html" data-i18n="nav.contact">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.peaks_title">Koppies</h4>
+          <ul>
+            <li><a href="koppie/sielsrus.html">Sielsrus</a></li>
+            <li><a href="koppie/sielskemering.html">Sielskemering</a></li>
+            <li><a href="koppie/sielsaandster.html">Sielsaandster</a></li>
+            <li><a href="koppie/sielswind.html">Sielswind</a></li>
+            <li><a href="koppie/sielshoogte.html">Sielshoogte</a></li>
+            <li><a href="koppie/sielsstilte.html">Sielsstilte</a></li>
+            <li><a href="koppie/sielsdageraad.html">Sielsdageraad</a></li>
+            <li><a href="koppie/sielshorison.html">Sielshorison</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact_title">Kontak</h4>
+          <ul>
+            <li><a href="kontak.html" data-i18n="footer.send">Stuur 'n boodskap</a></li>
+            <li><a href="kontak.html" data-i18n="footer.visit">Besoek Sielsoord</a></li>
+            <li><a href="tel:+264811289994">+264 81 128 9994</a></li>
+            <li><a href="mailto:sielsoord@gmail.com">sielsoord@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2026 Sielsoord. Namibië. Alle regte voorbehou.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+  <script src="js/form.js?v=2"></script>
+  <script src="js/translations.js?v=13"></script>
+  <script src="js/i18n.js?v=5"></script>
+  <script src="js/premium.js"></script>
+  <script type="module" src="js/sigil-3d.js?v=4"></script>
+</body>
+</html>

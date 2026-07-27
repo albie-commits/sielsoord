@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8C547"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="leafLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4D35E"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer gold ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="100" cy="100" r="91" fill="none" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- ═══ MOPANE TREE — bold silhouette style ═══ -->
+
+  <!-- Trunk: thick, tapered -->
+  <path d="M94 165
+           C93 150 92 130 93 110
+           C94 98 95 88 97 80
+           L103 80
+           C105 88 106 98 107 110
+           C108 130 107 150 106 165 Z"
+        fill="url(#goldGrad)"/>
+
+  <!-- LEFT MAIN BRANCH — thick, sweeps up and out -->
+  <path d="M97 85
+           C82 78 68 68 56 55
+           C52 50 49 45 47 40
+           C52 46 58 50 65 52
+           C62 47 60 42 59 37
+           C64 43 70 47 76 50
+           C74 45 73 40 73 35
+           C78 42 84 47 90 50
+           C87 45 86 41 86 37
+           C89 43 92 48 94 53
+           C93 58 93 64 94 70
+           C94 76 95 81 97 85 Z"
+        fill="url(#goldGrad)"/>
+
+  <!-- RIGHT MAIN BRANCH — mirrored -->
+  <path d="M103 85
+           C118 78 132 68 144 55
+           C148 50 151 45 153 40
+           C148 46 142 50 135 52
+           C138 47 140 42 141 37
+           C136 43 130 47 124 50
+           C126 45 127 40 127 35
+           C122 42 116 47 110 50
+           C113 45 114 41 114 37
+           C111 43 108 48 106 53
+           C107 58 107 64 106 70
+           C106 76 105 81 103 85 Z"
+        fill="url(#goldGrad)"/>
+
+  <!-- CENTER BRANCH — goes straight up -->
+  <path d="M99 78
+           C97 65 96 50 97 36
+           C98 26 99 18 100 12
+           C101 18 102 26 103 36
+           C104 50 103 65 101 78 Z"
+        fill="url(#goldGrad)"/>
+
+  <!-- ═══ BUTTERFLY MOPANE LEAVES — bold, clear bilobed shape ═══ -->
+  <!-- These are the KEY feature — make them unmistakable -->
+
+  <!-- Top center (largest) -->
+  <g transform="translate(100, 10)">
+    <ellipse cx="-6" cy="0" rx="6.5" ry="3.5" fill="url(#leafLight)" transform="rotate(-18)"/>
+    <ellipse cx="6" cy="0" rx="6.5" ry="3.5" fill="url(#leafLight)" transform="rotate(18)"/>
+  </g>
+
+  <!-- Upper left -->
+  <g transform="translate(72, 33) rotate(-35)">
+    <ellipse cx="-5" cy="0" rx="5.5" ry="3" fill="url(#leafLight)" transform="rotate(-15)"/>
+    <ellipse cx="5" cy="0" rx="5.5" ry="3" fill="url(#leafLight)" transform="rotate(15)"/>
+  </g>
+
+  <!-- Upper right -->
+  <g transform="translate(128, 33) rotate(35)">
+    <ellipse cx="-5" cy="0" rx="5.5" ry="3" fill="url(#leafLight)" transform="rotate(-15)"/>
+    <ellipse cx="5" cy="0" rx="5.5" ry="3" fill="url(#leafLight)" transform="rotate(15)"/>
+  </g>
+
+  <!-- Far left -->
+  <g transform="translate(45, 38) rotate(-55)">
+    <ellipse cx="-4.5" cy="0" rx="5" ry="2.8" fill="url(#leafLight)" transform="rotate(-12)"/>
+    <ellipse cx="4.5" cy="0" rx="5" ry="2.8" fill="url(#leafLight)" transform="rotate(12)"/>
+  </g>
+
+  <!-- Far right -->
+  <g transform="translate(155, 38) rotate(55)">
+    <ellipse cx="-4.5" cy="0" rx="5" ry="2.8" fill="url(#leafLight)" transform="rotate(-12)"/>
+    <ellipse cx="4.5" cy="0" rx="5" ry="2.8" fill="url(#leafLight)" transform="rotate(12)"/>
+  </g>
+
+  <!-- Mid left -->
+  <g transform="translate(62, 55) rotate(-45)">
+    <ellipse cx="-4" cy="0" rx="4.5" ry="2.5" fill="url(#leafLight)" transform="rotate(-10)"/>
+    <ellipse cx="4" cy="0" rx="4.5" ry="2.5" fill="url(#leafLight)" transform="rotate(10)"/>
+  </g>
+
+  <!-- Mid right -->
+  <g transform="translate(138, 55) rotate(45)">
+    <ellipse cx="-4" cy="0" rx="4.5" ry="2.5" fill="url(#leafLight)" transform="rotate(-10)"/>
+    <ellipse cx="4" cy="0" rx="4.5" ry="2.5" fill="url(#leafLight)" transform="rotate(10)"/>
+  </g>
+
+  <!-- Ground -->
+  <path d="M70 167 Q100 163 130 167" stroke="url(#goldGrad)" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- ═══ TEXT ═══ -->
+  <line x1="65" y1="174" x2="135" y2="174" stroke="url(#goldGrad)" stroke-width="0.5" opacity="0.4"/>
+  <text x="100" y="187" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif" font-size="12"
+        font-weight="700" fill="url(#goldGrad)" letter-spacing="3">SIELSOORD</text>
+</svg>
