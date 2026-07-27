@@ -118,19 +118,28 @@ async function init() {
   // Fullscreen toggle (map page)
   const fsBtn = document.getElementById('terrain-fullscreen');
   if (fsBtn) {
-    fsBtn.addEventListener('click', () => {
-      const el = container.closest('.map-container') || container;
+    fsBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const el = container.closest('.map-container') || document.documentElement;
       if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-        (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
+        const requestFs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+        if (requestFs) {
+          requestFs.call(el).catch(() => {
+            // Fallback: try documentElement if element-level fails (iOS Safari quirk)
+            const fallback = document.documentElement.requestFullscreen
+              || document.documentElement.webkitRequestFullscreen;
+            if (fallback) fallback.call(document.documentElement).catch(() => {});
+          });
+        }
       } else {
-        (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+        const exitFs = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+        if (exitFs) exitFs.call(document);
       }
     });
     const onFsChange = () => {
       const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
-      fsBtn.textContent = isFs ? '⛶' : '⛶';
+      fsBtn.textContent = '⛶';
       fsBtn.classList.toggle('terrain-fullscreen--active', isFs);
-      // Re-trigger resize after fullscreen transition
       setTimeout(resize, 150);
     };
     document.addEventListener('fullscreenchange', onFsChange);

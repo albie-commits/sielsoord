@@ -411,6 +411,21 @@
     height: 320px;
   }
 
+  /* Terrain map buttons — smaller on mobile */
+  .terrain-reset {
+    font-size: 10px;
+    padding: 6px 10px;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  .terrain-fullscreen {
+    font-size: 15px;
+    padding: 5px 8px;
+    right: 8px;
+    top: 8px;
+  }
+
   /* Full width buttons */
   .btn {
     width: 100%;
