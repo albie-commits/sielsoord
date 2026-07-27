@@ -235,7 +235,7 @@ const TRANSLATIONS = {
     /* ── Hill names (proper nouns — same in all langs) ── */
     "mtn.sielsrus": "Sielsrus",
     "mtn.sielsrus_sub": "Sielsrus — Ons Koppie",
-    "mtn.sielsrus_desc": "Ons familie se tuis. Ons huis bo-op die hoogste piek. Nie te koop nie — dit bly ons s'n.",
+    "mtn.sielsrus_desc": "Ons familie se tuiste in die bos.",
 
     /* ── Kaart page ── */
     "map.hero_eyebrow": "Die Kaart",
@@ -750,7 +750,7 @@ const TRANSLATIONS = {
 
     "mtn.sielsrus": "Sielsrus",
     "mtn.sielsrus_sub": "Sielsrus — Our Hill",
-    "mtn.sielsrus_desc": "Our family's home. Our house atop the highest peak. Not for sale — it stays ours.",
+    "mtn.sielsrus_desc": "Our family's home in the bush.",
 
     "map.hero_eyebrow": "The Map",
     "map.hero_title": "See the land",
@@ -1263,7 +1263,7 @@ const TRANSLATIONS = {
 
     "mtn.sielsrus": "Sielsrus",
     "mtn.sielsrus_sub": "Sielsrus — Unser Hügel",
-    "mtn.sielsrus_desc": "Das Zuhause unserer Familie. Das Haus auf dem höchsten Gipfel. Nicht zu verkaufen — es bleibt unser.",
+    "mtn.sielsrus_desc": "Das Zuhause unserer Familie im Busch.",
 
     "map.hero_eyebrow": "Die Karte",
     "map.hero_title": "Sehen Sie das Land",
