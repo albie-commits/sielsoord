@@ -79,13 +79,17 @@
   </div>
   <script>
     async function loadCount() {
-      try {
-        var r = await fetch("/api/counter.js");
-        var d = await r.json();
-        document.getElementById("count").textContent = d.count;
-      } catch (e) {
-        document.getElementById("count").textContent = "?";
+      var paths = ["/api/counter.js", "/api/counter"];
+      for (var i = 0; i < paths.length; i++) {
+        try {
+          var r = await fetch(paths[i]);
+          if (!r.ok) continue;
+          var d = await r.json();
+          document.getElementById("count").textContent = d.count;
+          return;
+        } catch (e) {}
       }
+      document.getElementById("count").textContent = "?";
     }
     loadCount();
   </script>
