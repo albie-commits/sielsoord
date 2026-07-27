@@ -38,6 +38,9 @@ Uses Netlify Forms (`data-netlify="true"` + honeypot); `form.js` only does clien
 ### CSS
 `css/style.css` holds the full design system (Namibian earth palette: gold `#C9842A`, sunset `#E07B39`, espresso `#2C1810`, cream `#FAF3E7`) and all components; `css/responsive.css` holds mobile/tablet breakpoints. Fonts: Cormorant Garamond (headings), Lora (body), Montserrat (labels/buttons) via Google Fonts. Maintain WCAG contrast, ≥44px touch targets, and `prefers-reduced-motion` support.
 
+### 3D Game Drive Viewer (REMOVED)
+The Location section's right column (`#gamedrive-3d`, where a stock photo used to be) previously held a Blender-authored Three.js bushveld scene. This has been removed. The Location section now spans full width with text only.
+
 ### 3D Terrain Map (`kaart.html` + `js/terrain.js` + `js/terrain-data.js`)
 The map page's interactive map is a real-time Three.js (r166, importmap via jsdelivr CDN) scene of the **actual farm**: SRTM elevation mesh textured with Esri World Imagery. It replaced the old Leaflet map (`js/map.js` is kept but no longer loaded). Features rendered: gold farm-boundary tube, cream D2695 road, green Etosha border, terracotta Ongava border, 8 clickable hill markers, 2 borehole dots, clouds/birds, day-night sync with the nav toggle, and a `#terrain-reset` button (i18n key `map.control_reset`). `terrain-data.js` holds `window.SIELSOORD_TERRAIN` (bbox, grid, elevation range, `sizeX/sizeZ` in metres, feature lines as `[u,v]` polylines, hills). Assets in `images/terrain/`; rebuild with:
 ```bash

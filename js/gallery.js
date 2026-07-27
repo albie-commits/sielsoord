@@ -63,28 +63,19 @@
       ]
     },
     {
-      slug: 'activities',
-      titleKey: 'gallery.cat.activities.title',
-      descKey: 'gallery.cat.activities.desc',
-      icon: '🚵',
-      accent: '#D26E2C',
-      images: []  // Photos to be added
-    },
-    {
-      slug: 'wildlife',
-      titleKey: 'gallery.cat.wildlife.title',
-      descKey: 'gallery.cat.wildlife.desc',
-      icon: '🦌',
-      accent: '#8E5A1A',
-      images: []  // Photos to be added
-    },
-    {
-      slug: 'sielsrus',
-      titleKey: 'gallery.cat.sielsrus.title',
-      descKey: 'gallery.cat.sielsrus.desc',
-      icon: '🏔️',
-      accent: '#C9A227',
-      images: []  // Photos to be added
+      slug: 'ongava',
+      titleKey: 'gallery.cat.ongava.title',
+      descKey: 'gallery.cat.ongava.desc',
+      icon: '🦏',
+      accent: '#C05A2E',
+      images: [
+        'images/gallery/ongava/img_8020sielsoord.jpg',
+        'images/gallery/ongava/img_8021sielsoord.jpg',
+        'images/gallery/ongava/img_8027sielsoord.jpg',
+        'images/gallery/ongava/img_8028sielsoord.jpg',
+        'images/gallery/ongava/img_8031sielsoord.jpg',
+        'images/gallery/ongava/img_8032sielsoord.jpg'
+      ]
     },
     {
       slug: 'birdlife',
@@ -103,18 +94,6 @@
         'images/gallery/birds/dsc_0209sielsoord.jpg',
         'images/gallery/birds/74366822-33c4-4821-ba41-972769cb48c1sielsoord.jpg',
         'images/gallery/birds/fa5fb12d-ef2b-426f-9cb6-756d98bd6e70sielsoord.jpg'
-      ],
-      captions: [
-        'gallery.bird.lilac_roller',
-        'gallery.bird.lilac_roller2',
-        'gallery.bird.bee_eater_green',
-        'gallery.bird.crimson_shrike',
-        'gallery.bird.yellow_hornbill',
-        'gallery.bird.yellow_hornbill2',
-        'gallery.bird.capped_wheatear',
-        'gallery.bird.ruppells',
-        'gallery.bird.bee_eater_blue',
-        'gallery.bird.bee_eater_swallow'
       ]
     }
   ];
@@ -159,12 +138,8 @@
         'gallery.cat.homestead.desc': 'Die plaashuis — ons tuis in die bos',
         'gallery.cat.nature.title': 'Nature',
         'gallery.cat.nature.desc': 'Die ongeskonde wildernis van Sielsoord',
-        'gallery.cat.activities.title': 'Farm Activities',
-        'gallery.cat.activities.desc': 'Fietsry, stap en veldritte',
-        'gallery.cat.wildlife.title': 'Wildlife',
-        'gallery.cat.wildlife.desc': 'Kudu, gemsbok, springbok en meer',
-        'gallery.cat.sielsrus.title': 'Sielsrus',
-        'gallery.cat.sielsrus.desc': 'Ons koppie — die jaghuis bo-op die piek',
+        'gallery.cat.ongava.title': 'Ongava Border',
+        'gallery.cat.ongava.desc': 'Die grens met Ongava Wildreservaat',
         'gallery.cat.birdlife.title': 'Voëllewe',
         'gallery.cat.birdlife.desc': 'Namibi\u00eb se veelkleurige vo\u00ebls — \'n vo\u00eblkyker se paradys',
         'gallery.photos': 'foto\'s',
@@ -248,12 +223,8 @@
       // Render grid
       galleryGrid.innerHTML = '';
       cat.images.forEach(function (src, i) {
-        var captionKey = (cat.captions && cat.captions[i]) ? cat.captions[i] : null;
-        var captionHtml = captionKey
-          ? '<div class="gallery-item-caption"><span class="bird-badge">🐦</span> ' + t(captionKey) + '</div>'
-          : '';
         var item = document.createElement('div');
-        item.className = 'gallery-item fade-in' + (captionKey ? ' gallery-item-has-caption' : '');
+        item.className = 'gallery-item fade-in';
         item.style.animationDelay = (i * 0.05) + 's';
         item.innerHTML =
           '<div class="gallery-item-inner">' +
@@ -261,8 +232,7 @@
             '<div class="gallery-item-overlay">' +
               '<span class="gallery-zoom">⤢</span>' +
             '</div>' +
-          '</div>' +
-          captionHtml;
+          '</div>';
         item.addEventListener('click', function () {
           openLightbox(cat.images, i);
         });

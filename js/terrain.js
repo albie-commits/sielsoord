@@ -5,6 +5,7 @@
    ═══════════════════════════════════════════════════════════════ */
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 const T = window.SIELSOORD_TERRAIN;
 const container = document.getElementById('terrain-map') || document.getElementById('terrain-hero');
@@ -21,7 +22,7 @@ async function init() {
   const SIZE_X = T.sizeX || 10400;     // scene width  (m)
   const SIZE_Z = T.sizeZ || 10400;     // scene depth  (m)
   const isCoarse = matchMedia('(hover: none) and (pointer: coarse)').matches;
-  const SEG = isCoarse ? 128 : 256;    // mesh resolution
+  const SEG = isCoarse ? 256 : 512;    // mesh resolution (512 on desktop = sub-metre detail)
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const ELEV_SPAN = T.elevMax - T.elevMin;
@@ -42,9 +43,18 @@ async function init() {
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   container.appendChild(renderer.domElement);
 
+  // PBR environment — image-based lighting for realistic sky reflections
+  // on the terrain surface and boundary tubes.
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  pmrem.compileEquirectangularShader();
+  const envTex = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
   const scene = new THREE.Scene();
+  scene.environment = envTex;
   const camera = new THREE.PerspectiveCamera(45, 1, 10, 40000);
 
   // Orbit target: centre of the hills cluster, at ground level
@@ -126,6 +136,16 @@ async function init() {
 
   const sun = new THREE.DirectionalLight(0xffdfae, 2.4);
   sun.position.set(target.x - 5200, 2600, target.z + 3200); // low west sun = golden hour
+  // Shadow camera covers the hills cluster (the area of interest)
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(2048, 2048);
+  sun.shadow.camera.near = 500;
+  sun.shadow.camera.far = 12000;
+  sun.shadow.camera.left = -4500;
+  sun.shadow.camera.right = 4500;
+  sun.shadow.camera.top = 4500;
+  sun.shadow.camera.bottom = -4500;
+  sun.shadow.bias = -0.0004;
   scene.add(sun);
   const hemi = new THREE.HemisphereLight(0xbdd7f5, 0x9a7850, 0.55);
   scene.add(hemi);
@@ -154,9 +174,34 @@ async function init() {
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
+  // PBR detail maps — tiny surface bumps and varying roughness for realism.
+  // Loaded in parallel; missing maps degrade gracefully (back-compat with
+  // older builds that did not generate them).
+  const loader = new THREE.TextureLoader();
+  const loadOpt = (url) => url ? new Promise((res, rej) =>
+    loader.load(url, res, undefined, rej)) : Promise.resolve(null);
+  const [normalTex, roughTex] = await Promise.all([
+    loadOpt(T.normalMap),
+    loadOpt(T.roughMap),
+  ]);
+  for (const dt of [normalTex, roughTex]) {
+    if (dt) {
+      dt.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      dt.wrapS = dt.wrapT = THREE.RepeatWrapping;
+    }
+  }
+
   const terrain = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
-    map: tex, roughness: 1.0, metalness: 0.0,
+    map: tex,
+    normalMap: normalTex || null,
+    normalScale: new THREE.Vector2(0.85, 0.85),
+    roughnessMap: roughTex || null,
+    roughness: 1.0,
+    metalness: 0.0,
+    envMapIntensity: 0.35,
   }));
+  terrain.castShadow = true;
+  terrain.receiveShadow = true;
   scene.add(terrain);
 
   /* ── Feature lines (boundary / road / borders) ────────────── */
@@ -169,10 +214,13 @@ async function init() {
     });
     const curve = new THREE.CatmullRomCurve3(pts, closed, 'catmullrom', 0.6);
     const tube = new THREE.Mesh(
-      new THREE.TubeGeometry(curve, Math.max(32, uvPts.length * 24), radius, 6, closed),
+      new THREE.TubeGeometry(curve, Math.max(32, uvPts.length * 24), radius, 8, closed),
       new THREE.MeshStandardMaterial({
-        color, emissive: color, emissiveIntensity: emissive, roughness: 0.5,
+        color, emissive: color, emissiveIntensity: emissive, roughness: 0.4,
+        metalness: 0.1, envMapIntensity: 0.6,
       }));
+    tube.castShadow = true;
+    tube.receiveShadow = true;
     scene.add(tube);
   }
 

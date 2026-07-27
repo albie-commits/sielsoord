@@ -5,16 +5,18 @@ window.SIELSOORD_TERRAIN = {
     "latMin": -19.435,
     "latMax": -19.22
   },
-  "grid": 512,
+  "grid": 1024,
   "elevMin": 1139.8,
   "elevMax": 1264.0,
   "sizeX": 11555,
   "sizeZ": 23852,
   "heightmap": "images/terrain/terrain-height.bin",
   "texture": "images/terrain/terrain-color.jpg",
+  "normalMap": "images/terrain/terrain-normal.jpg",
+  "roughMap": "images/terrain/terrain-rough.jpg",
   "texSize": [
-    772,
-    1600
+    1977,
+    4096
   ],
   "boundary": [
     [

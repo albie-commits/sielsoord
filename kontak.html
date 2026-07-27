@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=13">
+  <link rel="stylesheet" href="css/style.css?v=18">
   <link rel="stylesheet" href="css/responsive.css?v=4">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23E07B39'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>S</text></svg>">
 
@@ -67,7 +67,7 @@
   <main id="main">
 
     <section class="page-hero">
-      <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1920&q=80');"></div>
+      <div class="hero-bg" style="background: linear-gradient(135deg, #1D130F 0%, #4A2D1C 55%, #8B542C 100%);"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="hero-eyebrow" data-i18n="kontak.hero_eyebrow">Kontak</p>
@@ -90,132 +90,52 @@
       </div>
     </section>
 
-    <!-- ═══ Contact Form + Info ═══ -->
+    <!-- ═══ Direct Contact ═══ -->
     <section class="section">
-      <div class="container">
-        <div class="grid grid-2" style="align-items: start; gap: var(--space-2xl);">
+      <div class="container-narrow">
+        <div class="text-center fade-in" style="margin-bottom: var(--space-xl);">
+          <p class="eyebrow" data-i18n="kontak.hero_eyebrow">Kontak</p>
+          <h2 data-i18n="kontak.direct_title">Direkte Kontak</h2>
+          <p style="color: var(--color-text-muted);" data-i18n="kontak.direct_sub">Een oproep of e-pos is al wat dit neem — ons antwoord binne 24 uur.</p>
+        </div>
 
-          <!-- Form -->
-          <div class="fade-in">
-            <p class="eyebrow" data-i18n="kontak.form_eyebrow">Registreer jou belangstelling</p>
-            <h2 data-i18n="kontak.form_title">Stuur 'n boodskap</h2>
-            <p style="color: var(--color-text-muted); margin-bottom: var(--space-xl);" data-i18n="kontak.form_desc">
-              Vul die vorm in en ons kontak jou binne 24 uur. Geen verpligting nie.
-            </p>
-
-            <div class="form-success">
-              <span data-i18n="kontak.form_success">✅ Dankie! Jou boodskap is gestuur. Ons kontak jou binnekort.</span>
+        <!-- 1-click contact -->
+        <div class="card float-card fade-in fade-in-delay-1" style="margin-bottom: var(--space-xl);">
+          <div class="card-body">
+            <div style="display: grid; gap: var(--space-md);">
+              <a href="tel:+264811289994" class="btn btn-primary btn-lg">📞 +264 81 128 9994</a>
+              <a href="mailto:sielsoord@gmail.com" class="btn btn-primary btn-lg">✉️ sielsoord@gmail.com</a>
+              <a href="https://wa.me/264811289994" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">💬 WhatsApp</a>
             </div>
+          </div>
+        </div>
 
-            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-              <input type="hidden" name="form-name" value="contact">
-              <p style="display: none;">
-                <label><span data-i18n="kontak.honeypot">Moenie dit vul nie:</span> <input name="bot-field"></label>
+        <div class="grid grid-2 fade-in fade-in-delay-2" style="align-items: start;">
+          <div class="card float-card">
+            <div class="card-body">
+              <h3 class="card-title" data-i18n="kontak.visit_title">Besoek Sielsoord</h3>
+              <p class="card-text" style="margin-top: var(--space-md);" data-i18n="kontak.visit_p">
+                Wil jy die plaas self kom sien? Ons nooi ernstige kopers uit vir 'n persoonlike
+                toer. Kom loop die koppies, voel die aarde, en laat die land self met jou praat.
               </p>
-
-              <div class="form-group">
-                <label class="form-label" for="name" data-i18n="kontak.form_name">Naam *</label>
-                <input type="text" id="name" name="name" class="form-input" required aria-required="true">
-                <div class="form-error" data-error-for="name"></div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="email" data-i18n="kontak.form_email">E-pos *</label>
-                <input type="email" id="email" name="email" class="form-input" required aria-required="true">
-                <div class="form-error" data-error-for="email"></div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="phone" data-i18n="kontak.form_phone">Telefoon / WhatsApp</label>
-                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+264 ...">
-                <div class="form-error" data-error-for="phone"></div>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="hill" data-i18n="kontak.form_hill">Watter koppie interesseer jou?</label>
-                <select id="hill" name="hill" class="form-select">
-                  <option value="" data-i18n="kontak.form_hill_default">— Ek is nog besluit —</option>
-                  <option value="sielskemering">Sielskemering</option>
-                  <option value="sielsaandster">Sielsaandster</option>
-                  <option value="sielswind">Sielswind</option>
-                  <option value="sielshoogte">Sielshoogte</option>
-                  <option value="sielsstilte">Sielsstilte</option>
-                  <option value="sielsdageraad">Sielsdageraad</option>
-                  <option value="sielshorison">Sielshorison</option>
-                  <option value="meerdere" data-i18n="kontak.form_hill_multiple">Meer as een koppie</option>
-                  <option value="kml" data-i18n="kontak.form_hill_kml">Ek wil die KML-lêer versoek</option>
-                  <option value="besoek" data-i18n="kontak.form_hill_visit">Ek wil die plaas besoek</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message" data-i18n="kontak.form_msg">Boodskap *</label>
-                <textarea id="message" name="message" class="form-textarea" required aria-required="true" data-i18n-attr="placeholder:kontak.form_msg_ph" placeholder="Vertel ons wat jy soek..."></textarea>
-                <div class="form-error" data-error-for="message"></div>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="kontak.form_submit">Stuur Boodskap</button>
-            </form>
-          </div>
-
-          <!-- Contact info sidebar -->
-          <div class="fade-in fade-in-delay-1">
-            <div class="card" style="margin-bottom: var(--space-xl);">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="kontak.direct_title">Direkte Kontak</h3>
-                <div style="display: grid; gap: var(--space-md); margin-top: var(--space-md);">
-                  <div style="display: flex; gap: var(--space-md); align-items: center;">
-                    <span style="font-size: 1.5rem;">📞</span>
-                    <div>
-                      <strong data-i18n="kontak.direct_phone">Telefoon</strong><br>
-                      <a href="tel:+264811289994" style="color: var(--color-gold); text-decoration: none;">+264 81 128 9994</a>
-                    </div>
-                  </div>
-                  <div style="display: flex; gap: var(--space-md); align-items: center;">
-                    <span style="font-size: 1.5rem;">✉️</span>
-                    <div>
-                      <strong data-i18n="kontak.direct_email">E-pos</strong><br>
-                      <a href="mailto:sielsoord@gmail.com" style="color: var(--color-gold); text-decoration: none;">sielsoord@gmail.com</a>
-                    </div>
-                  </div>
-                  <div style="display: flex; gap: var(--space-md); align-items: center;">
-                    <span style="font-size: 1.5rem;">💬</span>
-                    <div>
-                      <strong data-i18n="kontak.direct_wa">WhatsApp</strong><br>
-                      <a href="https://wa.me/264811289994" target="_blank" rel="noopener" style="color: var(--color-gold); text-decoration: none;">+264 81 128 9994</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card" style="margin-bottom: var(--space-xl);">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="kontak.visit_title">Besoek Sielsoord</h3>
-                <p class="card-text" style="margin-top: var(--space-md);" data-i18n="kontak.visit_p">
-                  Wil jy die plaas self kom sien? Ons nooi ernstige kopers uit vir 'n persoonlike
-                  toer. Kom loop die koppies, voel die aarde, en laat die land self met jou praat.
-                </p>
-                <p style="margin-top: var(--space-md); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="kontak.visit_note">
-                  Besoeke word per afspraak gereël. Vul die vorm links in met "besoek" as jou boodskap.
-                </p>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title" data-i18n="kontak.kml_title">KML-lêer Versoek</h3>
-                <p class="card-text" style="margin-top: var(--space-md);" data-i18n="kontak.kml_p">
-                  Die volledige opmetings-lêer (KML) word met ernstige kopers gedeel sodat hulle
-                  die grense in hul eie Google Earth kan verifieer.
-                </p>
-                <p style="margin-top: var(--space-md); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="kontak.kml_note">
-                  Kies "Ek wil die KML-lêer versoek" in die vorm, of noem dit in jou boodskap.
-                </p>
-              </div>
+              <p style="margin-top: var(--space-md); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="kontak.visit_note">
+                Besoeke word per afspraak gereël. Bel of e-pos ons om 'n tyd te reël.
+              </p>
             </div>
           </div>
 
+          <div class="card float-card">
+            <div class="card-body">
+              <h3 class="card-title" data-i18n="kontak.kml_title">KML-lêer Versoek</h3>
+              <p class="card-text" style="margin-top: var(--space-md);" data-i18n="kontak.kml_p">
+                Die volledige opmetings-lêer (KML) word met ernstige kopers gedeel sodat hulle
+                die grense in hul eie Google Earth kan verifieer.
+              </p>
+              <p style="margin-top: var(--space-md); font-size: var(--fs-sm); color: var(--color-text-muted);" data-i18n="kontak.kml_note">
+                Noem dit in jou e-pos of oproep en ons stuur die lêer vir jou.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -360,8 +280,8 @@
   </footer>
 
   <script src="js/main.js?v=6"></script>
-  <script src="js/form.js?v=2"></script>
-  <script src="js/translations.js?v=13"></script>
+  <script src="js/float-cards.js?v=1"></script>
+  <script src="js/translations.js?v=19"></script>
   <script src="js/i18n.js?v=5"></script>
   <script src="js/premium.js"></script>
   <script type="module" src="js/sigil-3d.js?v=4"></script>

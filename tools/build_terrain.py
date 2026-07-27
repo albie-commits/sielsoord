@@ -3,9 +3,12 @@
 
 Fetches terrarium elevation tiles (SRTM) + Esri World Imagery tiles
 covering the farm, and emits:
-  images/terrain/terrain-height.png   16-bit grayscale heightmap (512x512)
-  images/terrain/terrain-color.jpg    satellite texture (stitched, cropped)
-  js/terrain-data.js                  SIELSOORD_TERRAIN meta + hill coords
+  images/terrain/terrain-height.png   16-bit grayscale heightmap (1024x1024)
+  images/terrain/terrain-height.bin    raw uint16 height data
+  images/terrain/terrain-color.jpg     satellite texture (stitched, cropped)
+  images/terrain/terrain-normal.jpg    tangent-space normal map (PBR)
+  images/terrain/terrain-rough.jpg     roughness map (PBR)
+  js/terrain-data.js                   SIELSOORD_TERRAIN meta + hill coords
 
 Run:  uv run --with pillow --with numpy tools/build_terrain.py
 """
@@ -24,9 +27,10 @@ OUT_IMG.mkdir(parents=True, exist_ok=True)
 LON_MIN, LON_MAX = 15.545, 15.655
 LAT_MIN, LAT_MAX = -19.435, -19.22
 
-ZOOM = 14
-GRID = 512          # heightmap resolution
-TEX_MAX = 1600      # cap texture size
+ELEV_ZOOM = 14      # SRTM native resolution (~30 m); higher zoom adds no detail
+TEX_ZOOM = 15       # Esri satellite imagery (~5 m/px at this latitude)
+GRID = 1024         # heightmap / normal / roughness resolution
+TEX_MAX = 4096      # texture long-edge cap
 
 HILLS = [
     # (name, display, lon, lat, status, link)
@@ -169,21 +173,21 @@ def fetch(url, tries=3):
     raise RuntimeError(f"failed: {url}")
 
 
-def tile_range():
-    x0f, y0f = lonlat_to_tile(LON_MIN, LAT_MAX, ZOOM)  # NW
-    x1f, y1f = lonlat_to_tile(LON_MAX, LAT_MIN, ZOOM)  # SE
+def tile_range(z):
+    x0f, y0f = lonlat_to_tile(LON_MIN, LAT_MAX, z)  # NW
+    x1f, y1f = lonlat_to_tile(LON_MAX, LAT_MIN, z)  # SE
     x0, y0 = math.floor(x0f), math.floor(y0f)
     x1, y1 = math.floor(x1f), math.floor(y1f)
     return (x0, y0, x1, y1), (x0f, y0f, x1f, y1f)
 
 
-def build_elevation(x0, y0, x1, y1):
+def build_elevation(x0, y0, x1, y1, z):
     W = (x1 - x0 + 1) * 256
     H = (y1 - y0 + 1) * 256
     elev = np.zeros((H, W), dtype=np.float32)
     for ty in range(y0, y1 + 1):
         for tx in range(x0, x1 + 1):
-            url = f"https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{ZOOM}/{tx}/{ty}.png"
+            url = f"https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{tx}/{ty}.png"
             data = fetch(url)
             img = np.array(Image.open(io.BytesIO(data)).convert("RGB"), dtype=np.float32)
             e = img[:, :, 0] * 256.0 + img[:, :, 1] + img[:, :, 2] / 256.0 - 32768.0
@@ -192,13 +196,13 @@ def build_elevation(x0, y0, x1, y1):
     return elev
 
 
-def build_texture(x0, y0, x1, y1):
+def build_texture(x0, y0, x1, y1, z):
     W = (x1 - x0 + 1) * 256
     H = (y1 - y0 + 1) * 256
     tex = Image.new("RGB", (W, H))
     for ty in range(y0, y1 + 1):
         for tx in range(x0, x1 + 1):
-            url = f"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{ZOOM}/{ty}/{tx}"
+            url = f"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{ty}/{tx}"
             data = fetch(url)
             img = Image.open(io.BytesIO(data)).convert("RGB")
             tex.paste(img, ((tx - x0) * 256, (ty - y0) * 256))
@@ -215,18 +219,60 @@ def crop_box(x0f, y0f, x1f, y1f, x0, y0):
     return px0, py0, px1, py1
 
 
+def build_normalmap(hm_float, strength=2.5):
+    """Tangent-space normal map (OpenGL convention) from a normalized 0..1 heightmap.
+    Uses Sobel-style central differences."""
+    h = hm_float.astype(np.float32)
+    gx = np.zeros_like(h)
+    gy = np.zeros_like(h)
+    gx[:, 1:-1] = h[:, 2:] - h[:, :-2]
+    gy[1:-1, :] = h[2:, :] - h[:-2, :]
+    gx *= strength
+    gy *= strength
+    nz = np.ones_like(h)
+    inv_len = 1.0 / np.sqrt(gx * gx + gy * gy + nz * nz)
+    nx = (-gx * inv_len * 0.5 + 0.5)
+    ny = (-gy * inv_len * 0.5 + 0.5)
+    nz_out = (nz * inv_len * 0.5 + 0.5)
+    out = np.clip(np.stack([nx, ny, nz_out], axis=-1), 0, 1)
+    return Image.fromarray((out * 255).astype(np.uint8), "RGB")
+
+
+def build_roughmap(hm_float):
+    """Roughness map: rocky/sloped areas brighter (rough), flat lowlands
+    slightly darker (smoother pans / dry riverbeds)."""
+    h = hm_float.astype(np.float32)
+    gx = np.zeros_like(h)
+    gy = np.zeros_like(h)
+    gx[:, 1:-1] = np.abs(h[:, 2:] - h[:, :-2])
+    gy[1:-1, :] = np.abs(h[2:, :] - h[:-2, :])
+    slope = np.sqrt(gx * gx + gy * gy)
+    rough = 0.60 + slope * 6.0 + h * 0.20
+    rough = np.clip(rough, 0.40, 0.98)
+    return Image.fromarray((rough * 255).astype(np.uint8), "L")
+
+
 def main():
-    (x0, y0, x1, y1), (x0f, y0f, x1f, y1f) = tile_range()
-    print(f"tiles: x {x0}..{x1}  y {y0}..{y1}  ({x1-x0+1}x{y1-y0+1})")
-
+    # --- Elevation tiles (SRTM native zoom) ---
+    (ex0, ey0, ex1, ey1), (ex0f, ey0f, ex1f, ey1f) = tile_range(ELEV_ZOOM)
+    print(f"elev tiles ({ELEV_ZOOM}): x {ex0}..{ex1}  y {ey0}..{ey1}  "
+          f"({ex1-ex0+1}x{ey1-ey0+1})")
     print("== elevation ==")
-    elev = build_elevation(x0, y0, x1, y1)
-    print("== texture ==")
-    tex = build_texture(x0, y0, x1, y1)
+    elev = build_elevation(ex0, ey0, ex1, ey1, ELEV_ZOOM)
 
-    px0, py0, px1, py1 = crop_box(x0f, y0f, x1f, y1f, x0, y0)
-    elev_c = elev[py0:py1, px0:px1]
-    tex_c = tex.crop((px0, py0, px1, py1))
+    # --- Texture tiles (higher-res satellite) ---
+    (tx0, ty0, tx1, ty1), (tx0f, ty0f, tx1f, ty1f) = tile_range(TEX_ZOOM)
+    print(f"tex tiles ({TEX_ZOOM}): x {tx0}..{tx1}  y {ty0}..{ty1}  "
+          f"({tx1-tx0+1}x{ty1-ty0+1})")
+    print("== texture ==")
+    tex = build_texture(tx0, ty0, tx1, ty1, TEX_ZOOM)
+
+    # --- Crop both to exact bbox ---
+    epx0, epy0, epx1, epy1 = crop_box(ex0f, ey0f, ex1f, ey1f, ex0, ey0)
+    elev_c = elev[epy0:epy1, epx0:epx1]
+
+    tpx0, tpy0, tpx1, tpy1 = crop_box(tx0f, ty0f, tx1f, ty1f, tx0, ty0)
+    tex_c = tex.crop((tpx0, tpy0, tpx1, tpy1))
     print(f"cropped: elev {elev_c.shape}, tex {tex_c.size}")
 
     # --- heightmap: resample to GRID x GRID, save 16-bit PNG + raw bin ---
@@ -236,13 +282,20 @@ def main():
     hm_img = Image.fromarray(hm_arr, mode="I;16")
     hm_img = hm_img.resize((GRID, GRID), Image.BICUBIC)
     hm_img.save(OUT_IMG / "terrain-height.png")
-    np.array(hm_img, dtype="<u2").tofile(OUT_IMG / "terrain-height.bin")
+    hm_data = np.array(hm_img, dtype="<u2")
+    hm_data.tofile(OUT_IMG / "terrain-height.bin")
+    hm_float = hm_data.astype(np.float32) / 65535.0
+
+    # --- PBR maps from resampled heightmap ---
+    print("== normal + roughness maps ==")
+    build_normalmap(hm_float, strength=2.5).save(OUT_IMG / "terrain-normal.jpg", quality=92)
+    build_roughmap(hm_float).save(OUT_IMG / "terrain-rough.jpg", quality=92)
 
     # --- texture: cap size, save jpg ---
     if max(tex_c.size) > TEX_MAX:
         s = TEX_MAX / max(tex_c.size)
         tex_c = tex_c.resize((int(tex_c.size[0] * s), int(tex_c.size[1] * s)), Image.LANCZOS)
-    tex_c.save(OUT_IMG / "terrain-color.jpg", quality=87)
+    tex_c.save(OUT_IMG / "terrain-color.jpg", quality=88)
 
     # --- hills with sampled elevation ---
     hills_out = []
@@ -272,6 +325,8 @@ def main():
         "sizeZ": round(size_z),
         "heightmap": "images/terrain/terrain-height.bin",
         "texture": "images/terrain/terrain-color.jpg",
+        "normalMap": "images/terrain/terrain-normal.jpg",
+        "roughMap": "images/terrain/terrain-rough.jpg",
         "texSize": list(tex_c.size),
         "boundary": lonlat_to_uv(feats.get("boundary", [])),
         "road": merge_segments(clip_polyline_to_bbox(feats["road"])),

@@ -3049,125 +3049,6 @@ img {
   border-radius: var(--radius-full);
 }
 
-/* ═══ Bird Gallery Captions ═════════════════════════════════════ */
-
-.gallery-item-has-caption {
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery-item-caption {
-  padding: 10px 14px;
-  font-family: var(--font-body);
-  font-size: var(--fs-sm);
-  color: var(--color-text);
-  background: rgba(255,255,255,0.6);
-  border-top: 2px solid var(--color-accent, #E07B39);
-  border-radius: 0 0 var(--radius-md, 8px) var(--radius-md, 8px);
-  text-align: center;
-  line-height: 1.4;
-}
-
-.bird-badge {
-  display: inline-block;
-  margin-right: 4px;
-}
-
-/* ═══ Bird Species Checklist ════════════════════════════════════ */
-
-.bird-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: var(--space-xl, 2rem);
-}
-
-.bird-tab {
-  font-family: var(--font-label, 'Montserrat', sans-serif);
-  font-size: var(--fs-xs, 0.75rem);
-  font-weight: 600;
-  padding: 8px 18px;
-  border-radius: var(--radius-full, 100px);
-  border: 2px solid var(--color-border, #ddd);
-  background: transparent;
-  color: var(--color-text-muted, #888);
-  cursor: pointer;
-  transition: all 0.25s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.bird-tab:hover {
-  border-color: var(--color-sunset, #E07B39);
-  color: var(--color-sunset, #E07B39);
-}
-
-.bird-tab.active {
-  background: var(--color-sunset, #E07B39);
-  border-color: var(--color-sunset, #E07B39);
-  color: white;
-}
-
-.bird-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: var(--font-body, 'Lora', serif);
-  font-size: var(--fs-sm, 0.875rem);
-  background: white;
-  border-radius: var(--radius-lg, 12px);
-  overflow: hidden;
-  box-shadow: var(--shadow-md, 0 4px 12px rgba(0,0,0,0.08));
-}
-
-.bird-table thead {
-  background: var(--color-sunset, #E07B39);
-  color: white;
-}
-
-.bird-table thead th {
-  padding: 12px 14px;
-  text-align: left;
-  font-family: var(--font-label, 'Montserrat', sans-serif);
-  font-size: var(--fs-xs, 0.7rem);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.bird-table tbody tr {
-  border-bottom: 1px solid var(--color-border, #eee);
-  transition: background 0.15s ease;
-}
-
-.bird-table tbody tr:hover {
-  background: #FFF8F0;
-}
-
-.bird-table tbody td {
-  padding: 10px 14px;
-  vertical-align: top;
-}
-
-.bird-table tbody td i {
-  color: var(--color-text-muted, #888);
-  font-size: var(--fs-xs, 0.75rem);
-}
-
-@media (max-width: 768px) {
-  .bird-table {
-    font-size: var(--fs-xs, 0.7rem);
-  }
-  .bird-table thead th,
-  .bird-table tbody td {
-    padding: 8px 6px;
-  }
-  .bird-tab {
-    font-size: 0.65rem;
-    padding: 6px 12px;
-  }
-}
-
 /* ── Floating Share Button ─────────────────────────────────────── */
 
 .share-fab {
@@ -3408,5 +3289,30 @@ img {
   .footer-sigil {
     width: 96px;
     height: 96px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Float cards — Spline "Connecting Card" feel (kontak.html)
+   Idle bob + hover lift with cursor tilt. js/float-cards.js
+   drives the transform; CSS owns the golden shadow bloom.
+   ═══════════════════════════════════════════════════════════════ */
+.float-card {
+  transition: box-shadow var(--transition-luxury);
+  will-change: transform;
+}
+
+.float-card.is-hovered {
+  box-shadow:
+    0 6px 18px rgba(201, 162, 39, 0.22),
+    0 24px 60px rgba(30, 16, 10, 0.22),
+    0 48px 110px rgba(30, 16, 10, 0.15);
+  z-index: 2;
+}
+
+@media (hover: none) and (pointer: coarse),
+       (prefers-reduced-motion: reduce) {
+  .float-card {
+    will-change: auto;
   }
 }
