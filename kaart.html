@@ -293,14 +293,14 @@
             <h3>Sielsoord.kml</h3>
             <p data-i18n="map.kml1_desc">Die amptelike Sielsoord opmeting — grense, 8 koppies, boreholes, paaie, en wildreservaat grense.</p>
             <div class="kml-card-actions">
-              <a href="data/Sielsoord.kml" download class="btn btn-primary btn-lg" data-i18n="map.btn_download">
-                ⬇ Laai af
+              <a href="https://earth.google.com/web/?url=https://albie-commits.github.io/sielsoord/data/Sielsoord.kml" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="map.btn_earth">
+                🌍 Bekyk in Google Earth
               </a>
-              <a href="https://earth.google.com/web/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="map.btn_earth">
-                🌍 Open in Google Earth
-              </a>
+              <button onclick="navigator.clipboard.writeText('https://albie-commits.github.io/sielsoord/data/Sielsoord.kml').then(()=>{this.textContent='✅ Gekopieer!';setTimeout(()=>{this.textContent='📋 Kopieer skakel'},1500)}).catch(()=>{this.textContent='⚠️ Probeer weer'})" class="btn btn-ghost btn-lg" data-i18n="map.btn_copy">
+                📋 Kopieer skakel
+              </button>
             </div>
-            <p class="kml-card-hint" data-i18n="map.hint_download">Klik "Laai af" om die lêer te stoor, dan sleep dit in Google Earth.</p>
+            <p class="kml-card-hint" data-i18n="map.hint_kml">Maak direk oop in Google Earth Web. Op selfoon: kopieer die skakel en plak dit in die Google Earth-app.</p>
           </div>
 
           <!-- rustoort-2500.kml -->
@@ -309,26 +309,37 @@
             <h3 data-i18n="map.kml2_name">Plaas Rustoord 2500.kml</h3>
             <p data-i18n="map.kml2_desc">Die oorspronklike familieplaas Rustoord se 2,500 hektaar opmeting met alle grense en punte.</p>
             <div class="kml-card-actions">
-              <a href="data/rustoort-2500.kml" download class="btn btn-primary btn-lg" data-i18n="map.btn_download">
-                ⬇ Laai af
+              <a href="https://earth.google.com/web/?url=https://albie-commits.github.io/sielsoord/data/rustoort-2500.kml" target="_blank" rel="noopener" class="btn btn-primary btn-lg" data-i18n="map.btn_earth">
+                🌍 Bekyk in Google Earth
               </a>
-              <a href="https://earth.google.com/web/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg" data-i18n="map.btn_earth">
-                🌍 Open in Google Earth
-              </a>
+              <button onclick="navigator.clipboard.writeText('https://albie-commits.github.io/sielsoord/data/rustoort-2500.kml').then(()=>{this.textContent='✅ Gekopieer!';setTimeout(()=>{this.textContent='📋 Kopieer skakel'},1500)}).catch(()=>{this.textContent='⚠️ Probeer weer'})" class="btn btn-ghost btn-lg" data-i18n="map.btn_copy">
+                📋 Kopieer skakel
+              </button>
             </div>
-            <p class="kml-card-hint" data-i18n="map.hint_download">Klik "Laai af" om die lêer te stoor, dan sleep dit in Google Earth.</p>
+            <p class="kml-card-hint" data-i18n="map.hint_kml">Maak direk oop in Google Earth Web. Op selfoon: kopieer die skakel en plak dit in die Google Earth-app.</p>
           </div>
         </div>
 
         <!-- Instructions -->
         <div class="kml-instructions fade-in">
           <h3 data-i18n="map.instr_title">Hoe om te gebruik</h3>
-          <ol>
-            <li data-i18n="map.instr_step1"><strong>Laai af</strong> — Klik die "Laai af" knop bo om die .kml lêer te stoor.</li>
-            <li data-i18n="map.instr_step2"><strong>Open Google Earth</strong> — Gaan na earth.google.com op jou rekenaar, of open die Google Earth app.</li>
-            <li data-i18n="map.instr_step3"><strong>Sleep die lêer</strong> — Sleep die .kml lêer in die Google Earth venster. Die grense verskyn dadelik.</li>
-            <li data-i18n="map.instr_step4"><strong>Verken</strong> — Zoem in op die koppies, boreholes, en grense met satellietbeeld.</li>
-          </ol>
+          <div class="grid grid-2" style="align-items: start;">
+            <div>
+              <h4 style="margin-bottom: var(--space-sm);">💻 Op rekenaar</h4>
+              <ol>
+                <li data-i18n="map.instr_desk1"><strong>Klik "Bekyk in Google Earth"</strong> — die KML maak outomaties oop in Google Earth Web.</li>
+                <li data-i18n="map.instr_desk2"><strong>Of laai af</strong> — regskliek "Kopieer skakel" en kies "Save link as..." om die .kml-lêer te stoor.</li>
+              </ol>
+            </div>
+            <div>
+              <h4 style="margin-bottom: var(--space-sm);">📱 Op selfoon</h4>
+              <ol>
+                <li data-i18n="map.instr_mob1"><strong>Kopieer die skakel</strong> — tik "Kopieer skakel" bo.</li>
+                <li data-i18n="map.instr_mob2"><strong>Open Google Earth</strong> — maak die Google Earth-app oop.</li>
+                <li data-i18n="map.instr_mob3"><strong>Plak die skakel</strong> — in Earth, gaan na Projects → Import KML file en plak die skakel.</li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -384,7 +395,7 @@
   </footer>
 
   <script src="js/main.js?v=6"></script>
-  <script src="js/translations.js?v=19"></script>
+  <script src="js/translations.js?v=20"></script>
   <script src="js/i18n.js?v=5"></script>
   <script src="js/premium.js"></script>
   <script type="module" src="js/sigil-3d.js?v=4"></script>
