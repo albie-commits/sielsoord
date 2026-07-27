@@ -35,8 +35,8 @@ Gallery content is driven by the `CATEGORIES` array at the top of `gallery.js` �
 ### Contact form (`kontak.html` + `js/form.js`)
 Uses Netlify Forms (`data-netlify="true"` + honeypot); `form.js` only does client-side validation. Works only when deployed to Netlify.
 
-### Device counter (`js/counter.js` + `netlify/functions/counter.js` + `teller.html`)
-Invisible unique-device counter. `js/counter.js` (included on all 14 site pages) sets a `localStorage` flag (`sielsoord_v`) so each device counts only once ever, then `POST`s to `/api/counter`. The Netlify Function (`netlify/functions/counter.js`) stores the count in `/tmp/sielsoord-counter.json` (persists across warm Lambda invocations). Admin view at `teller.html` (no robots, no nav — secret URL only you know) fetches `GET /api/counter` and shows the count. Configured via `netlify.toml`. No npm dependencies, no external services.
+### Device counter (`js/counter.js` + `api/counter.js` + `teller.html`)
+Invisible unique-device counter. `js/counter.js` (included on all 14 site pages) sets a `localStorage` flag (`sielsoord_v`) so each device counts only once ever, then `POST`s to `/api/counter`. The Vercel Serverless Function (`api/counter.js`, Node.js runtime) stores the count in `/tmp/sielsoord-counter.json` (persists across warm Lambda invocations). Admin view at `teller.html` (no robots, no nav — secret URL only you know) fetches `GET /api/counter` and shows the count. Configured via `vercel.json` (`@vercel/node` for the function, `@vercel/static` for everything else). No npm dependencies, no external services.
 
 ### CSS
 `css/style.css` holds the full design system (Namibian earth palette: gold `#C9842A`, sunset `#E07B39`, espresso `#2C1810`, cream `#FAF3E7`) and all components; `css/responsive.css` holds mobile/tablet breakpoints. Fonts: Cormorant Garamond (headings), Lora (body), Montserrat (labels/buttons) via Google Fonts. Maintain WCAG contrast, ≥44px touch targets, and `prefers-reduced-motion` support.
