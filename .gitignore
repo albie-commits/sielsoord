@@ -8,3 +8,4 @@ __pycache__/
 
 # Build cache (regenerable — 7MB of downloaded tiles)
 tools/.tile-cache/
+.vercel
