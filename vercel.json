@@ -2,17 +2,6 @@
   "version": 2,
   "builds": [
     { "src": "api/counter.js", "use": "@vercel/node" },
-    { "src": "!api/**", "src": "**/*.html", "use": "@vercel/static" },
-    { "src": "**/*.css", "use": "@vercel/static" },
-    { "src": "**/*.js", "use": "@vercel/static" },
-    { "src": "**/*.png", "use": "@vercel/static" },
-    { "src": "**/*.jpg", "use": "@vercel/static" },
-    { "src": "**/*.svg", "use": "@vercel/static" },
-    { "src": "**/*.kml", "use": "@vercel/static" },
-    { "src": "**/*.blend", "use": "@vercel/static" },
-    { "src": "**/*.md", "use": "@vercel/static" },
-    { "src": "**/*.toml", "use": "@vercel/static" },
-    { "src": "**/*.json", "use": "@vercel/static" },
-    { "src": "**/*.bin", "use": "@vercel/static" }
+    { "src": "**/*", "use": "@vercel/static" }
   ]
 }
