@@ -115,31 +115,66 @@ async function init() {
     });
   }
 
-  // Fullscreen toggle (map page)
+  // Fullscreen toggle (map page) — browser API + CSS fallback for mobile
   const fsBtn = document.getElementById('terrain-fullscreen');
   if (fsBtn) {
+    let cssFs = false;
+    const mapWrap = container.closest('.map-container');
+
     fsBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const el = container.closest('.map-container') || document.documentElement;
-      if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-        const requestFs = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
-        if (requestFs) {
-          requestFs.call(el).catch(() => {
-            // Fallback: try documentElement if element-level fails (iOS Safari quirk)
-            const fallback = document.documentElement.requestFullscreen
-              || document.documentElement.webkitRequestFullscreen;
-            if (fallback) fallback.call(document.documentElement).catch(() => {});
-          });
-        }
-      } else {
+
+      // Already in CSS fullscreen mode? Exit it.
+      if (cssFs) {
+        exitCssFs();
+        return;
+      }
+
+      // Already in browser fullscreen? Exit via API.
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
         const exitFs = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
         if (exitFs) exitFs.call(document);
+        return;
+      }
+
+      // Try browser Fullscreen API first
+      const requestFs = (mapWrap || document.documentElement).requestFullscreen
+        || (mapWrap || document.documentElement).webkitRequestFullscreen;
+      if (requestFs) {
+        requestFs.call(mapWrap || document.documentElement).then(() => {
+          // Success via browser API
+        }).catch(() => {
+          // Browser API failed — use CSS fallback
+          enterCssFs();
+        });
+      } else {
+        // No Fullscreen API at all — use CSS fallback
+        enterCssFs();
       }
     });
+
+    function enterCssFs() {
+      cssFs = true;
+      if (mapWrap) mapWrap.classList.add('map-fullscreen');
+      fsBtn.classList.add('terrain-fullscreen--active');
+      // Prevent body scroll while in CSS fullscreen
+      document.body.style.overflow = 'hidden';
+      setTimeout(resize, 150);
+    }
+
+    function exitCssFs() {
+      cssFs = false;
+      if (mapWrap) mapWrap.classList.remove('map-fullscreen');
+      fsBtn.classList.remove('terrain-fullscreen--active');
+      document.body.style.overflow = '';
+      setTimeout(resize, 150);
+    }
+
+    // Sync with browser fullscreen events (still try on desktop)
     const onFsChange = () => {
       const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
-      fsBtn.textContent = '⛶';
       fsBtn.classList.toggle('terrain-fullscreen--active', isFs);
+      if (!isFs && cssFs) exitCssFs();
       setTimeout(resize, 150);
     };
     document.addEventListener('fullscreenchange', onFsChange);

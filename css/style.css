@@ -843,6 +843,18 @@ body.hero-dark .hero-bg-fallback {
   border-color: var(--color-gold, #C9842A);
 }
 
+/* CSS fullscreen fallback — fills viewport on mobile */
+.map-fullscreen {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  max-width: 100vw !important;
+  z-index: 9999 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
 /* Hill markers floating over the 3D scene */
 .terrain-marker {
   position: absolute;
