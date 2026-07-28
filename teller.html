@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>Sielsoord — Toestelle</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -82,7 +83,7 @@
       var paths = ["/api/counter.js", "/api/counter"];
       for (var i = 0; i < paths.length; i++) {
         try {
-          var r = await fetch(paths[i]);
+          var r = await fetch(paths[i] + "?t=" + Date.now(), { cache: "no-store" });
           if (!r.ok) continue;
           var d = await r.json();
           document.getElementById("count").textContent = d.count;
