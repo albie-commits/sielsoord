@@ -1352,6 +1352,31 @@ body.hero-dark .hero-bg-fallback {
   font-size: var(--fs-lg);
   color: var(--color-espresso);
   margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.kml-instr-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.kml-instr-col {
+  /* column wrapper */
+}
+
+.kml-instr-heading {
+  font-family: var(--font-heading);
+  font-size: var(--fs-base);
+  color: var(--color-deep);
+  margin-bottom: var(--space-md);
+}
+
+@media (max-width: 640px) {
+  .kml-instr-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .kml-instructions ol {
