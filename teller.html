@@ -79,18 +79,22 @@
     <button class="refresh" onclick="loadCount()">Herlaai</button>
   </div>
   <script>
-    async function loadCount() {
-      var paths = ["/api/counter.js", "/api/counter"];
-      for (var i = 0; i < paths.length; i++) {
-        try {
-          var r = await fetch(paths[i] + "?t=" + Date.now(), { cache: "no-store" });
-          if (!r.ok) continue;
-          var d = await r.json();
-          document.getElementById("count").textContent = d.count;
-          return;
-        } catch (e) {}
-      }
-      document.getElementById("count").textContent = "?";
+    function loadCount() {
+      var el = document.getElementById("count");
+      el.textContent = "…";
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "/api/counter.js?t=" + Date.now(), true);
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          try {
+            el.textContent = JSON.parse(xhr.responseText).count;
+            return;
+          } catch (e) {}
+        }
+        el.textContent = "?";
+      };
+      xhr.onerror = function () { el.textContent = "?"; };
+      xhr.send();
     }
     loadCount();
   </script>
