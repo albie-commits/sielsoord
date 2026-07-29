@@ -377,7 +377,7 @@ async function init() {
   /* ── Hill markers (HTML overlay, clickable) ───────────────── */
   const markers = T.hills.map((h, i) => {
     const p = local(h.u, h.v);
-    p.y = heightAt(h.u, h.v) + 90;
+    p.y = heightAt(h.u, h.v) + 30;
     const num = i + 1;
     const el = document.createElement('a');
     el.className = 'terrain-marker terrain-marker-' + h.status;
@@ -391,7 +391,7 @@ async function init() {
   /* ── Borehole markers (blue dots, not clickable) ──────────── */
   for (const [u, v] of (T.boreholes || [])) {
     const p = local(u, v);
-    p.y = heightAt(u, v) + 60;
+    p.y = heightAt(u, v) + 20;
     const el = document.createElement('span');
     el.className = 'terrain-marker terrain-marker-borehole';
     el.title = 'Borehole';

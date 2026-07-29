@@ -923,6 +923,12 @@ body.hero-dark .hero-bg-fallback {
   .terrain-marker-dot { width: 16px; height: 16px; }
 }
 
+/* Fullscreen on mobile: show labels */
+.map-container:fullscreen .terrain-marker-label,
+.map-container:-webkit-full-screen .terrain-marker-label {
+  display: inline;
+}
+
 .hero-actions {
   display: flex;
   gap: var(--space-md);
