@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Sielsoord — Toestelle</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,76 +26,59 @@
       box-shadow: 0 4px 24px rgba(44,24,16,0.12);
       padding: 3rem 4rem;
     }
-    h1 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: #8B6914;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.05em;
-    }
-    .count {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 5rem;
-      font-weight: 600;
-      color: #C9842A;
-      line-height: 1;
-    }
-    .label {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: #8B7355;
-      margin-top: 0.5rem;
-    }
-    .refresh {
-      margin-top: 2rem;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #C9842A;
-      cursor: pointer;
-      border: 1px solid #C9842A;
-      border-radius: 24px;
-      padding: 0.5rem 1.25rem;
-      background: transparent;
-      transition: all 0.2s;
-    }
-    .refresh:hover {
-      background: #C9842A;
-      color: #fff;
-    }
-    @media (max-width: 480px) {
-      .card { padding: 2rem; margin: 1rem; }
-      .count { font-size: 3.5rem; }
-    }
+    h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.4rem; font-weight: 400; color: #8B6914; margin-bottom: 0.5rem; letter-spacing: 0.05em; }
+    .count { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 5rem; font-weight: 600; color: #C9842A; line-height: 1; }
+    .label { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #8B7355; margin-top: 0.5rem; }
+    .refresh { margin-top: 2rem; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #C9842A; cursor: pointer; border: 1px solid #C9842A; border-radius: 24px; padding: 0.5rem 1.25rem; background: transparent; transition: all 0.2s; }
+    .refresh:hover { background: #C9842A; color: #fff; }
+    .debug { margin-top: 1rem; font-size: 0.6rem; color: #999; word-break: break-all; max-width: 280px; }
+    @media (max-width: 480px) { .card { padding: 2rem; margin: 1rem; } .count { font-size: 3.5rem; } }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>Sielsoord</h1>
     <div class="count" id="count">…</div>
-    <div class="label">Unieke Toestelle.</div>
+    <div class="label">Bladsy Besoeke</div>
     <button class="refresh" onclick="loadCount()">Herlaai</button>
+    <div class="debug" id="debug">v3 - laai…</div>
   </div>
   <script>
     function loadCount() {
       var el = document.getElementById("count");
+      var dbg = document.getElementById("debug");
       el.textContent = "…";
+      dbg.textContent = "v3 - probeer…";
+
       var xhr = new XMLHttpRequest();
       xhr.open("GET", "/api/counter.js?t=" + Date.now(), true);
+      xhr.timeout = 8000;
+
       xhr.onload = function () {
+        dbg.textContent = "v3 - status: " + xhr.status;
         if (xhr.status === 200) {
           try {
-            el.textContent = JSON.parse(xhr.responseText).count;
+            var d = JSON.parse(xhr.responseText);
+            el.textContent = d.count;
+            dbg.textContent = "v3 - OK, count=" + d.count;
             return;
-          } catch (e) {}
+          } catch (e) {
+            dbg.textContent = "v3 - parse fout: " + e;
+          }
         }
         el.textContent = "?";
       };
-      xhr.onerror = function () { el.textContent = "?"; };
+
+      xhr.onerror = function () {
+        el.textContent = "?";
+        dbg.textContent = "v3 - netwerk fout";
+      };
+
+      xhr.ontimeout = function () {
+        el.textContent = "?";
+        dbg.textContent = "v3 - time-out";
+      };
+
       xhr.send();
     }
     loadCount();
