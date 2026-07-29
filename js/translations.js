@@ -136,7 +136,7 @@ const TRANSLATIONS = {
     "peaks.avail_eyebrow": "Beskikbaarheid",
 
     /* ── Extra index keys ── */
-    "index.sielsrus_desc": "Ons familie se tuis. Ons huis bo-op die hoogste punt.",
+    "index.sielsrus_desc": "Ons familie se tuiste in die bos.",
     "index.cta_text2": "Voel die aarde onder jou voete en die stilte in jou siel.",
     "mtn.sielsrus_img_alt": "Sielsrus — ons koppie",
 
@@ -431,7 +431,7 @@ const TRANSLATIONS = {
     "meta.story_title": "Storie — Sielsoord",
     "meta.story_desc": "Die storie van Sielsoord — 2,500 hektaar Namibiese wildernis met geskiedenis, wild en siel, naby Etosha.",
     "meta.sielsrus_title": "Sielsrus — Ons Koppie — Sielsoord",
-    "meta.sielsrus_desc": "Sielsrus — ons familie se koppie en huis op die hoogste punt van Sielsoord.",
+    "meta.sielsrus_desc": "Sielsrus — ons familie se koppie en tuiste in die bos van Sielsoord.",
     "mtn.sielsrus_view_alt": "Uitsig vanaf Sielsrus",
     "meta.hill_available_desc": "'n Privaat koppie beskikbaar op Sielsoord, Namibië, teen R4 miljoen.",
     "meta.hill_reserved_desc": "Sielshorison — Koppie 8 op Sielsoord, Namibië. Tans gereserveer.",
@@ -655,7 +655,7 @@ const TRANSLATIONS = {
     "peaks.avail_eyebrow": "Availability",
 
     /* ── Extra index keys ── */
-    "index.sielsrus_desc": "Our family's home. Our house atop the highest point.",
+    "index.sielsrus_desc": "Our family's home in the bush.",
     "index.cta_text2": "Feel the earth beneath your feet and the silence in your soul.",
     "mtn.sielsrus_img_alt": "Sielsrus — our hill",
 
@@ -944,7 +944,7 @@ const TRANSLATIONS = {
     "meta.story_title": "Story — Sielsoord",
     "meta.story_desc": "The story of Sielsoord — 2,500 hectares of Namibian wilderness, history, wildlife and soul, near Etosha.",
     "meta.sielsrus_title": "Sielsrus — Our Hill — Sielsoord",
-    "meta.sielsrus_desc": "Sielsrus — our family's hill and home at the highest point of Sielsoord.",
+    "meta.sielsrus_desc": "Sielsrus — our family's hill and home in the bush at Sielsoord.",
     "mtn.sielsrus_view_alt": "View from Sielsrus",
     "meta.hill_available_desc": "A private hill available at Sielsoord, Namibia, for R4 million.",
     "meta.hill_reserved_desc": "Sielshorison — Hill 8 at Sielsoord, Namibia. Currently reserved.",
@@ -1168,7 +1168,7 @@ const TRANSLATIONS = {
     "peaks.avail_eyebrow": "Verfügbarkeit",
 
     /* ── Extra index keys ── */
-    "index.sielsrus_desc": "Unser Familienheim. Das Haus auf dem höchsten Punkt.",
+    "index.sielsrus_desc": "Das Zuhause unserer Familie im Busch.",
     "index.cta_text2": "Fühlen Sie die Erde unter Ihren Füßen und die Stille in Ihrer Seele.",
     "mtn.sielsrus_img_alt": "Sielsrus — unser Hügel",
 
@@ -1457,7 +1457,7 @@ const TRANSLATIONS = {
     "meta.story_title": "Geschichte — Sielsoord",
     "meta.story_desc": "Die Geschichte von Sielsoord — 2.500 Hektar namibische Wildnis, Geschichte, Tierwelt und Seele, nahe Etosha.",
     "meta.sielsrus_title": "Sielsrus — Unser Hügel — Sielsoord",
-    "meta.sielsrus_desc": "Sielsrus — der Hügel unserer Familie mit Haus am höchsten Punkt von Sielsoord.",
+    "meta.sielsrus_desc": "Sielsrus — der Hügel unserer Familie mit Zuhause im Busch von Sielsoord.",
     "mtn.sielsrus_view_alt": "Aussicht vom Sielsrus",
     "meta.hill_available_desc": "Ein privater Hügel auf Sielsoord, Namibia, für R4 Millionen verfügbar.",
     "meta.hill_reserved_desc": "Sielshorison — Hügel 8 auf Sielsoord, Namibia. Derzeit reserviert.",
