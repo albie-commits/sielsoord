@@ -277,6 +277,13 @@ const TRANSLATIONS = {
     "map.instr_mob2": "<strong>Open Google Earth</strong> — maak die Google Earth-app oop op jou foon.",
     "map.instr_mob3": "<strong>Voer die KML in:</strong> Tik op <em>Projects</em> → <em>Import KML file</em> → kies die afgelaaide lêer uit jou Downloads.",
 
+    /* ── Maps buttons ── */
+    "map.maps_eyebrow": "Sien waar dit is",
+    "map.maps_title": "Kry aanwysings na Sielsoord",
+    "map.maps_desc": "Maak Sielsoord oop in Google Maps of Apple Maps vir aanwysings vanaf jou huidige ligging.",
+    "map.maps_google": "Google Maps",
+    "map.maps_apple": "Apple Maps",
+
     /* ── Kontak page ── */
     "kontak.hero_eyebrow": "Kontak",
     "kontak.hero_title": "Kom praat met ons",
@@ -793,6 +800,13 @@ const TRANSLATIONS = {
     "map.instr_mob2": "<strong>Open Google Earth</strong> — launch the Google Earth app on your phone.",
     "map.instr_mob3": "<strong>Import the KML:</strong> Tap <em>Projects</em> → <em>Import KML file</em> → select the downloaded file from your Downloads.",
 
+    /* ── Maps buttons ── */
+    "map.maps_eyebrow": "See where it is",
+    "map.maps_title": "Get directions to Sielsoord",
+    "map.maps_desc": "Open Sielsoord in Google Maps or Apple Maps for directions from your current location.",
+    "map.maps_google": "Google Maps",
+    "map.maps_apple": "Apple Maps",
+
     "kontak.hero_eyebrow": "Contact",
     "kontak.hero_title": "Come talk to us",
     "kontak.hero_sub": "We listen. We answer. We show you the land.",
@@ -1307,6 +1321,13 @@ const TRANSLATIONS = {
     "map.instr_mob1": "<strong>Laden Sie die .kml-Datei herunter</strong> — tippen Sie auf \"KML herunterladen\" und warten Sie, bis die Datei heruntergeladen ist.",
     "map.instr_mob2": "<strong>Öffnen Sie Google Earth</strong> — starten Sie die Google Earth-App auf Ihrem Handy.",
     "map.instr_mob3": "<strong>KML importieren:</strong> Tippen Sie auf <em>Projekte</em> → <em>KML-Datei importieren</em> → wählen Sie die heruntergeladene Datei aus Ihren Downloads.",
+
+    /* ── Maps buttons ── */
+    "map.maps_eyebrow": "Sehen, wo es ist",
+    "map.maps_title": "Route nach Sielsoord",
+    "map.maps_desc": "Öffnen Sie Sielsoord in Google Maps oder Apple Maps für eine Wegbeschreibung von Ihrem aktuellen Standort.",
+    "map.maps_google": "Google Maps",
+    "map.maps_apple": "Apple Maps",
 
     "kontak.hero_eyebrow": "Kontakt",
     "kontak.hero_title": "Sprechen Sie mit uns",

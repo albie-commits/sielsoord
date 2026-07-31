@@ -1414,6 +1414,66 @@ body.hero-dark .hero-bg-fallback {
   font-weight: 600;
 }
 
+/* ── Google Maps & Apple Maps buttons ─────────────────────────── */
+.maps-section {
+  background: linear-gradient(180deg, #fff 0%, var(--color-cream) 100%);
+}
+
+.maps-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  justify-content: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.maps-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-label, 'Montserrat', sans-serif);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 56px;
+}
+
+.maps-btn:hover {
+  transform: translateY(-2px);
+}
+
+.maps-btn-icon {
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+.maps-btn-google {
+  background: #fff;
+  color: var(--color-espresso);
+  border: 2px solid rgba(201, 132, 42, 0.3);
+  box-shadow: 0 2px 8px rgba(44, 24, 16, 0.08);
+}
+
+.maps-btn-google:hover {
+  box-shadow: 0 4px 16px rgba(44, 24, 16, 0.15);
+  border-color: var(--color-gold);
+}
+
+.maps-btn-apple {
+  background: var(--color-espresso);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(44, 24, 16, 0.15);
+}
+
+.maps-btn-apple:hover {
+  box-shadow: 0 4px 16px rgba(44, 24, 16, 0.25);
+}
+
 /* ── Forms ─────────────────────────────────────────────────────── */
 
 .form-group {
