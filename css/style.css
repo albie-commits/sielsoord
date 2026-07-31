@@ -1465,13 +1465,15 @@ body.hero-dark .hero-bg-fallback {
 }
 
 .maps-btn-apple {
-  background: var(--color-espresso);
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(44, 24, 16, 0.15);
+  background: #fff;
+  color: var(--color-espresso);
+  border: 2px solid rgba(201, 132, 42, 0.3);
+  box-shadow: 0 2px 8px rgba(44, 24, 16, 0.08);
 }
 
 .maps-btn-apple:hover {
-  box-shadow: 0 4px 16px rgba(44, 24, 16, 0.25);
+  box-shadow: 0 4px 16px rgba(44, 24, 16, 0.15);
+  border-color: var(--color-gold);
 }
 
 /* ── Forms ─────────────────────────────────────────────────────── */
